@@ -36,4 +36,37 @@ func main() {
 
 	f := MyFloat(-math.Sqrt2)
 	fmt.Println(f.Abs())
+
+	a := Android{
+		Model:  "m",
+		Person: struct{ Name string }{Name: "t"},
+	}
+	a.Person.Talk()
+
+	a1 := &Android{
+		Model: "m",
+		Person: Person{
+			Name: "you",
+		},
+	}
+	a1.Person.Talk()
+
+	b := new(Android)
+	b.Talk()
+}
+
+// Embedded Types
+type Person struct {
+	Name string
+}
+
+func (p *Person) Talk() {
+	fmt.Println("Hi, my name is", p.Name)
+}
+
+// is-a releationship
+// Android is a Person
+type Android struct {
+	Person
+	Model string
 }
