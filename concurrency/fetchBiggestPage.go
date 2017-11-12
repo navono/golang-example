@@ -13,9 +13,8 @@ type HomePageSize struct {
 
 func main() {
 	urls := []string{
-		"http://www.apple.com",
+		"http://www.baidu.com",
 		"http://www.amazon.com",
-		"https://www.google.com",
 		"http://www.microsoft.com",
 	}
 
