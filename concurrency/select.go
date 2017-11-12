@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "time"
 
 // select 语句使得一个 goroutine 在多个通讯操作上等待。
 // select 会阻塞，直到条件分支中的某个可以继续执行，这时就会执行那个条件分支。
@@ -18,6 +19,19 @@ func fibonacci(c, quit chan int) {
 	}
 }
 
+func customTimeout(c1, c2 <-chan string) {
+	select {
+	case msg1 := <-c1:
+		fmt.Println("Message 1", msg1)
+	case msg2 := <-c2:
+		fmt.Println("Message 2", msg2)
+	case <-time.After(time.Second * 5):
+		fmt.Println("timeout")
+	default:
+		fmt.Println("nothing ready")
+	}
+}
+
 func main() {
 	c := make(chan int)
 	quit := make(chan int)
@@ -28,4 +42,15 @@ func main() {
 		quit <- 0
 	}()
 	fibonacci(c, quit)
+
+	c1 := make(chan string)
+	c2 := make(chan string)
+	go func() {
+		c1 <- "Yo"
+	}()
+	customTimeout(c1, c2)
+
+	// just wait for code execution complete
+	var input string
+	fmt.Scanln(&input)
 }
