@@ -32,7 +32,7 @@ func customTimeout(c1, c2 <-chan string) {
 	}
 }
 
-func main() {
+func simpleCase() {
 	c := make(chan int)
 	quit := make(chan int)
 	go func() {
@@ -53,4 +53,105 @@ func main() {
 	// just wait for code execution complete
 	var input string
 	fmt.Scanln(&input)
+}
+
+func block() {
+	start := time.Now()
+	c := make(chan interface{})
+
+	go func() {
+		time.Sleep(5 * time.Second)
+		// 此处阻塞，导致 c 的 reader 被阻塞
+		close(c)
+	}()
+
+	fmt.Println("Blocking on read...")
+	select {
+	// 被阻塞
+	case <-c:
+		fmt.Printf("Unblocked %v later. \n", time.Since(start))
+	}
+
+	// 引发几个问题：
+	// 1. 当有多个 channel 需要读，怎么办
+	// 2. 当没有 channel 准备好时，怎么办
+	// 3. 在当前时刻没有 channel 准备好，但是又要去执行点什么，怎么办
+
+	// A1. go 的运行时会对多个 case 的读采用一种平均随机的算法来调度，也就是每个读都有平局的执行机会（multiSelect）
+	// A2. 可以在最后一个 case 语句加入超时
+	// A3. 在 select 中加入 default
+}
+
+func multiSelect() {
+	c1 := make(chan interface{})
+	close(c1)
+	c2 := make(chan interface{})
+	close(c2)
+
+	var c1Count, c2Count int
+	for i := 1000; i >= 0; i-- {
+		select {
+		case <-c1:
+			c1Count++
+		case <-c2:
+			c2Count++
+		}
+	}
+
+	fmt.Printf("c1Count: %d\nc2Count: %d\n", c1Count, c2Count)
+}
+
+func timeoutSelect() {
+	var c <-chan int32
+
+	select {
+	case <-c:
+	case <-time.After(1 * time.Second):
+		fmt.Println("Timed out.")
+	}
+}
+
+func defaultSelect() {
+	start := time.Now()
+	var c1, c2 <-chan int
+
+	select {
+	case <-c1:
+	case <-c2:
+	default:
+		fmt.Printf("In default after %v\n", time.Since(start))
+	}
+}
+
+func forSelect() {
+	done := make(chan interface{})
+	go func() {
+		time.Sleep(5 * time.Second)
+		close(done)
+	}()
+
+	workCounter := 0
+loop:
+	for {
+		select {
+		case <-done:
+			break loop
+		default:
+		}
+
+		// Simulate work
+		workCounter++
+		time.Sleep(1 * time.Second)
+	}
+
+	fmt.Printf("Achieved %v cycles of work before signalled to stop.\n", workCounter)
+}
+
+func main() {
+	// simpleCase()
+	// block()
+	// multiSelect()
+	// timeoutSelect()
+	// defaultSelect()
+	forSelect()
 }
