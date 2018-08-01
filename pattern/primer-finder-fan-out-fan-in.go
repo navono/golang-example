@@ -48,6 +48,7 @@ func main() {
 
 	randIntStream := ToInt(done, RepeatFn(done, rand))
 
+	// fan-out with CPU numbers
 	numFinders := runtime.NumCPU()
 	fmt.Printf("Spinning up %d prime finders.\n", numFinders)
 	finders := make([]<-chan interface{}, numFinders)
@@ -56,6 +57,7 @@ func main() {
 		finders[i] = primeFinder(done, randIntStream)
 	}
 
+	// fan-in the channels
 	for prime := range Take(done, FanIn(done, finders...), 10) {
 		fmt.Printf("\t%d\n", prime)
 	}
