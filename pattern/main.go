@@ -36,5 +36,7 @@ func testBridge() {
 
 func main() {
 	// testTee()
-	testBridge()
+	// testBridge()
+	// testNonContext()
+	testContext()
 }
