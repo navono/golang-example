@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	_ "golangTutorialSeries/VariablesTypesConstants"
+	// _ "golangTutorialSeries/VariablesTypesConstants/variables"
+	_ "golangTutorialSeries/VariablesTypesConstants/types"
 )
 
 func main() {
