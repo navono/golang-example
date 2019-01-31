@@ -5,7 +5,8 @@ import (
 
 	// _ "golangTutorialSeries/VariablesTypesConstants/variables"
 	// _ "golangTutorialSeries/VariablesTypesConstants/types"
-	_ "golangTutorialSeries/ConditionalStatements"
+	// _ "golangTutorialSeries/ConditionalStatements"
+	_ "golangTutorialSeries/ArraySlices"
 )
 
 func main() {
