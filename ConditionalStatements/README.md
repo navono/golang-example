@@ -49,4 +49,4 @@ for initialisation; condition; post {
 
 ## switch
 
-默认每个 `case` 都带有 `break`，匹配成功后不会自动向下执行其他`case`，而是跳出整个 `switch`, 但是可以使用 `fallthrough` 强制执行后面的 `case`代码。
+默认每个 `case` 都带有 `break`，匹配成功后不会自动向下执行其他 `case`，而是跳出整个 `switch`, 但是可以使用 `fallthrough` 强制执行后面的 `case` 代码。
