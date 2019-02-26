@@ -9,7 +9,8 @@ import (
 	// _ "golangTutorialSeries/Basic/arraySlices"
 	// _ "golangTutorialSeries/Basic/functions"
 	// _ "golangTutorialSeries/Basic/conditional"
-	_ "golangTutorialSeries/Basic/structure"
+	// _ "golangTutorialSeries/Basic/structure"
+	_ "golangTutorialSeries/Basic/methods"
 )
 
 func main() {
