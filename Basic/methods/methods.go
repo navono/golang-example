@@ -42,6 +42,88 @@ func (e *employee) changeAge(newAge int) {
 	e.age = newAge
 }
 
+// 匿名字段的方法调用
+type address struct {
+	city  string
+	state string
+}
+
+func (a address) fullAddress() {
+	fmt.Printf("\nFull address: %s, %s\n", a.city, a.state)
+}
+
+type person struct {
+	firstName string
+	lastName  string
+	address
+}
+
+func testAnounymouseFieldMethod() {
+	p := person{
+		firstName: "Elon",
+		lastName:  "Musk",
+		address: address{
+			city:  "Los Angeles",
+			state: "California",
+		},
+	}
+
+	p.fullAddress()
+}
+
+// method 中的值接收器（value receivers）vs 函数中的值参数（value arguments）
+//   1. 当函数有一个值参数，那么它将只能接受值参数
+//   2. 当方法有一个值接收器，那么它可以接受值和指针的接收器
+
+// 上述规则对于指针类型也适用
+
+type rectangle struct {
+	length int
+	width  int
+}
+
+func area(r rectangle) {
+	fmt.Printf("Area Function result: %d\n", (r.length * r.width))
+}
+
+func (r rectangle) area() {
+	fmt.Printf("Area Method result: %d\n", (r.length * r.width))
+}
+
+func testValueArgsAndValueReceivers() {
+	r := rectangle{
+		length: 10,
+		width:  5,
+	}
+	area(r)
+	r.area()
+
+	p := &r
+	/*
+	 compilation error, cannot use p (type *rectangle) as type rectangle
+	 in argument to area
+	*/
+	// area(p)
+
+	p.area() //calling value receiver with a pointer
+}
+
+// method 作用于 non-struct 上时，要求 method 的接收器类型的定义与 method 的定义
+// 在同一个包
+
+// 非法，因为 int 不在 main 包
+// package main
+// func (a int) add(b int) {
+// }
+
+// 合法
+// package main
+// import "fmt"
+// type myInt int
+// func (a myInt) add(b myInt) myInt {
+//     return a + b
+// }
+
 func init() {
 	fmt.Println()
 	fmt.Println("===> enter methods package")
@@ -64,8 +146,12 @@ func init() {
 	fmt.Printf("\nEmployee name after change: %s", emp2.name)
 
 	fmt.Printf("\n\nEmployee age before change: %d", emp2.age)
-	(&emp2).changeAge(51)
+	// (&emp2).changeAge(51)
+	emp2.changeAge(51)
 	fmt.Printf("\nEmployee age after change: %d\n", emp2.age)
+
+	testAnounymouseFieldMethod()
+	testValueArgsAndValueReceivers()
 
 	fmt.Println("<=== exit methods package")
 	fmt.Println()
