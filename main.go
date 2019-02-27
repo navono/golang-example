@@ -10,7 +10,8 @@ import (
 	// _ "golangTutorialSeries/Basic/functions"
 	// _ "golangTutorialSeries/Basic/conditional"
 	// _ "golangTutorialSeries/Basic/structure"
-	_ "golangTutorialSeries/Basic/methods"
+	// _ "golangTutorialSeries/Basic/methods"
+	_ "golangTutorialSeries/Interfaces"
 )
 
 func main() {
