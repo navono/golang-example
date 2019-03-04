@@ -5,6 +5,15 @@ import (
 	"time"
 )
 
+func helloGoroutine() {
+	fmt.Println("Hello goroutine")
+}
+
+func helloGoroutine2(done chan bool) {
+	fmt.Println("Hello goroutine")
+	done <- true
+}
+
 func hello(done chan bool) {
 	fmt.Println("Hello world goroutine")
 	done <- true
@@ -46,13 +55,22 @@ func init() {
 	fmt.Println()
 	fmt.Println("===> enter concurrency package")
 
+	// 没有任何输出，因为 goroutine 是异步执行的，创建 goroutine 后
+	// 会立马返回，执行后面的代码
+	// go helloGoroutine()
+
+	done := make(chan bool)
+	go helloGoroutine2(done)
+	// channel 的读与写默认都是阻塞的，所以此处会等待 goroutine 执行完
+	<-done
+
 	// testHello2()
 	// deadLock()
 
 	// testIterateChan()
 	// testRangeChan()
 
-	testCalc()
+	// testCalc()
 
 	fmt.Println("<=== exit concurrency package")
 	fmt.Println()
