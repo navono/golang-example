@@ -11,7 +11,8 @@ import (
 	// _ "golangTutorialSeries/Basic/conditional"
 	// _ "golangTutorialSeries/Basic/structure"
 	// _ "golangTutorialSeries/Basic/methods"
-	_ "golangTutorialSeries/Interface"
+	// _ "golangTutorialSeries/Interface"
+	_ "golangTutorialSeries/Concurrency"
 )
 
 func main() {
