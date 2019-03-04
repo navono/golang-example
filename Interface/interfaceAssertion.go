@@ -1,18 +1,15 @@
-package interfaces
+package intf
 
 import (
 	"fmt"
 )
-
-type describer interface {
-	Describe()
-}
 
 type person struct {
 	name string
 	age  int
 }
 
+// implemented using value receiver
 func (p person) Describe() {
 	fmt.Printf("%s is %d years old\n", p.name, p.age)
 }

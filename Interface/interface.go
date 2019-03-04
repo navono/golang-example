@@ -1,4 +1,4 @@
-package interfaces
+package intf
 
 import "fmt"
 
@@ -90,6 +90,9 @@ func init() {
 		age:  25,
 	}
 	findType2(p)
+
+	testImplements()
+	testEmbededInterface()
 
 	fmt.Println("<=== exit interfaces package")
 	fmt.Println()

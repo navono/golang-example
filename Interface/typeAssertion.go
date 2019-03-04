@@ -1,4 +1,4 @@
-package interfaces
+package intf
 
 import "fmt"
 
