@@ -59,10 +59,10 @@ func init() {
 	// 会立马返回，执行后面的代码
 	// go helloGoroutine()
 
-	done := make(chan bool)
-	go helloGoroutine2(done)
-	// channel 的读与写默认都是阻塞的，所以此处会等待 goroutine 执行完
-	<-done
+	// done := make(chan bool)
+	// go helloGoroutine2(done)
+	// // channel 的读与写默认都是阻塞的，所以此处会等待 goroutine 执行完
+	// <-done
 
 	// testHello2()
 	// deadLock()
@@ -71,6 +71,12 @@ func init() {
 	// testRangeChan()
 
 	// testCalc()
+
+	// testBufferdChan()
+	// testWaitGroup()
+	// testWorkerPool()
+
+	testSelect()
 
 	fmt.Println("<=== exit concurrency package")
 	fmt.Println()
