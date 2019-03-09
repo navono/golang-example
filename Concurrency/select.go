@@ -22,10 +22,17 @@ func testSelect() {
 	go server1(output1)
 	go server2(output2)
 
-	select {
-	case s1 := <-output1:
-		fmt.Println(s1)
-	case s2 := <-output2:
-		fmt.Println(s2)
+	for {
+		select {
+		case s1 := <-output1:
+			fmt.Println(s1)
+			return
+		case s2 := <-output2:
+			fmt.Println(s2)
+		// 进入 default 分支，然后直接退出，因此应该加上 for
+		default:
+			time.Sleep(1 * time.Second)
+			fmt.Println("no value received")
+		}
 	}
 }

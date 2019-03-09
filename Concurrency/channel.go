@@ -76,7 +76,8 @@ func init() {
 	// testWaitGroup()
 	// testWorkerPool()
 
-	testSelect()
+	// testSelect()
+	testRandomSelect()
 
 	fmt.Println("<=== exit concurrency package")
 	fmt.Println()
