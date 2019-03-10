@@ -3,16 +3,16 @@ package main
 import (
 	"fmt"
 
-	// _ "golangTutorialSeries/Basic/variables"
-	// _ "golangTutorialSeries/Basic/types"
-	// _ "golangTutorialSeries/Basic/pointer"
-	// _ "golangTutorialSeries/Basic/arraySlices"
-	// _ "golangTutorialSeries/Basic/functions"
-	// _ "golangTutorialSeries/Basic/conditional"
-	// _ "golangTutorialSeries/Basic/structure"
-	// _ "golangTutorialSeries/Basic/methods"
-	// _ "golangTutorialSeries/Interface"
-	_ "golangTutorialSeries/Concurrency"
+	// _ "golangTutorialSeries/basic/variables"
+	// _ "golangTutorialSeries/basic/types"
+	// _ "golangTutorialSeries/basic/pointer"
+	// _ "golangTutorialSeries/basic/arraySlices"
+	// _ "golangTutorialSeries/basic/functions"
+	// _ "golangTutorialSeries/basic/conditional"
+	// _ "golangTutorialSeries/basic/structure"
+	// _ "golangTutorialSeries/basic/methods"
+	// _ "golangTutorialSeries/interface"
+	_ "golangTutorialSeries/concurrency"
 )
 
 func main() {
