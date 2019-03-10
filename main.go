@@ -13,7 +13,8 @@ import (
 	// _ "golangTutorialSeries/basic/methods"
 	// _ "golangTutorialSeries/interface"
 	// _ "golangTutorialSeries/concurrency"
-	_ "golangTutorialSeries/misc/oop"
+	// _ "golangTutorialSeries/misc/oop"
+	_ "golangTutorialSeries/misc/composition"
 )
 
 func main() {
