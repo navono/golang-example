@@ -77,7 +77,11 @@ func init() {
 	// testWorkerPool()
 
 	// testSelect()
-	testRandomSelect()
+	// testRandomSelect()
+
+	testRaceCondition()
+	testMutext()
+	testRaceConditionWithChan()
 
 	fmt.Println("<=== exit concurrency package")
 	fmt.Println()
