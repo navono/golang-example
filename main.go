@@ -12,7 +12,8 @@ import (
 	// _ "golangTutorialSeries/basic/structure"
 	// _ "golangTutorialSeries/basic/methods"
 	// _ "golangTutorialSeries/interface"
-	_ "golangTutorialSeries/concurrency"
+	// _ "golangTutorialSeries/concurrency"
+	_ "golangTutorialSeries/misc/oop"
 )
 
 func main() {
