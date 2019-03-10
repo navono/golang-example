@@ -14,7 +14,8 @@ import (
 	// _ "golangTutorialSeries/interface"
 	// _ "golangTutorialSeries/concurrency"
 	// _ "golangTutorialSeries/misc/oop"
-	_ "golangTutorialSeries/misc/composition"
+	// _ "golangTutorialSeries/misc/composition"
+	_ "golangTutorialSeries/misc/polymorphism"
 )
 
 func main() {
