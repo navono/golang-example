@@ -17,7 +17,8 @@ import (
 	// _ "golangTutorialSeries/misc/composition"
 	// _ "golangTutorialSeries/misc/polymorphism"
 	// _ "golangTutorialSeries/misc/deferpkg"
-	_ "golangTutorialSeries/misc/error"
+	// _ "golangTutorialSeries/misc/errorpkg"
+	_ "golangTutorialSeries/misc/panicpkg"
 )
 
 func main() {
