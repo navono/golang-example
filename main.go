@@ -18,7 +18,8 @@ import (
 	// _ "golangTutorialSeries/misc/polymorphism"
 	// _ "golangTutorialSeries/misc/deferpkg"
 	// _ "golangTutorialSeries/misc/errorpkg"
-	_ "golangTutorialSeries/misc/panicpkg"
+	// _ "golangTutorialSeries/misc/panicpkg"
+	_ "golangTutorialSeries/misc/firstclassfunction"
 )
 
 func main() {
