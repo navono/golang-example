@@ -19,7 +19,8 @@ import (
 	// _ "golangTutorialSeries/misc/deferpkg"
 	// _ "golangTutorialSeries/misc/errorpkg"
 	// _ "golangTutorialSeries/misc/panicpkg"
-	_ "golangTutorialSeries/misc/firstclassfunction"
+	// _ "golangTutorialSeries/misc/firstclassfunction"
+	_ "golangTutorialSeries/misc/reflection"
 )
 
 func main() {
