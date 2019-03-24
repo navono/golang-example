@@ -68,12 +68,12 @@ func testReadFileLineByLine() {
 
 func init() {
 	fmt.Println()
-	fmt.Println("===> enter IO package")
+	fmt.Println("===> enter IO read package")
 
 	// testReadRelativeFile()
 	// testBufferedRead()
-	testReadFileLineByLine()
+	// testReadFileLineByLine()
 
-	fmt.Println("<=== exit IO package")
+	fmt.Println("<=== exit IO read package")
 	fmt.Println()
 }
