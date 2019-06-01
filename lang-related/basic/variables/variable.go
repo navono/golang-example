@@ -15,7 +15,7 @@ func init() {
 	fmt.Println("assign age: ", age)
 
 	var age2 int = 29 // variable declaration with initial value
-	fmt.Println("declare with intial age: ", age2)
+	fmt.Println("declare with initial age: ", age2)
 
 	var age3 = 29
 	fmt.Println("inferred age: ", age3)
