@@ -1,4 +1,4 @@
-package main
+package concurrency
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-func main() {
+func goroutineSize() {
 	memConsumed := func() uint64 {
 		runtime.GC()
 		var s runtime.MemStats

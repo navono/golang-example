@@ -1,4 +1,4 @@
-package main
+package concurrency
 
 import (
 	"fmt"
@@ -46,8 +46,4 @@ func lexicalConfine() {
 
 	results := chanOwner()
 	consumer(results)
-}
-
-func main() {
-	adHocConfine()
 }

@@ -1,4 +1,4 @@
-package main
+package pattern
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func primeFinder(
+func primeFinderFOFI(
 	done <-chan interface{},
 	intStream <-chan int,
 ) <-chan interface{} {
@@ -36,8 +36,8 @@ func primeFinder(
 	return primeStream
 }
 
-func main() {
-	rand := func() interface{} {
+func primerFOFI() {
+	number := func() interface{} {
 		return rand.Intn(50000000)
 	}
 
@@ -46,7 +46,7 @@ func main() {
 
 	start := time.Now()
 
-	randIntStream := ToInt(done, RepeatFn(done, rand))
+	randIntStream := ToInt(done, RepeatFn(done, number))
 
 	// fan-out with CPU numbers
 	numFinders := runtime.NumCPU()

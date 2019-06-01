@@ -16,9 +16,10 @@ func randomServer2(ch chan string) {
 func testRandomSelect() {
 	output1 := make(chan string)
 	output2 := make(chan string)
-	go server1(output1)
-	go server2(output2)
+	go randomServer1(output1)
+	go randomServer2(output2)
 	time.Sleep(1 * time.Second)
+
 	select {
 	case s1 := <-output1:
 		fmt.Println(s1)

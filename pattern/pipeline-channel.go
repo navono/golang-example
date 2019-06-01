@@ -1,4 +1,4 @@
-package main
+package pattern
 
 import (
 	"fmt"
@@ -54,19 +54,15 @@ func add(done <-chan interface{},
 	return addedStream
 }
 
-func testPipeline() {
+func pipelineChannel() {
 	done := make(chan interface{})
 	defer close(done)
 
 	// 将值转换到 channel 中
 	// 每个 stage 都是抢占式的
 	intStream := generator(done, 1, 2, 3, 4)
-	pipline := multiply(done, add(done, multiply(done, intStream, 2), 1), 2)
-	for v := range pipline {
+	pipeline := multiply(done, add(done, multiply(done, intStream, 2), 1), 2)
+	for v := range pipeline {
 		fmt.Println(v)
 	}
-}
-
-func main() {
-	testPipeline()
 }

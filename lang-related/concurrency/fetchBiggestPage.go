@@ -1,4 +1,4 @@
-package main
+package concurrency
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ type HomePageSize struct {
 	Size int
 }
 
-func main() {
+func fetchBiggestPage() {
 	urls := []string{
 		"http://www.baidu.com",
 		"http://www.amazon.com",

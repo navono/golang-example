@@ -1,10 +1,7 @@
-package main
+package concurrency
 
 import (
 	"fmt"
-	"math/rand"
-	"sync"
-	"time"
 )
 
 func memLeak() {
@@ -27,6 +24,6 @@ func memLeak() {
 	fmt.Println("Done.")
 }
 
-func main() {
+func goroutineLeak() {
 	memLeak()
 }

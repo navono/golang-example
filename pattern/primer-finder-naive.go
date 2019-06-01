@@ -1,4 +1,4 @@
-package main
+package pattern
 
 import (
 	"fmt"
@@ -32,8 +32,8 @@ func primeFinder(done <-chan interface{}, intStream <-chan int) <-chan interface
 	return primeStream
 }
 
-func main() {
-	rand := func() interface{} {
+func primerNative() {
+	number := func() interface{} {
 		return rand.Intn(50000000)
 	}
 
@@ -41,7 +41,7 @@ func main() {
 	defer close(done)
 
 	start := time.Now()
-	randIntStream := ToInt(done, RepeatFn(done, rand))
+	randIntStream := ToInt(done, RepeatFn(done, number))
 	fmt.Println("Primes:")
 
 	for prime := range Take(done, primeFinder(done, randIntStream), 10) {

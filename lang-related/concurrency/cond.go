@@ -1,4 +1,4 @@
-package main
+package concurrency
 
 import (
 	"fmt"
@@ -73,6 +73,12 @@ func broadcast() {
 	clickRegistered.Wait()
 }
 
-func main() {
+func init() {
+	fmt.Println()
+	fmt.Println("===> enter concurrency package cond")
+
 	broadcast()
+
+	fmt.Println("<=== exit concurrency package cond")
+	fmt.Println()
 }

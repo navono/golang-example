@@ -18,7 +18,7 @@ func (p person) Describe() {
 func findType2(i interface{}) {
 	switch v := i.(type) {
 	case describer:
-		Describe()
+		v.Describe()
 	default:
 		fmt.Printf("unknown type\n")
 	}

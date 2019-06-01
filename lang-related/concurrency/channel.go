@@ -53,7 +53,7 @@ func deadLock() {
 
 func init() {
 	fmt.Println()
-	fmt.Println("===> enter concurrency package")
+	fmt.Println("===> enter concurrency package channel")
 
 	// 没有任何输出，因为 goroutine 是异步执行的，创建 goroutine 后
 	// 会立马返回，执行后面的代码
@@ -72,7 +72,7 @@ func init() {
 
 	// testCalc()
 
-	// testBufferdChan()
+	// testBufferedChan()
 	// testWaitGroup()
 	// testWorkerPool()
 
@@ -83,6 +83,6 @@ func init() {
 	testMutext()
 	testRaceConditionWithChan()
 
-	fmt.Println("<=== exit concurrency package")
+	fmt.Println("<=== exit concurrency package channel")
 	fmt.Println()
 }

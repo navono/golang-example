@@ -1,4 +1,4 @@
-package main
+package concurrency
 
 import (
 	"fmt"
@@ -75,7 +75,7 @@ func blockRead() {
 
 	done := make(chan interface{})
 	randStream := newRandStream(done)
-	fmt.Println("3 random ints: ")
+	fmt.Println("3 random int: ")
 	for i := 0; i < 3; i++ {
 		fmt.Printf("%d: %d\n", i, <-randStream)
 	}
@@ -85,7 +85,7 @@ func blockRead() {
 	time.Sleep(1 * time.Second)
 }
 
-func main() {
+func goroutineCancel() {
 	// signalChild()
 	blockRead()
 }

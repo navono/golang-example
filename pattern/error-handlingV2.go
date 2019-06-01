@@ -1,4 +1,4 @@
-package main
+package pattern
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ type Result struct {
 	Response *http.Response
 }
 
-func main() {
+func errorHandller2() {
 	checkStatus := func(done <-chan interface{},
 		urls ...string) <-chan Result {
 		results := make(chan Result)

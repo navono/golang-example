@@ -1,10 +1,10 @@
-package main
+package pattern
 
 import (
 	"fmt"
 )
 
-func main() {
+func pipelineNormal() {
 	multiply := func(values []int, multiplier int) []int {
 		multipliedValues := make([]int, len(values))
 		for i, v := range values {
@@ -21,8 +21,8 @@ func main() {
 		return addedValues
 	}
 
-	ints := []int{1,2,3,4}
-	for _, v := range add(multiply(ints, 2), 1) {
+	number := []int{1, 2, 3, 4}
+	for _, v := range add(multiply(number, 2), 1) {
 		fmt.Println(v)
 	}
 }

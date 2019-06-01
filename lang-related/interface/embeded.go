@@ -32,7 +32,7 @@ func (e employee) CalculateLeavesLeft() int {
 	return e.totalLeaves - e.leavesTaken
 }
 
-func testEmbededInterface() {
+func testEmbeddedInterface() {
 	e := employee{
 		firstName:   "Naveen",
 		lastName:    "Ramanathan",

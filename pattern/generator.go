@@ -1,4 +1,4 @@
-package main
+package pattern
 
 import (
 	"fmt"
@@ -215,8 +215,8 @@ func testRepeatFn() {
 	done := make(chan interface{})
 	defer close(done)
 
-	rand := func() interface{} { return rand.Int() }
-	for num := range Take(done, RepeatFn(done, rand), 10) {
+	randNumber := func() interface{} { return rand.Int() }
+	for num := range Take(done, RepeatFn(done, randNumber), 10) {
 		fmt.Println(num)
 	}
 }
@@ -231,7 +231,3 @@ func testTypeContert() {
 	}
 	fmt.Printf("message: %s...", message)
 }
-
-// func main() {
-// 	testTypeContert()
-// }

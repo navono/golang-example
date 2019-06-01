@@ -1,11 +1,11 @@
-package main
+package concurrency
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func selection() {
 	tick := time.Tick(100 * time.Millisecond)
 	boom := time.After(500 * time.Millisecond)
 	for {

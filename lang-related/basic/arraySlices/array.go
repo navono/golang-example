@@ -1,4 +1,4 @@
-package arrayslices
+package arraySlices
 
 import "fmt"
 
@@ -16,7 +16,7 @@ import "fmt"
 
 func init() {
 	fmt.Println()
-	fmt.Println("===> enter arrayslices package")
+	fmt.Println("===> enter arraySlices package")
 
 	var a [3]int // int array with length
 	a[0] = 12
@@ -65,7 +65,7 @@ func init() {
 	countriesNeeded := countries()
 	fmt.Println(countriesNeeded)
 
-	fmt.Println("<=== exit arrayslices package")
+	fmt.Println("<=== exit arraySlices package")
 	fmt.Println()
 }
 

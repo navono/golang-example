@@ -1,11 +1,11 @@
-package main
+package pattern
 
 import (
 	"fmt"
 	"net/http"
 )
 
-func main() {
+func errorHandller1() {
 	checkStatus := func(done <-chan interface{},
 		urls ...string) <-chan *http.Response {
 		responses := make(chan *http.Response)

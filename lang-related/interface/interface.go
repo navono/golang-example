@@ -13,9 +13,9 @@ type MyString string
 // FindVowels MyString implements
 func (ms MyString) FindVowels() []rune {
 	var vowels []rune
-	for _, rune := range ms {
-		if rune == 'a' || rune == 'e' || rune == 'i' || rune == 'o' || rune == 'u' {
-			vowels = append(vowels, rune)
+	for _, runeNumber := range ms {
+		if runeNumber == 'a' || runeNumber == 'e' || runeNumber == 'i' || runeNumber == 'o' || runeNumber == 'u' {
+			vowels = append(vowels, runeNumber)
 		}
 	}
 
@@ -28,23 +28,23 @@ type salaryCalculator interface {
 
 type permanent struct {
 	empID    int
-	basicpay int
+	basicPay int
 	pf       int
 }
 
 type contract struct {
 	empID    int
-	basicpay int
+	basicPay int
 }
 
 // CalculateSalary returns salary of permanent employee is sum of basic pay and pf
 func (p permanent) CalculateSalary() int {
-	return p.basicpay + p.pf
+	return p.basicPay + p.pf
 }
 
 // CalculateSalary returns salary of contract employee is the basic pay alone
 func (c contract) CalculateSalary() int {
-	return c.basicpay
+	return c.basicPay
 }
 
 /*
@@ -92,7 +92,7 @@ func init() {
 	findType2(p)
 
 	testImplements()
-	testEmbededInterface()
+	testEmbeddedInterface()
 
 	fmt.Println("<=== exit interfaces package")
 	fmt.Println()

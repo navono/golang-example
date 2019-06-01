@@ -1,4 +1,4 @@
-package main
+package pattern
 
 import (
 	"context"
@@ -12,21 +12,21 @@ import (
 // 2. 一个 `goroutine` 可能想要取消它的子 `goroutine`
 // 3. 在 `goroutine` 中的任意一个阻塞的操作想要获得抢占，这样它就可以被取消
 
-func genGreeting(ctx context.Context) (string, error) {
-	ctx, cancle := context.WithTimeout(ctx, 1*time.Second)
-	defer cancle()
+func genGreetingCtx(ctx context.Context) (string, error) {
+	ctx, cancel := context.WithTimeout(ctx, 1*time.Second)
+	defer cancel()
 
-	switch locale, err := locale(ctx); {
+	switch localeCtx, err := localeCtx(ctx); {
 	case err != nil:
 		return "", err
-	case locale == "EN/US":
+	case localeCtx == "EN/US":
 		return "hello", nil
 	}
-	return "", fmt.Errorf("unsupported locale")
+	return "", fmt.Errorf("unsupported localeCtx")
 }
 
-func printGreeting(ctx context.Context) error {
-	greeting, err := genGreeting(ctx)
+func printGreetingCtx(ctx context.Context) error {
+	greeting, err := genGreetingCtx(ctx)
 	if err != nil {
 		return err
 	}
@@ -34,18 +34,18 @@ func printGreeting(ctx context.Context) error {
 	return nil
 }
 
-func genFarewell(ctx context.Context) (string, error) {
-	switch locale, err := locale(ctx); {
+func genFarewellCtx(ctx context.Context) (string, error) {
+	switch localeCtx, err := localeCtx(ctx); {
 	case err != nil:
 		return "", err
-	case locale == "EN/US":
+	case localeCtx == "EN/US":
 		return "goodbye", nil
 	}
-	return "", fmt.Errorf("unsupported locale")
+	return "", fmt.Errorf("unsupported localeCtx")
 }
 
-func printFarewell(ctx context.Context) error {
-	farewell, err := genFarewell(ctx)
+func printFarewellCtx(ctx context.Context) error {
+	farewell, err := genFarewellCtx(ctx)
 	if err != nil {
 		return err
 	}
@@ -53,7 +53,7 @@ func printFarewell(ctx context.Context) error {
 	return nil
 }
 
-func locale(ctx context.Context) (string, error) {
+func localeCtx(ctx context.Context) (string, error) {
 	if deadline, ok := ctx.Deadline(); ok {
 		if deadline.Sub(time.Now().Add(1*time.Minute)) <= 0 {
 			return "", context.DeadlineExceeded
@@ -69,24 +69,24 @@ func locale(ctx context.Context) (string, error) {
 
 func testContext() {
 	var wg sync.WaitGroup
-	ctx, cancle := context.WithCancel(context.Background())
-	defer cancle()
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
 
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
-		if err := printGreeting(ctx); err != nil {
+		if err := printGreetingCtx(ctx); err != nil {
 			fmt.Printf("cannot print greeting： %v\n", err)
-			cancle()
+			cancel()
 		}
 	}()
 
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
-		if err := printFarewell(ctx); err != nil {
+		if err := printFarewellCtx(ctx); err != nil {
 			fmt.Printf("cannot print farewell %v\n", err)
-			cancle()
+			cancel()
 		}
 	}()
 

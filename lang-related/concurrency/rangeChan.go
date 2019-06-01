@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func producer(ch chan int) {
+func rangeProducer(ch chan int) {
 	for i := 0; i < 10; i++ {
 		ch <- i
 	}
@@ -15,7 +15,7 @@ func producer(ch chan int) {
 func testIterateChan() {
 	fmt.Println("\nIterate channel:")
 	ch := make(chan int)
-	go producer(ch)
+	go rangeProducer(ch)
 
 	for {
 		v, ok := <-ch
@@ -29,7 +29,7 @@ func testIterateChan() {
 func testRangeChan() {
 	fmt.Println("\nRange channel:")
 	ch := make(chan int)
-	go producer(ch)
+	go rangeProducer(ch)
 
 	for v := range ch {
 		fmt.Println("Received ", v)

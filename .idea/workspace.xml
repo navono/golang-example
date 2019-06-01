@@ -2,10 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/terminus.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/arraySlices/array.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/arraySlices/array.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lang-related/basic/variables/variable.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/variables/variable.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/RWMutex.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/RWMutex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/cond.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/cond.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/data-confinement.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/data-confinement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/default-selection.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/default-selection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/fetchBiggestPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/fetchBiggestPage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutine-cancel.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutine-cancel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutine-leak.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutine-leak.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutine-size.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutine-size.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutines.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutines.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/producer-consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/producer-consumer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/randomSelect.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/randomSelect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/rangeChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/rangeChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/select.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/embeded.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/embeded.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/oop/oop.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/oop/oop.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/error-handlingV1.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/error-handlingV1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/error-handlingV2.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/error-handlingV2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/generator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/greeter-context.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/greeter-context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/greeter-non-context.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/greeter-non-context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/or-channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/or-channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/pipeline-channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/pipeline-channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/pipeline-normal.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/pipeline-normal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/primer-finder-naive.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/primer-finder-naive.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,112 +48,131 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang-related/misc/reflection/reflection.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1457">
+              <folding>
+                <element signature="e#20#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/error-handlingV1.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#14#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/error-handlingV2.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-220">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/generator.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="163" column="24" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/greeter-context.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-533">
+              <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/greeter-non-context.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-731">
+              <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/pipeline-channel.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="n#!!block;n#generator#0" />
+                <element signature="e#146#278#0" />
+                <element signature="e#202#275#0" />
+                <element signature="e#207#271#0" />
+                <element signature="e#219#242#0" />
+                <element signature="n#!!block;n#multiply#0" />
+                <element signature="e#441#598#0" />
+                <element signature="e#502#595#0" />
+                <element signature="e#507#591#0" />
+                <element signature="e#519#542#0" />
+                <element signature="n#!!block;n#add#0" />
+                <element signature="e#758#903#0" />
+                <element signature="e#814#900#0" />
+                <element signature="e#819#896#0" />
+                <element signature="e#831#854#0" />
+                <element signature="n#!!block;n#testPipeline#0" />
+                <element signature="e#1004#1022#0" />
+                <element signature="e#1183#1204#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.go">
+        <entry file="file://$PROJECT_DIR$/pattern/primer-finder-naive.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lang-related/IO/filehandling/file_read.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="286">
+              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
               <folding>
-                <element signature="n#!!block;n#testReadRelativeFile#0" />
-                <element signature="n#!!block;n#testBufferedRead#0" />
+                <element signature="n#!!block;n#primeFinder#0" />
+                <element signature="e#192#523#0" />
+                <element signature="e#254#520#0" />
+                <element signature="e#343#415#0" />
+                <element signature="e#373#410#0" />
+                <element signature="e#429#516#0" />
+                <element signature="e#435#511#0" />
+                <element signature="e#448#472#0" />
+                <element signature="e#591#624#0" />
+                <element signature="e#845#879#0" />
+                <element signature="e#859#876#0" />
+                <element signature="e#892#930#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/runtime/proc.go">
+        <entry file="file://$PROJECT_DIR$/pattern/pipeline-normal.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="197" column="5" lean-forward="true" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/fmt/print.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="274" selection-start-line="274" selection-end-line="274" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lang-related/basic/arraySlices/array.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-912">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lang-related/basic/variables/variable.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lang-related/IO/filehandling/file_write.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!block;n#testWriteString#0" />
-                <element signature="e#141#173#0" />
-                <element signature="e#269#313#0" />
-                <element signature="e#393#425#0" />
-                <element signature="n#!!block;n#testWriteLineByLine#0" />
-                <element signature="e#507#551#0" />
-                <element signature="e#566#665#0" />
-                <element signature="e#688#765#0" />
-                <element signature="e#727#762#0" />
-                <element signature="e#798#830#0" />
-                <element signature="n#!!block;n#testAppendToFile#0" />
-                <element signature="e#984#1016#0" />
-                <element signature="e#1105#1149#0" />
-                <element signature="e#1183#1215#0" />
-                <element signature="n#!!block;n#produce#0" />
-                <element signature="n#!!block;n#consume#0" />
-                <element signature="e#1456#1488#0" />
-                <element signature="e#1511#1627#0" />
-                <element signature="e#1559#1624#0" />
-                <element signature="e#1661#1709#0" />
-                <element signature="e#1933#1963#0" />
-                <element signature="e#2047#2088#0" />
-                <element signature="e#2167#2187#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/sync/waitgroup.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go.mod">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="7" selection-end-column="21" />
+            <state relative-caret-position="550">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -135,11 +184,28 @@
       <find>golangTutorialSeries/</find>
       <find>golangTutorialSeries</find>
       <find>testBufferedRead</find>
+      <find>arrayslices</find>
+      <find>testBufferedChan</find>
+      <find>testCalc</find>
+      <find>testRaceCondition</find>
+      <find>producer</find>
+      <find>rune</find>
+      <find>genGreeting</find>
+      <find>locale</find>
+      <find>localelCtx</find>
+      <find>rand</find>
     </findStrings>
     <replaceStrings>
       <replace>golangTutorialSeries/lang-related/</replace>
       <replace>golang_example</replace>
       <replace>``</replace>
+      <replace>arraySlices</replace>
+      <replace>rangeProducer</replace>
+      <replace>runeNumber</replace>
+      <replace>genGreetingCtx</replace>
+      <replace>localelCtx</replace>
+      <replace>localeCtx</replace>
+      <replace>numbe</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -157,9 +223,35 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/go.mod" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/lang-related/IO/filehandling/file_write.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/lang-related/basic/arraySlices/array.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/cond.go" />
         <option value="$PROJECT_DIR$/lang-related/basic/variables/variable.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/channel.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/data-confinement.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/default-selection.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/fetchBiggestPage.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/goroutine-size.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/goroutine-leak.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/goroutine-cancel.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/goroutines.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/randomSelect.go" />
+        <option value="$PROJECT_DIR$/lang-related/concurrency/rangeChan.go" />
+        <option value="$PROJECT_DIR$/lang-related/interface/embeded.go" />
+        <option value="$PROJECT_DIR$/lang-related/interface/interface.go" />
+        <option value="$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go" />
+        <option value="$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go" />
+        <option value="$PROJECT_DIR$/lang-related/misc/oop/oop.go" />
+        <option value="$PROJECT_DIR$/pattern/error-handlingV1.go" />
+        <option value="$PROJECT_DIR$/pattern/error-handlingV2.go" />
+        <option value="$PROJECT_DIR$/pattern/generator.go" />
+        <option value="$PROJECT_DIR$/pattern/greeter-non-context.go" />
+        <option value="$PROJECT_DIR$/pattern/greeter-context.go" />
+        <option value="$PROJECT_DIR$/pattern/pipeline-normal.go" />
+        <option value="$PROJECT_DIR$/pattern/pipeline-channel.go" />
+        <option value="$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go" />
+        <option value="$PROJECT_DIR$/pattern/primer-finder-naive.go" />
       </list>
     </option>
   </component>
@@ -175,6 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,37 +291,82 @@
               <item name="golang_example" type="462c0819:PsiDirectoryNode" />
               <item name="lang-related" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="arraySlices" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
-              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="variables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="golang_example" type="462c0819:PsiDirectoryNode" />
               <item name="lang-related" type="462c0819:PsiDirectoryNode" />
-              <item name="IO" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="golang_example" type="462c0819:PsiDirectoryNode" />
               <item name="lang-related" type="462c0819:PsiDirectoryNode" />
               <item name="IO" type="462c0819:PsiDirectoryNode" />
-              <item name="filehandling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="oop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="oop" type="462c0819:PsiDirectoryNode" />
+              <item name="employee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="panicpkg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="polymorphism" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="reflection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="package" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+              <item name="pattern" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -238,7 +376,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/main.go" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -301,17 +439,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74846625" visible="true" weight="0.14157528" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74846625" visible="true" weight="0.16799602" />
       <window_info id="Structure" order="1" sideWeight="0.25153375" side_tool="true" weight="0.18533333" />
       <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.2055961" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32885212" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39896908" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.36494845" />
+      <window_info anchor="bottom" id="Version Control" order="6" visible="true" weight="0.21649484" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32783505" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -321,12 +460,22 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Key Promoter X" order="4" visible="true" weight="0.19491525" />
+      <window_info anchor="right" id="Key Promoter X" order="4" visible="true" weight="0.19441675" />
       <window_info anchor="right" id="make" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -368,6 +517,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix to debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix to debug" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -377,35 +530,12 @@
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/lang-related/IO/filehandling/file_write.go</url>
           <line>149</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.go/src/fmt/print.go" />
-    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CLI/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/ORMs/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/WebFramework/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/Databases/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/Caching/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/LogFramework/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/Testing/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/Patterns/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/Microservices/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/Libs/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/APIClients/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/Profiling/.gitkeep" />
-    <entry file="file://$PROJECT_DIR$/basicSyntax/append.go" />
-    <entry file="file://$PROJECT_DIR$/package/main.go" />
     <entry file="file://$PROJECT_DIR$/package/math.go" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -424,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gRPC/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -438,44 +561,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lang-related/basic/arraySlices/array.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang-related/basic/variables/variable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/fmt/print.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="274" selection-start-line="274" selection-end-line="274" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/proc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="197" column="5" lean-forward="true" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/waitgroup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lang-related/IO/filehandling/file_read.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="726">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="n#!!block;n#testReadRelativeFile#0" />
@@ -484,10 +572,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Go/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4224">
+          <caret line="197" column="5" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/fmt/print.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5852">
+          <caret line="274" selection-start-line="274" selection-end-line="274" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lang-related/IO/filehandling/file_write.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#testWriteString#0" />
             <element signature="e#141#173#0" />
@@ -511,15 +613,377 @@
             <element signature="e#1661#1709#0" />
             <element signature="e#1933#1963#0" />
             <element signature="e#2047#2088#0" />
-            <element signature="e#2167#2187#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Go/src/sync/waitgroup.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concurrent">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="506">
           <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/basic/arraySlices/array.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="71" column="27" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/misc/composition/blog.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="220">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/basic/variables/variable.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/bufferedChan.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/channel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="85" column="52" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!block;n#helloGoroutine#0" />
+            <element signature="n#!!block;n#helloGoroutine2#0" />
+            <element signature="n#!!block;n#hello#0" />
+            <element signature="n#!!block;n#testHello#0" />
+            <element signature="n#!!block;n#hello2#0" />
+            <element signature="n#!!block;n#testHello2#0" />
+            <element signature="n#!!block;n#deadLock#0" />
+            <element signature="e#945#989#0" />
+            <element signature="e#1034#1060#0" />
+            <element signature="e#1152#1167#0" />
+            <element signature="e#1185#1205#0" />
+            <element signature="e#1244#1264#0" />
+            <element signature="e#1308#1323#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/cond.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#signal#0" />
+            <element signature="e#183#304#0" />
+            <element signature="e#331#511#0" />
+            <element signature="e#368#385#0" />
+            <element signature="e#527#557#0" />
+            <element signature="n#!!block;n#broadcast#0" />
+            <element signature="e#676#873#0" />
+            <element signature="e#754#842#0" />
+            <element signature="e#967#1032#0" />
+            <element signature="e#1065#1143#0" />
+            <element signature="e#1176#1237#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/data-confinement.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/default-selection.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#21#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/fetchBiggestPage.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/goroutine-size.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/goroutine-leak.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/goroutine-cancel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="80" column="3" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/goroutines.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/producer-consumer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-951">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/randomSelect.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/rangeChan.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="67" column="15" lean-forward="true" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/workerPool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-929">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/mutex.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1061" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/interface/embeded.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/interface/typeAssertion.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/interface/implement.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/interface/interface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/unidirectionChan.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="e#18#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/misc/oop/oop.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#13#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/misc/panicpkg/panicpkg.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511">
+          <folding>
+            <element signature="e#18#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/misc/polymorphism/poly.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1237">
+          <folding>
+            <element signature="e#22#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/misc/reflection/reflection.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1457">
+          <folding>
+            <element signature="e#20#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/error-handlingV1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#14#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/error-handlingV2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/generator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="163" column="24" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/greeter-context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-533">
+          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/greeter-non-context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/pipeline-normal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/pipeline-channel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="n#!!block;n#generator#0" />
+            <element signature="e#146#278#0" />
+            <element signature="e#202#275#0" />
+            <element signature="e#207#271#0" />
+            <element signature="e#219#242#0" />
+            <element signature="n#!!block;n#multiply#0" />
+            <element signature="e#441#598#0" />
+            <element signature="e#502#595#0" />
+            <element signature="e#507#591#0" />
+            <element signature="e#519#542#0" />
+            <element signature="n#!!block;n#add#0" />
+            <element signature="e#758#903#0" />
+            <element signature="e#814#900#0" />
+            <element signature="e#819#896#0" />
+            <element signature="e#831#854#0" />
+            <element signature="n#!!block;n#testPipeline#0" />
+            <element signature="e#1004#1022#0" />
+            <element signature="e#1183#1204#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/primer-finder-naive.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!block;n#primeFinder#0" />
+            <element signature="e#192#523#0" />
+            <element signature="e#254#520#0" />
+            <element signature="e#343#415#0" />
+            <element signature="e#373#410#0" />
+            <element signature="e#429#516#0" />
+            <element signature="e#435#511#0" />
+            <element signature="e#448#472#0" />
+            <element signature="e#591#624#0" />
+            <element signature="e#845#879#0" />
+            <element signature="e#859#876#0" />
+            <element signature="e#892#930#0" />
+          </folding>
         </state>
       </provider>
     </entry>

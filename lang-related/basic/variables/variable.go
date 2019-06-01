@@ -14,13 +14,13 @@ func init() {
 	age = 29 // assignment
 	fmt.Println("assign age: ", age)
 
-	var age2 int = 29 // variable declaration with initial value
+	var age2 = 29 // variable declaration with initial value
 	fmt.Println("declare with initial age: ", age2)
 
 	var age3 = 29
 	fmt.Println("inferred age: ", age3)
 
-	var width, height int = 100, 50 //declaring multiple variables
+	var width, height = 100, 50 //declaring multiple variables
 	// or var width, height = 100, 50
 	fmt.Println("multiple variables declaring: width is", width, ",height is", height)
 
