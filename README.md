@@ -1,1 +1,2 @@
-# [Golang tutorial series](https://golangbot.com/learn-golang-series/)
+# Golang example
+- [Golang tutorial series](https://golangbot.com/learn-golang-series/)

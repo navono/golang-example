@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/golang_example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IO/filehandling/file_read.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/filehandling/file_read.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IO/filehandling/file_write.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/filehandling/file_write.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IO/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/arraySlices/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/arraySlices/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/arraySlices/array.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/arraySlices/array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/conditional/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/conditional/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/conditional/condition.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/conditional/condition.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/functions/variadic.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/functions/variadic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/methods/methods.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/methods/methods.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/pointer/pointer.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/pointer/pointer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/structure/structure.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/structure/structure.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/types/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/types/maps.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/types/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/types/strings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/variables/variable.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/variables/variable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/bufferedChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/bufferedChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/mutex.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/mutex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/randomSelect.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/randomSelect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/rangeChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/rangeChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/select.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/unidirectionChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/unidirectionChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency/workerPool.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/workerPool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/embeded.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/embeded.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/implement.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/implement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/interfaceAssertion.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/typeAssertion.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/typeAssertion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/composition/author/author.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/author/author.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/composition/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/blog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/composition/post/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/post/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/composition/website/website.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/website/website.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/deferpkg/deferpkg.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/deferpkg/deferpkg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/deferpkg/deferredCases.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/deferpkg/deferredCases.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/errorpkg/cusom_errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/errorpkg/cusom_errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/errorpkg/error_handling.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/errorpkg/error_handling.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/firstclassfunction/firstclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/firstclassfunction/firstclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/firstclassfunction/practice.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/firstclassfunction/practice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/oop/employee/employee.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/oop/oop.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/oop/oop.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/panicpkg/panicpkg.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/panicpkg/panicpkg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/polymorphism/poly.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/polymorphism/poly.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/reflection/reflection.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/reflection/reflection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/package/README.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="learnGolang" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="48">
+                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>golangTutorialSeries/</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>golangTutorialSeries/lang-related/</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="205" />
+    <option name="y" value="45" />
+    <option name="width" value="2010" />
+    <option name="height" value="1305" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourcecode\go\golang_example\lang-related" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="learnGolang" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="golangTutorialSeries" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="164" y="36" width="1608" height="1044" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74846625" visible="true" weight="0.19233268" />
+      <window_info id="Structure" order="1" sideWeight="0.25153375" side_tool="true" weight="0.18533333" />
+      <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.2055961" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32953465" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39981008" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.36593786" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32796317" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.30740038" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27272728" />
+      <window_info anchor="right" id="make" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.go/src/fmt/print.go" />
+    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CLI/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/ORMs/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/WebFramework/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/Databases/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/Caching/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/LogFramework/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/Testing/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/Patterns/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/Microservices/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/Libs/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/APIClients/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/Profiling/.gitkeep" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicSyntax/append.go" />
+    <entry file="file://$PROJECT_DIR$/package/main.go" />
+    <entry file="file://$PROJECT_DIR$/package/math.go" />
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

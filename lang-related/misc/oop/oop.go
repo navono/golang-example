@@ -2,7 +2,7 @@ package oop
 
 import (
 	"fmt"
-	"golangTutorialSeries/misc/oop/employee"
+	employee2 "golangTutorialSeries/lang-related/misc/oop/employee"
 )
 
 func init() {
@@ -15,7 +15,7 @@ func init() {
 	// 	TotalLeaves: 30,
 	// 	LeavesTaken: 20,
 	// }
-	e := employee.New("Sam", "Adolf", 30, 20)
+	e := employee2.New("Sam", "Adolf", 30, 20)
 	e.LeavesRemaining()
 
 	fmt.Println("<=== exit oop package")

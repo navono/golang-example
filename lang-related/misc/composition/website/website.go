@@ -2,12 +2,12 @@ package website
 
 import (
 	"fmt"
-	p "golangTutorialSeries/misc/composition/post"
+	"golangTutorialSeries/lang-related/misc/composition/post"
 )
 
 // WebSite represent a web site
 type WebSite struct {
-	Posts []p.Post
+	Posts []post.Post
 }
 
 // Contents returns all post of web site

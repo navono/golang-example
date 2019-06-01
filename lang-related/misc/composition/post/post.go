@@ -2,14 +2,14 @@ package post
 
 import (
 	"fmt"
-	"golangTutorialSeries/misc/composition/author"
+	author2 "golangTutorialSeries/lang-related/misc/composition/author"
 )
 
 // Post represent a post
 type Post struct {
 	Title   string
 	Content string
-	author.Author
+	author2.Author
 }
 
 // Details returns a blog details
