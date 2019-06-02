@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="add gRPC TLS sample">
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/My_Root_CA.crl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/My_Root_CA.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/My_Root_CA.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/client.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/client.csr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/client.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/conf.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/mydomain.com.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/mydomain.com.csr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/cert/mydomain.com.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/client/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gRPC/tls/server/server.go" afterDir="false" />
+    <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/filedir/dirs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/IO/filedir/dirs_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gRPC/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/gRPC/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/filehandling/file_read.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/filehandling/file_write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/test.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,34 +27,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/buffer.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#14#1001#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gRPC/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gRPC/tls/cert/conf.go">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/buffer_test.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding>
-                <element signature="e#14#52#0" expanded="true" />
+                <element signature="e#21#51#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/bytes.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <element signature="e#21#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/bytes_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#21#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/string.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#21#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/filedir/dirs.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-312">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="e#22#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lang-related/IO/filedir/dirs_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -64,22 +116,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gRPC/tls/client/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="984">
               <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gRPC/tls/server/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+            <state relative-caret-position="216">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -155,15 +214,24 @@
         <option value="$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go" />
         <option value="$PROJECT_DIR$/pattern/primer-finder-naive.go" />
         <option value="$PROJECT_DIR$/gRPC/README.md" />
-        <option value="$PROJECT_DIR$/gRPC/tls/server/server.go" />
         <option value="$PROJECT_DIR$/gRPC/tls/client/client.go" />
+        <option value="$PROJECT_DIR$/gRPC/tls/server/server.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/buffer.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer_test.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes_test.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/string.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/filedir/dirs.go" />
+        <option value="$PROJECT_DIR$/lang-related/IO/filedir/dirs_test.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="362" />
-    <option name="width" value="2118" />
-    <option name="height" value="1398" />
+    <option name="x" value="881" />
+    <option name="width" value="1684" />
+    <option name="height" value="1399" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,27 +250,13 @@
             <path>
               <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="golang_example" type="462c0819:PsiDirectoryNode" />
-              <item name="gRPC" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
               <item name="golang_example" type="462c0819:PsiDirectoryNode" />
-              <item name="gRPC" type="462c0819:PsiDirectoryNode" />
-              <item name="tls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
-              <item name="gRPC" type="462c0819:PsiDirectoryNode" />
-              <item name="tls" type="462c0819:PsiDirectoryNode" />
-              <item name="cert" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="golang_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="golang_example" type="462c0819:PsiDirectoryNode" />
-              <item name="gRPC" type="462c0819:PsiDirectoryNode" />
-              <item name="tls" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-related" type="462c0819:PsiDirectoryNode" />
+              <item name="IO" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,6 +266,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
@@ -227,6 +282,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourcecode\go\golang_example\lang-related\IO\bytestrings" />
       <recent name="D:\sourcecode\go\golang_example\lang-related" />
     </key>
   </component>
@@ -242,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.tls-client">
+  <component name="RunManager" selected="Go Test.TestModifyString in golang_example/lang-related/IO/bytestrings">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -283,6 +339,50 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestBuffer in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang_example/lang-related/IO/bytestrings" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestBuffer$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestModifyString in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang_example/lang-related/IO/bytestrings" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestModifyString$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestToString in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang_example/lang-related/IO/bytestrings" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestToString$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golang_example/lang-related/IO/bytestrings" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestWorkWithBuffer$" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -294,11 +394,55 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="string_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="golang_exam" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.main-debug" />
       <item itemvalue="Go Build.tls-server" />
       <item itemvalue="Go Build.tls-client" />
+      <item itemvalue="Go Test.TestBuffer in golang_example/lang-related/IO/bytestrings" />
+      <item itemvalue="Go Test.TestToString in golang_example/lang-related/IO/bytestrings" />
+      <item itemvalue="Go Test.TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" />
+      <item itemvalue="Go Test.string_test.go" />
+      <item itemvalue="Go Test.TestModifyString in golang_example/lang-related/IO/bytestrings" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestModifyString in golang_example/lang-related/IO/bytestrings" />
+        <item itemvalue="Go Test.string_test.go" />
+        <item itemvalue="Go Test.TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" />
+        <item itemvalue="Go Test.TestToString in golang_example/lang-related/IO/bytestrings" />
+        <item itemvalue="Go Test.TestBuffer in golang_example/lang-related/IO/bytestrings" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestBuffer_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 11h 06m 57s.xml">
+      <configuration name="TestBuffer in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestToString_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 50m 25s.xml">
+      <configuration name="TestToString in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestWorkWithBuffer_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 55m 37s.xml">
+      <configuration name="TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestWorkWithBuffer_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 55m 49s.xml">
+      <configuration name="TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="string_test_go - 2019.06.02 at 15h 59m 00s.xml">
+      <configuration name="string_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestModifyString_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 59m 12s.xml">
+      <configuration name="TestModifyString in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,31 +454,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="290" y="33" width="1694" height="1049" extended-state="0" />
-    <editor active="true" />
+    <frame x="705" y="0" width="1347" height="1119" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74846625" visible="true" weight="0.15873016" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74846625" visible="true" weight="0.20449264" />
       <window_info id="Structure" order="1" sideWeight="0.25153375" side_tool="true" weight="0.18533333" />
       <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.2055961" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32783505" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34714445" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29595014" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34615386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.2418813" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.34579438" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32756633" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.30740038" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29792148" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3219107" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32922733" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Key Promoter X" order="4" visible="true" weight="0.01831502" />
-      <window_info anchor="right" id="make" order="5" />
+      <window_info anchor="right" id="Key Promoter X" order="4" weight="0.34469405" />
+      <window_info anchor="right" id="make" order="5" weight="0.0232378" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +536,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix to debug" />
     <MESSAGE value="add gRPC TLS sample" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gRPC TLS sample" />
+    <MESSAGE value="delete gRPC redundant code" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete gRPC redundant code" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -406,99 +550,10 @@
           <line>149</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/gRPC/tls/server/server.go</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Go/src/fmt/print.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5852">
-          <caret line="274" selection-start-line="274" selection-end-line="274" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang-related/IO/filehandling/file_write.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#testWriteString#0" />
-            <element signature="e#141#173#0" />
-            <element signature="e#269#313#0" />
-            <element signature="e#393#425#0" />
-            <element signature="n#!!block;n#testWriteLineByLine#0" />
-            <element signature="e#507#551#0" />
-            <element signature="e#566#665#0" />
-            <element signature="e#688#765#0" />
-            <element signature="e#727#762#0" />
-            <element signature="e#798#830#0" />
-            <element signature="n#!!block;n#testAppendToFile#0" />
-            <element signature="e#984#1016#0" />
-            <element signature="e#1105#1149#0" />
-            <element signature="e#1183#1215#0" />
-            <element signature="n#!!block;n#produce#0" />
-            <element signature="n#!!block;n#consume#0" />
-            <element signature="e#1456#1488#0" />
-            <element signature="e#1511#1627#0" />
-            <element signature="e#1559#1624#0" />
-            <element signature="e#1661#1709#0" />
-            <element signature="e#1933#1963#0" />
-            <element signature="e#2047#2088#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/waitgroup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/concurrent" />
-    <entry file="file://$PROJECT_DIR$/lang-related/basic/arraySlices/array.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="71" column="27" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang-related/misc/composition/blog.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/note.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="220">
-            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang-related/basic/variables/variable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/bufferedChan.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lang-related/concurrency/channel.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -796,26 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#14#1001#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gRPC/tls/cert/conf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#14#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gRPC/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -826,24 +861,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gRPC/main.go">
+    <entry file="file://$PROJECT_DIR$/gRPC/main.go" />
+    <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="264">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/filehandling/file_read.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gRPC/tls/cert/conf.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gRPC/tls/client/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="984">
           <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gRPC/tls/server/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+        <state relative-caret-position="216">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/buffer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/buffer_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="e#21#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/bytes.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="e#21#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/bytes_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#21#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/string.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#21#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/filedir/dirs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#22#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/IO/filedir/dirs_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
