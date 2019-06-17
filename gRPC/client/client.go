@@ -3,7 +3,7 @@ package main
 import (
 	"crypto/tls"
 	"crypto/x509"
-	"golang_example/gRPC/tls/cert"
+	"golang_example/gRPC/cert"
 	"io/ioutil"
 	"log"
 	"net/rpc"
