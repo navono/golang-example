@@ -1,3 +1,7 @@
 .idea
-*.exe
 vendor
+
+*.exe
+*.a
+*.o
+*.PKGDEF
