@@ -2,7 +2,7 @@ package oop
 
 import (
 	"fmt"
-	employee2 "golang_example/lang-related/misc/oop/employee"
+	employee2 "golang-example/lang-related/misc/oop/employee"
 )
 
 func init() {

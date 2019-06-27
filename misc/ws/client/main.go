@@ -89,6 +89,7 @@ func main() {
 		}
 	}
 }
+
 func internalProxy(r *http.Request) (*url.URL, error) {
 	log.Println("proxy: ", r.URL)
 

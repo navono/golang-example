@@ -4,7 +4,6 @@ import (
 	"flag"
 	"github.com/koding/websocketproxy"
 	"log"
-	"net"
 	"net/http"
 	"net/url"
 )
@@ -19,6 +18,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
+	log.Println("proxy server running on localhost:9090")
 	err = http.ListenAndServe(":9090", websocketproxy.NewProxy(u))
 	if err != nil {
 		log.Fatalln(err)
@@ -39,6 +39,7 @@ func main() {
 	//}
 }
 
-func handleConn(from net.Conn) {
-
-}
+//
+//func handleConn(from net.Conn) {
+//
+//}

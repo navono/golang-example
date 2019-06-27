@@ -1,3 +1,8 @@
+## proto
+> go get -u github.com/golang/protobuf/protoc-gen-go
+>
+> protoc -I api/ api/helloworld.proto --go_out=plugins=grpc:api
+
 ## TLS
 Self signed CA
 
