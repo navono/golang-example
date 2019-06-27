@@ -3,14 +3,14 @@ package main
 import (
 	"crypto/tls"
 	"crypto/x509"
-	"golang_example/gRPC/cert"
+	cert2 "golang_example/misc/gRPC/cert"
 	"io/ioutil"
 	"log"
 	"net/rpc"
 )
 
 func main() {
-	certKeyPair, err := tls.LoadX509KeyPair(cert.ConfPath("client.crt"), cert.ConfPath("client.key"))
+	certKeyPair, err := tls.LoadX509KeyPair(cert2.ConfPath("client.crt"), cert2.ConfPath("client.key"))
 	if err != nil {
 		log.Fatalf("client: loadkeys: %s", err)
 	}
@@ -26,7 +26,7 @@ func main() {
 	//certPool := x509.NewCertPool()
 	//certPool.AddCert(ca)
 
-	certBytes, err := ioutil.ReadFile(cert.ConfPath("My_Root_CA.crt"))
+	certBytes, err := ioutil.ReadFile(cert2.ConfPath("My_Root_CA.crt"))
 	if err != nil {
 		panic("Unable to read cert.pem")
 	}
