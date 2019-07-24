@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/mockDemo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/mockDemo/student.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/mockDemo/student_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/raft/grpcapi/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/raft/grpcapi/api/grpcapi.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/raft/grpcapi/third_party/go.etcd.io/etcd/raft/raftpb/raft.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/raft/grpcapi/third_party/gogoproto/gogo.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/unsafe.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/unsafe.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/misc/raft/httpapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/raft/httpapi.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/raft/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/raft/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/raft/raftexample_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/raft/raftexample_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/raft/listener.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/raft/listener.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/raft/raft.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/raft/raft.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,19 +32,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/raft/main.go">
+        <entry file="file://$PROJECT_DIR$/misc/mockDemo/student.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/raft/raft.go">
+        <entry file="file://$PROJECT_DIR$/misc/mockDemo/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="329">
+                <caret line="32" selection-start-line="32" selection-end-line="32" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/mockDemo/student_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="120">
+              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc/mockDemo/mock/mock_student.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -44,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/go.mod">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state>
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -61,36 +90,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>golangTutorialSeries</find>
-      <find>testBufferedRead</find>
-      <find>arrayslices</find>
-      <find>testBufferedChan</find>
-      <find>testCalc</find>
-      <find>testRaceCondition</find>
-      <find>producer</find>
-      <find>rune</find>
-      <find>genGreeting</find>
-      <find>locale</find>
-      <find>localelCtx</find>
-      <find>rand</find>
-      <find>ProxyFromEnvironment</find>
-      <find>DefaultDialer</find>
-      <find>ProxyHandler</find>
-      <find>ListenAndServe</find>
-      <find>cert2</find>
-      <find>ServeConn</find>
-      <find>golang_example</find>
-      <find>CONNECT</find>
-      <find>200</find>
-      <find>SayHello</find>
-      <find>flagBackendHostPort</find>
-      <find>handler</find>
-      <find>DialContext</find>
-      <find>clientStreamDescForProxying</find>
-      <find>forwardServerToClient</find>
-      <find>SetTrailer</find>
+      <find>serveHttpKVAPI</find>
+      <find>GenID</find>
+      <find>AddPeer</find>
+      <find>transport</find>
+      <find>Transport</find>
+      <find>tr</find>
+      <find>pipeline</find>
+      <find>Send</find>
+      <find>rc</find>
+      <find>rn</find>
+      <find>CommittedEntries</find>
+      <find>raftLog</find>
+      <find>snapshotter</find>
+      <find>serveRaft</find>
+      <find>log</find>
+      <find>readCommits</find>
+      <find>msgWithResult</find>
+      <find>r.msgs</find>
+      <find>maxMsgSize</find>
+      <find>msgs</find>
+      <find>stepFunc</find>
+      <find>Dial</find>
+      <find>step</find>
+      <find>propc</find>
       <find>proposeC</find>
-      <find>etcdserver</find>
+      <find>commitC</find>
+      <find>publishEntries</find>
+      <find>new e</find>
+      <find>httpstopc</find>
+      <find>default:</find>
     </findStrings>
     <replaceStrings>
       <replace>golangTutorialSeries/lang-related/</replace>
@@ -105,9 +134,10 @@
       <replace>numbe</replace>
       <replace>certPath</replace>
       <replace>golang-example</replace>
+      <replace>rn</replace>
     </replaceStrings>
   </component>
-  <component name="GOROOT" path="F:\Program Files\Go" />
+  <component name="GOROOT" path="D:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -122,24 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lang-related/concurrency/goroutines.go" />
-        <option value="$PROJECT_DIR$/lang-related/concurrency/randomSelect.go" />
-        <option value="$PROJECT_DIR$/lang-related/concurrency/rangeChan.go" />
-        <option value="$PROJECT_DIR$/lang-related/interface/embeded.go" />
-        <option value="$PROJECT_DIR$/lang-related/interface/interface.go" />
-        <option value="$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go" />
-        <option value="$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go" />
-        <option value="$PROJECT_DIR$/pattern/error-handlingV1.go" />
-        <option value="$PROJECT_DIR$/pattern/error-handlingV2.go" />
-        <option value="$PROJECT_DIR$/pattern/generator.go" />
-        <option value="$PROJECT_DIR$/pattern/greeter-non-context.go" />
-        <option value="$PROJECT_DIR$/pattern/greeter-context.go" />
-        <option value="$PROJECT_DIR$/pattern/pipeline-normal.go" />
-        <option value="$PROJECT_DIR$/pattern/pipeline-channel.go" />
-        <option value="$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go" />
-        <option value="$PROJECT_DIR$/pattern/primer-finder-naive.go" />
-        <option value="$PROJECT_DIR$/gRPC/tls/client/client.go" />
-        <option value="$PROJECT_DIR$/gRPC/tls/server/server.go" />
         <option value="$PROJECT_DIR$/lang-related/IO/buffer.go" />
         <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer.go" />
         <option value="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer_test.go" />
@@ -151,7 +163,6 @@
         <option value="$PROJECT_DIR$/lang-related/IO/filedir/dirs_test.go" />
         <option value="$PROJECT_DIR$/gRPC/README.md" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/internal/unsafe.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/internal/gColl.go" />
         <option value="$PROJECT_DIR$/internal/README.md" />
@@ -173,14 +184,33 @@
         <option value="$PROJECT_DIR$/misc/gRPC/client/main.go" />
         <option value="$PROJECT_DIR$/misc/gRPC/proxyServer/main.go" />
         <option value="$PROJECT_DIR$/misc/raft/README.md" />
+        <option value="$PROJECT_DIR$/misc/raft/httpapi.go" />
+        <option value="$PROJECT_DIR$/misc/queue/startRedis.sh" />
+        <option value="$PROJECT_DIR$/misc/queue/machinery-worker/main.go" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/third_party/gogoproto/gogo.proto" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/third_party/go.etcd.io/etcd/raft/raftpb/raft.proto" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/api/grpcapi.proto" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/README.md" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/util.go" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/node_test.go" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/cluster.go" />
+        <option value="$PROJECT_DIR$/misc/raft/grpcapi/node.go" />
+        <option value="$PROJECT_DIR$/misc/raft/listener.go" />
+        <option value="$PROJECT_DIR$/misc/raft/raft.go" />
+        <option value="$PROJECT_DIR$/internal/unsafe.go" />
+        <option value="$PROJECT_DIR$/pattern/or-channel.go" />
+        <option value="$PROJECT_DIR$/misc/mock/student.go" />
+        <option value="$PROJECT_DIR$/misc/mockDemo/student.go" />
+        <option value="$PROJECT_DIR$/misc/mockDemo/student_test.go" />
+        <option value="$PROJECT_DIR$/misc/mockDemo/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1720" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="466" />
+    <option name="y" value="16" />
+    <option name="width" value="1343" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -197,6 +227,24 @@
               <item name="golang-example" type="b2602c69:ProjectViewProjectNode" />
               <item name="golang-example" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="golang-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang-example" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang-example" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="mockDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golang-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golang-example" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="mockDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="mock" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -209,22 +257,23 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\sourcecode\go\golang-example\misc\raft" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
       <recent name="E:\sourcecode\go\golang-example\misc\ws" />
       <recent name="E:\sourcecode\go\golang-example\misc" />
       <recent name="D:\sourcecode\go\golang_example\lang-related\IO\bytestrings" />
@@ -243,7 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.grpc-proxy">
+  <component name="RunManager" selected="Go Build.node2">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -275,34 +324,26 @@
       <directory value="E:\sourcecode\go\golang-example\misc\gRPC\proxyServer" />
       <method v="2" />
     </configuration>
-    <configuration name="main-debug" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <configuration name="node1" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/" />
+      <working_directory value="E:\sourcecode\go\golang-example\misc\raft" />
       <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="E:\sourcecode\go\golang_example\main.go" />
+      <parameters value="--id 1 --cluster http://127.0.0.1:12379,http://127.0.0.1:22379 --port 12380" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/" />
       <package value="golang_exam" />
-      <directory value="$PROJECT_DIR$/" />
+      <directory value="E:\sourcecode\go\golang-example\misc\raft" />
       <method v="2" />
     </configuration>
-    <configuration name="tls-client" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <configuration name="node2" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/" />
+      <working_directory value="E:\sourcecode\go\golang-example\misc\raft" />
       <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="D:\sourcecode\go\golang_example\gRPC\tls\client\client.go" />
+      <parameters value="--id 3 --cluster http://192.168.200.100:12379,http://192.168.200.100:22379,http://192.168.200.101:12379 --port 12380" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/" />
       <package value="golang_exam" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tls-server" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/gRPC" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="E:\sourcecode\go\golang_example\gRPC\tls\server\server.go" />
-      <package value="golang_exam" />
-      <directory value="$PROJECT_DIR$/" />
+      <directory value="E:\sourcecode\go\golang-example\misc\raft" />
       <method v="2" />
     </configuration>
     <configuration name="ws-client" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -395,9 +436,8 @@
       <item itemvalue="Go Build.grpc-client" />
       <item itemvalue="Go Build.ws-proxy" />
       <item itemvalue="Go Build.grpc-proxy" />
-      <item itemvalue="Go Build.main-debug" />
-      <item itemvalue="Go Build.tls-server" />
-      <item itemvalue="Go Build.tls-client" />
+      <item itemvalue="Go Build.node1" />
+      <item itemvalue="Go Build.node2" />
       <item itemvalue="Go Test.TestBuffer in golang_example/lang-related/IO/bytestrings" />
       <item itemvalue="Go Test.TestToString in golang_example/lang-related/IO/bytestrings" />
       <item itemvalue="Go Test.TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" />
@@ -413,6 +453,10 @@
         <item itemvalue="Go Test.TestBuffer in golang_example/lang-related/IO/bytestrings" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",EXPORTABILITY_SORTER,ALPHA_COMPARATOR" />
   </component>
   <component name="TestHistory">
     <history-entry file="TestBuffer_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 11h 06m 57s.xml">
@@ -444,24 +488,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="466" y="16" width="1343" height="960" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7457627" visible="true" weight="0.1619303" />
-      <window_info id="Structure" order="1" sideWeight="0.2542373" side_tool="true" weight="0.11849866" />
-      <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.2055961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5968504" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.4031496" side_tool="true" weight="0.19463807" />
+      <window_info id="Favorites" order="2" sideWeight="0.3726852" side_tool="true" weight="0.21715818" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2949002" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="5" visible="true" weight="0.3503326" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32594234" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.4135166" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.325315" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008043" side_tool="true" weight="0.4490022" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.36363637" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49919572" weight="0.38691795" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" weight="0.34922394" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.3676976" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.44401544" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32922733" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -469,6 +515,30 @@
       <window_info anchor="right" id="Key Promoter X" order="4" weight="0.34423593" />
       <window_info anchor="right" id="make" order="5" weight="0.0232378" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44524497" visible="true" weight="0.21715818" />
+      <window_info id="Structure" order="1" sideWeight="0.55475503" side_tool="true" weight="0.21715818" />
+      <window_info id="Favorites" order="2" sideWeight="0.3726852" side_tool="true" weight="0.21715818" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2949002" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.29268292" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32594234" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" weight="0.34922394" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.36363637" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" weight="0.23059867" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32922733" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Key Promoter X" order="4" weight="0.34423593" />
+      <window_info anchor="right" id="make" order="5" weight="0.0232378" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -534,7 +604,9 @@
     <MESSAGE value="fix: 删除注释代码" />
     <MESSAGE value="fix: 实现 gRPC 的 server forward proxy" />
     <MESSAGE value="feat: 增加 ectd/raft 的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 ectd/raft 的例子" />
+    <MESSAGE value="fix: 修改 ectd 为 master 分支" />
+    <MESSAGE value="feat: add machinery demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add machinery demo" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -592,348 +664,53 @@
           <line>1286</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/transport.go</url>
+          <line>200</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/raft/raft.go</url>
+          <line>350</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/raft.go</url>
+          <line>636</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/Program Files/Go/src/net/net.go">
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/v2stats/server.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/util.go" />
+    <entry file="file://$PROJECT_DIR$/misc/raft/grpcapi/api/grpcapi.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/ws/multiplexServer/main.go">
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/probing_status.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/remote.go" />
+    <entry file="file://F:/Program Files/Go/src/net/http/client.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/pipeline.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/http.go" />
+    <entry file="file://F:/Program Files/Go/src/runtime/asm_amd64.s" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/storage.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/transport.go" />
+    <entry file="file://$PROJECT_DIR$/misc/raft/listener.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#14#98#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="355">
+          <caret line="54" column="26" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/ws/multiplexServer/endpoint.go">
+    <entry file="file://$PROJECT_DIR$/misc/raft/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-          <folding>
-            <element signature="e#14#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/gRPC/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/golang_example.iml" />
-    <entry file="file://$PROJECT_DIR$/lang-related/misc/oop/oop.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#13#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/koding/websocketproxy@v0.0.0-20181220232114-7ed82d81a28c/websocketproxy.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3640">
-          <caret line="192" column="7" selection-start-line="192" selection-start-column="7" selection-end-line="192" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/gorilla/websocket@v1.4.0/conn.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20300">
-          <caret line="1027" column="36" selection-start-line="1027" selection-start-column="26" selection-end-line="1027" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/ws/client/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-          <folding>
-            <element signature="e#14#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/gorilla/websocket@v1.4.0/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7340">
-          <caret line="380" column="39" selection-start-line="380" selection-start-column="39" selection-end-line="380" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/ws/server/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#14#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/ws/proxy/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#14#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/service_config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/dialoptions.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Program Files/Go/src/context/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/gRPC/api/helloworld.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/internal/binarylog/binarylog.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/call.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/internal/transport/http2_client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Program Files/Go/src/io/io.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/internal/transport/transport.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="418" selection-start-line="418" selection-end-line="418" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/gRPC/client/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/mwitkow/grpc-proxy@v0.0.0-20181017164139-0f1106ef9c76/proxy/director.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding>
-            <element signature="e#109#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Program Files/Go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/metadata/metadata.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="146" column="5" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/stream.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/gRPC/proxyServer/backend.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="89" column="20" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
-          <folding>
-            <element signature="e#14#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/clientconn.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="123" column="20" lean-forward="true" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/mwitkow/grpc-proxy@v0.0.0-20181017164139-0f1106ef9c76/proxy/codec.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="e#15#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/rpc_util.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="750" column="25" selection-start-line="750" selection-start-column="19" selection-end-line="750" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Program Files/Go/src/net/dial.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="686" column="5" selection-start-line="686" selection-start-column="5" selection-end-line="686" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/gRPC/server/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="59" selection-start-line="59" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/grpc-ecosystem/go-grpc-prometheus@v1.2.0/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="62" lean-forward="true" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/grpc-ecosystem/go-grpc-prometheus@v1.2.0/server_metrics.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.0.0/logging/logrus/server_interceptors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/grpc-ecosystem/go-grpc-middleware@v1.0.0/chain.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/gRPC/api/helloworld.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-          <folding>
-            <element signature="e#98#224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/keepalive/keepalive.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="1274" selection-start-line="1274" selection-end-line="1274" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/stats/handlers.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/google.golang.org/grpc@v1.21.1/tap/tap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/gRPC/proxyServer/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go/pkg/mod/github.com/mwitkow/grpc-proxy@v0.0.0-20181017164139-0f1106ef9c76/proxy/handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/raft/raftexample_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -941,47 +718,282 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="320">
-            <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/raft/doc.go">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://F:/Program Files/Go/src/runtime/panic.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/logger.go" />
+    <entry file="file://F:/Program Files/Go/src/context/context.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/status.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/proxy/grpcproxy/kv.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/log.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/wal/wal.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/etcdserver/api/rafthttp/peer.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/raftpb/raft.pb.go" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/node.go" />
+    <entry file="file://$PROJECT_DIR$/../../frontend/test-project/src/App.tsx" />
+    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/raft.go" />
+    <entry file="file://$PROJECT_DIR$/internal/unsafe.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#14#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/raft/kvstore.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="63" column="60" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="60" />
+          <folding>
+            <element signature="e#608#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/raft/httpapi.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="125" column="18" lean-forward="true" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
+          <folding>
+            <element signature="e#608#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/raft/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="380">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="e#608#669#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v3.3.13+incompatible/raft/raftpb/raft.pb.go">
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/channel.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5440">
-          <caret line="282" column="5" selection-start-line="282" selection-start-column="5" selection-end-line="282" selection-end-column="5" />
+        <state relative-caret-position="-245">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#21#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Go/pkg/mod/go.etcd.io/etcd@v3.3.13+incompatible/raft/node.go">
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="260">
+            <caret line="13" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/rangeChan.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+        <state relative-caret-position="40">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#21#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/randomSelect.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/goroutine-leak.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="e#21#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/goroutine-cancel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/goroutines.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/workerPool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/generator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!block;n#Repeat#0" />
+            <element signature="e#208#361#0" />
+            <element signature="e#243#358#0" />
+            <element signature="e#273#354#0" />
+            <element signature="e#279#349#0" />
+            <element signature="e#292#316#0" />
+            <element signature="n#!!block;n#RepeatFn#0" />
+            <element signature="e#542#658#0" />
+            <element signature="e#577#655#0" />
+            <element signature="e#582#651#0" />
+            <element signature="e#594#617#0" />
+            <element signature="n#!!block;n#ToString#0" />
+            <element signature="e#1172#1319#0" />
+            <element signature="e#1231#1316#0" />
+            <element signature="e#1236#1312#0" />
+            <element signature="e#1248#1271#0" />
+            <element signature="n#!!block;n#ToInt#0" />
+            <element signature="e#1486#1624#0" />
+            <element signature="e#1542#1621#0" />
+            <element signature="e#1547#1617#0" />
+            <element signature="e#1559#1582#0" />
+            <element signature="n#!!block;n#FanIn#0" />
+            <element signature="e#1871#1994#0" />
+            <element signature="e#1910#1991#0" />
+            <element signature="e#1915#1987#0" />
+            <element signature="e#1927#1950#0" />
+            <element signature="e#2080#2102#0" />
+            <element signature="e#2154#2197#0" />
+            <element signature="n#!!block;n#OrDone#0" />
+            <element signature="e#2359#2566#0" />
+            <element signature="e#2392#2563#0" />
+            <element signature="e#2397#2559#0" />
+            <element signature="e#2409#2432#0" />
+            <element signature="e#2436#2554#0" />
+            <element signature="e#2474#2493#0" />
+            <element signature="e#2498#2554#0" />
+            <element signature="n#!!block;n#Tee#0" />
+            <element signature="e#2772#3035#0" />
+            <element signature="e#2851#3032#0" />
+            <element signature="e#2910#3028#0" />
+            <element signature="e#2916#3023#0" />
+            <element signature="e#2946#2979#0" />
+            <element signature="e#2984#3017#0" />
+            <element signature="n#!!block;n#Bridge#0" />
+            <element signature="e#3229#3563#0" />
+            <element signature="e#3262#3560#0" />
+            <element signature="e#3300#3445#0" />
+            <element signature="e#3312#3413#0" />
+            <element signature="e#3369#3388#0" />
+            <element signature="e#3417#3440#0" />
+            <element signature="e#3487#3556#0" />
+            <element signature="e#3493#3551#0" />
+            <element signature="n#!!block;n#testRepeat#0" />
+            <element signature="e#3712#3741#0" />
+            <element signature="n#!!block;n#testRepeatFn#0" />
+            <element signature="e#3853#3874#0" />
+            <element signature="e#3936#3959#0" />
+            <element signature="n#!!block;n#testTypeContert#0" />
+            <element signature="e#4136#4159#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/pipeline-channel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="e#17#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/misc/raft/raft.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state relative-caret-position="9820">
+          <caret line="491" column="2" selection-start-line="491" selection-start-column="2" selection-end-line="491" selection-end-column="10" />
+          <folding>
+            <element signature="e#608#1010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/or-channel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/unidirectionChan.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang-related/concurrency/default-selection.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/mockDemo/mock/mock_people.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/mockDemo/mock/mock_student.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/mockDemo/student_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/mockDemo/student.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/mockDemo/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="329">
+            <caret line="32" selection-start-line="32" selection-end-line="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

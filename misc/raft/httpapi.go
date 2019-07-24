@@ -48,7 +48,12 @@ func (h *httpKVAPI) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusNoContent)
 	case r.Method == "GET":
 		if v, ok := h.store.Lookup(key); ok {
-			w.Write([]byte(v))
+			_, err := w.Write([]byte(v))
+			if err != nil {
+				log.Printf("Failed to write on GET (%v)\n", err)
+				http.Error(w, "Failed on GET", http.StatusBadRequest)
+				return
+			}
 		} else {
 			http.Error(w, "Failed to GET", http.StatusNotFound)
 		}

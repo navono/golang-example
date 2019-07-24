@@ -57,8 +57,8 @@ type raftNode struct {
 	appliedIndex  uint64
 
 	// raft backing for the commit/error channel
-	node        raft.Node
-	raftStorage *raft.MemoryStorage
+	node        raft.Node           //真正的共识部分的 node，是应用层与共识算法的衔接
+	raftStorage *raft.MemoryStorage //raft中内存存储日志的部分
 	wal         *wal.WAL
 
 	snapshotter      *snap.Snapshotter
@@ -148,6 +148,9 @@ func (rc *raftNode) publishEntries(ents []raftpb.Entry) bool {
 				// ignore empty messages
 				break
 			}
+			status := rc.node.Status()
+			fmt.Printf("node status: %v", status)
+
 			s := string(ents[i].Data)
 			select {
 			case rc.commitC <- &s:
@@ -303,14 +306,20 @@ func (rc *raftNode) startRaft() {
 		ErrorC:      make(chan error),
 	}
 
-	rc.transport.Start()
+	err := rc.transport.Start()
+	if err != nil {
+		log.Fatalf("raftexample: cannot start raft node transport (%v)", err)
+	}
+
 	for i := range rc.peers {
 		if i+1 != rc.id {
 			rc.transport.AddPeer(types.ID(i+1), []string{rc.peers[i]})
 		}
 	}
 
+	// 监听 http 端口
 	go rc.serveRaft()
+
 	go rc.serveChannels()
 }
 
@@ -379,13 +388,13 @@ func (rc *raftNode) maybeTriggerSnapshot() {
 }
 
 func (rc *raftNode) serveChannels() {
-	snap, err := rc.raftStorage.Snapshot()
+	ss, err := rc.raftStorage.Snapshot()
 	if err != nil {
 		panic(err)
 	}
-	rc.confState = snap.Metadata.ConfState
-	rc.snapshotIndex = snap.Metadata.Index
-	rc.appliedIndex = snap.Metadata.Index
+	rc.confState = ss.Metadata.ConfState
+	rc.snapshotIndex = ss.Metadata.Index
+	rc.appliedIndex = ss.Metadata.Index
 
 	defer rc.wal.Close()
 
@@ -403,7 +412,13 @@ func (rc *raftNode) serveChannels() {
 					rc.proposeC = nil
 				} else {
 					// blocks until accepted by raft state machine
-					rc.node.Propose(context.TODO(), []byte(prop))
+					s := rc.node.Status()
+					log.Printf("node status (%v)", s)
+
+					err := rc.node.Propose(context.TODO(), []byte(prop))
+					if err != nil {
+						log.Printf("node propose failed (%v)", err)
+					}
 				}
 
 			case cc, ok := <-rc.confChangeC:
@@ -412,7 +427,10 @@ func (rc *raftNode) serveChannels() {
 				} else {
 					confChangeCount++
 					cc.ID = confChangeCount
-					rc.node.ProposeConfChange(context.TODO(), cc)
+					err := rc.node.ProposeConfChange(context.TODO(), cc)
+					if err != nil {
+						log.Printf("node propose config change failed (%v)", err)
+					}
 				}
 			}
 		}
@@ -433,6 +451,9 @@ func (rc *raftNode) serveChannels() {
 				rc.saveSnap(rd.Snapshot)
 				rc.raftStorage.ApplySnapshot(rd.Snapshot)
 				rc.publishSnapshot(rd.Snapshot)
+			}
+			if rd.Entries != nil {
+				log.Printf("%v \n", rd.Entries)
 			}
 			rc.raftStorage.Append(rd.Entries)
 			rc.transport.Send(rd.Messages)
@@ -475,6 +496,9 @@ func (rc *raftNode) serveRaft() {
 }
 
 func (rc *raftNode) Process(ctx context.Context, m raftpb.Message) error {
+	if m.Type != raftpb.MsgHeartbeat {
+		return rc.node.Step(ctx, m)
+	}
 	return rc.node.Step(ctx, m)
 }
 func (rc *raftNode) IsIDRemoved(id uint64) bool                           { return false }
