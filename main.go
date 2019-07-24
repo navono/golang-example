@@ -20,8 +20,9 @@ import (
 	// _ "golang-example/lang-related/misc/errorpkg"
 	// _ "golang-example/lang-related/misc/panicpkg"
 	// _ "golang-example/lang-related/misc/firstclassfunction"
-	_ "golang-example/lang-related/misc/reflection"
+	//_ "golang-example/lang-related/misc/reflection"
 	//_ "golang-example/lang-related/dump"
+	_ "golang-example/misc/gopsDemo"
 )
 
 func main() {
