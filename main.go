@@ -22,7 +22,8 @@ import (
 	// _ "golang-example/lang-related/misc/firstclassfunction"
 	//_ "golang-example/lang-related/misc/reflection"
 	//_ "golang-example/lang-related/dump"
-	_ "golang-example/misc/gopsDemo"
+	//_ "golang-example/misc/gopsDemo"
+	_ "golang-example/misc/badgerDemo"
 )
 
 func main() {
