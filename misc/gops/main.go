@@ -1,4 +1,4 @@
-package gopsDemo
+package gops
 
 import (
 	"fmt"

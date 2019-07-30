@@ -1,4 +1,4 @@
-package mockDemo
+package mock
 
 type IPeople interface {
 	GetName() string

@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	// _ "golang-example/lang-related/basic/variables"
 	// _ "golang-example/lang-related/basic/types"
 	// _ "golang-example/lang-related/basic/pointer"
@@ -22,8 +21,8 @@ import (
 	// _ "golang-example/lang-related/misc/firstclassfunction"
 	//_ "golang-example/lang-related/misc/reflection"
 	//_ "golang-example/lang-related/dump"
-	//_ "golang-example/misc/gopsDemo"
-	_ "golang-example/misc/badgerDemo"
+	//_ "golang-example/misc/gops"
+	//_ "golang-example/misc/badger"
 )
 
 func main() {

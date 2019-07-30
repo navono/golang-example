@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/expvarMon/READM.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/expvarMon/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/badgerDemo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/badger/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -275,7 +275,8 @@
     <MESSAGE value="chore: IDE 配置文件" />
     <MESSAGE value="feat: go concurrent quiz" />
     <MESSAGE value="feat: add badger demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add badger demo" />
+    <MESSAGE value="feat: add expVarMon 监控 app 的运行数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add expVarMon 监控 app 的运行数据" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -349,12 +350,12 @@
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/badgerDemo/main.go</url>
+          <url>file://$PROJECT_DIR$/misc/badger/main.go</url>
           <line>29</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/badgerDemo/main.go</url>
+          <url>file://$PROJECT_DIR$/misc/badger/main.go</url>
           <line>10</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>

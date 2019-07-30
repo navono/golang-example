@@ -1,5 +1,5 @@
 // https://colobu.com/2017/10/11/badger-a-performant-k-v-store/
-package badgerDemo
+package badger
 
 import (
 	"fmt"
