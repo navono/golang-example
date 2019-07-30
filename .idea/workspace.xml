@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/badgerDemo/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/expvarMon/READM.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/expvarMon/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +51,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../badger" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -80,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.node2">
+  <component name="RunManager" selected="Go Build.main">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -110,6 +108,16 @@
       <filePath value="E:/sourcecode/go/golang-example/misc/gRPC/proxyServer/main.go" />
       <package value="golang_exam" />
       <directory value="E:/sourcecode/go/golang-example/misc/gRPC/proxyServer" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="golang_exam" />
+      <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <configuration name="node1" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -154,50 +162,6 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestBuffer in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="golang_example/lang-related/IO/bytestrings" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestBuffer$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestModifyString in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="golang_example/lang-related/IO/bytestrings" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestModifyString$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestToString in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="golang_example/lang-related/IO/bytestrings" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestToString$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="golang_example/lang-related/IO/bytestrings" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestWorkWithBuffer$" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -209,38 +173,15 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="string_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/lang-related/IO/bytestrings" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <package value="golang_exam" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Go Build.main" />
       <item itemvalue="Go Build.ws-client" />
       <item itemvalue="Go Build.grpc-client" />
       <item itemvalue="Go Build.ws-proxy" />
       <item itemvalue="Go Build.grpc-proxy" />
       <item itemvalue="Go Build.node1" />
       <item itemvalue="Go Build.node2" />
-      <item itemvalue="Go Test.TestBuffer in golang_example/lang-related/IO/bytestrings" />
-      <item itemvalue="Go Test.TestToString in golang_example/lang-related/IO/bytestrings" />
-      <item itemvalue="Go Test.TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" />
-      <item itemvalue="Go Test.string_test.go" />
-      <item itemvalue="Go Test.TestModifyString in golang_example/lang-related/IO/bytestrings" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Test.TestModifyString in golang_example/lang-related/IO/bytestrings" />
-        <item itemvalue="Go Test.string_test.go" />
-        <item itemvalue="Go Test.TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" />
-        <item itemvalue="Go Test.TestToString in golang_example/lang-related/IO/bytestrings" />
-        <item itemvalue="Go Test.TestBuffer in golang_example/lang-related/IO/bytestrings" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
@@ -333,7 +274,8 @@
     <MESSAGE value="feat: 增加 gops 示例代码" />
     <MESSAGE value="chore: IDE 配置文件" />
     <MESSAGE value="feat: go concurrent quiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: go concurrent quiz" />
+    <MESSAGE value="feat: add badger demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add badger demo" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -405,6 +347,16 @@
           <url>file://E:/Go/pkg/mod/go.etcd.io/etcd@v0.0.0-20190621205006-948e276ca73d/raft/raft.go</url>
           <line>636</line>
           <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/badgerDemo/main.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/badgerDemo/main.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
