@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/casbin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/casbin/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/casbin/rbac_policy.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/badgerDemo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/badger/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,19 +55,20 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../badger" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
       <recent name="E:\sourcecode\go\golang-example\misc\ws" />
       <recent name="E:\sourcecode\go\golang-example\misc" />
       <recent name="D:\sourcecode\go\golang_example\lang-related\IO\bytestrings" />
       <recent name="D:\sourcecode\go\golang_example\lang-related" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
+      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -276,7 +281,8 @@
     <MESSAGE value="feat: go concurrent quiz" />
     <MESSAGE value="feat: add badger demo" />
     <MESSAGE value="feat: add expVarMon 监控 app 的运行数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add expVarMon 监控 app 的运行数据" />
+    <MESSAGE value="refactor: 将文件夹名称去除 Demo 字眼" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 将文件夹名称去除 Demo 字眼" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -358,6 +364,56 @@
           <url>file://$PROJECT_DIR$/misc/badger/main.go</url>
           <line>10</line>
           <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/zapSentry/main.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/zapSentry/main.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/!the!zero!slave/zapsentry@v0.0.0-20180112122240-410ad1e37c78/factory.go</url>
+          <line>6</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/!the!zero!slave/zapsentry@v0.0.0-20180112122240-410ad1e37c78/core.go</url>
+          <line>13</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/!the!zero!slave/zapsentry@v0.0.0-20180112122240-410ad1e37c78/logger.go</url>
+          <line>9</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/!the!zero!slave/zapsentry@v0.0.0-20180112122240-410ad1e37c78/core.go</url>
+          <line>47</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/casbin/casbin@v1.9.1/enforcer.go</url>
+          <line>448</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/casbin/casbin@v1.9.1/enforcer.go</url>
+          <line>429</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/casbin/casbin@v1.9.1/enforcer.go</url>
+          <line>407</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://F:/go/pkg/mod/github.com/casbin/casbin@v1.9.1/enforcer.go</url>
+          <line>352</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

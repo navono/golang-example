@@ -1,0 +1,4 @@
+p,abc123,user,GET
+p,abc123,user,POST
+p,admin,test,*
+g,super_admin,admin

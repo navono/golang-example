@@ -23,6 +23,7 @@ import (
 	//_ "golang-example/lang-related/dump"
 	//_ "golang-example/misc/gops"
 	//_ "golang-example/misc/badger"
+	_ "golang-example/misc/casbin"
 )
 
 func main() {
