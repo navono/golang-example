@@ -52,7 +52,7 @@ func dbPolicy() {
 	}
 }
 
-func localPolycy() {
+func localPolicy() {
 	e := casbin.NewEnforcer("./misc/casbin/rbac_model.conf", "./misc/casbin/rbac_policy.csv")
 	e.EnableLog(true)
 

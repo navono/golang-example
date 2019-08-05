@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/casbin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/misc/casbin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/casbin/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/casbin/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -278,7 +277,8 @@
     <MESSAGE value="feat: add expVarMon 监控 app 的运行数据" />
     <MESSAGE value="refactor: 将文件夹名称去除 Demo 字眼" />
     <MESSAGE value="feat: 增加 casbin 示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 casbin 示例" />
+    <MESSAGE value="docs: 增加 casbin README 的说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: 增加 casbin README 的说明" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
