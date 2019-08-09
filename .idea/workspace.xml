@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/misc/casbin/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/casbin/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/redis-docker.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/logger/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -278,7 +286,8 @@
     <MESSAGE value="refactor: 将文件夹名称去除 Demo 字眼" />
     <MESSAGE value="feat: 增加 casbin 示例" />
     <MESSAGE value="docs: 增加 casbin README 的说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: 增加 casbin README 的说明" />
+    <MESSAGE value="fix: typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: typo" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -352,16 +361,6 @@
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/badger/main.go</url>
-          <line>29</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/badger/main.go</url>
-          <line>10</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/misc/zapSentry/main.go</url>
           <line>12</line>
           <option name="timeStamp" value="90" />
@@ -410,6 +409,26 @@
           <url>file://F:/go/pkg/mod/github.com/casbin/casbin@v1.9.1/enforcer.go</url>
           <line>352</line>
           <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/authentication/session-based/handlers.go</url>
+          <line>23</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/authentication/session-based/main.go</url>
+          <line>11</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/authentication/session-based/handlers.go</url>
+          <line>25</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/authentication/session-based/handlers.go</url>
+          <line>65</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

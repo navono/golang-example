@@ -23,7 +23,9 @@ import (
 	//_ "golang-example/lang-related/dump"
 	//_ "golang-example/misc/gops"
 	//_ "golang-example/misc/badger"
-	_ "golang-example/misc/casbin"
+	//_ "golang-example/misc/casbin"
+	//_ "golang-example/misc/authentication/session-based"
+	_ "golang-example/misc/logger"
 )
 
 func main() {
