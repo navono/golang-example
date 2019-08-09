@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/dgraph-io/badger"
 	"log"
+	"time"
 )
 
 func init() {
@@ -17,24 +18,41 @@ func init() {
 
 	// set
 	err = db.Update(func(txn *badger.Txn) error {
-		err := txn.Set([]byte("answer"), []byte("42"))
+		e := badger.Entry{
+			Key:       []byte("answer"),
+			Value:     []byte("42"),
+			UserMeta:  0,
+			ExpiresAt: uint64(time.Now().Add(time.Duration(10 * time.Second)).Unix()),
+		}
+		err = txn.SetEntry(&e)
+		//err := txn.Set([]byte("answer"), []byte("42"))
+
+		if err := txn.Commit(); err != nil {
+			return err
+		}
 		return err
 	})
 	if err != nil {
 		panic(err)
 	}
 
+	time.Sleep(time.Duration(11 * time.Second))
 	// get
 	err = db.View(func(txn *badger.Txn) error {
 		item, err := txn.Get([]byte("answer"))
 		if err != nil {
 			return err
 		}
+		item.IsDeletedOrExpired()
 		err = item.Value(func(val []byte) error {
 			fmt.Printf("The answer is: %s\n", val)
 			return nil
 		})
 		if err != nil {
+			return err
+		}
+
+		if err := txn.Commit(); err != nil {
 			return err
 		}
 
@@ -62,6 +80,10 @@ func init() {
 			if err != nil {
 				return err
 			}
+		}
+
+		if err := txn.Commit(); err != nil {
+			return err
 		}
 		return nil
 	})
@@ -106,7 +128,13 @@ func init() {
 
 	// delete
 	err = db.Update(func(txn *badger.Txn) error {
-		return txn.Delete([]byte("answer"))
+		err = txn.Delete([]byte("answer"))
+
+		if err := txn.Commit(); err != nil {
+			return err
+		}
+
+		return err
 	})
 	if err != nil {
 		panic(err)
