@@ -25,7 +25,7 @@ import (
 	//_ "golang-example/misc/badger"
 	//_ "golang-example/misc/casbin"
 	//_ "golang-example/misc/authentication/session-based"
-	_ "golang-example/misc/logger"
+	//_ "golang-example/misc/log"
 )
 
 func main() {

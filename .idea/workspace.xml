@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/handlers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/authentication/session-based/redis-docker.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/logger/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/logger/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/log/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,7 +281,9 @@
     <MESSAGE value="feat: 增加 casbin 示例" />
     <MESSAGE value="docs: 增加 casbin README 的说明" />
     <MESSAGE value="fix: typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: typo" />
+    <MESSAGE value="feat: add session-based login" />
+    <MESSAGE value="feat: add logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add logger" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
