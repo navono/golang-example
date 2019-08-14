@@ -26,6 +26,7 @@ import (
 	//_ "golang-example/misc/casbin"
 	//_ "golang-example/misc/authentication/session-based"
 	//_ "golang-example/misc/log"
+	_ "golang-example/misc/wasm"
 )
 
 func main() {

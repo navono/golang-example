@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/gogit/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/wasm/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/wasm/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/wasm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/badger/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/badger/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +57,8 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../logger" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -258,7 +265,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add gRPC TLS sample" />
     <MESSAGE value="delete gRPC redundant code" />
     <MESSAGE value="docs: 修改说明" />
     <MESSAGE value="golang internals" />
@@ -283,7 +289,8 @@
     <MESSAGE value="feat: add session-based login" />
     <MESSAGE value="feat: add logger" />
     <MESSAGE value="refactor: log 包重命名" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: log 包重命名" />
+    <MESSAGE value="feat: add badger item TTL" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add badger item TTL" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

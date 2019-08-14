@@ -5,3 +5,4 @@ vendor
 *.a
 *.o
 *.PKGDEF
+*.wasm
