@@ -6,3 +6,7 @@ vendor
 *.o
 *.PKGDEF
 *.wasm
+*.db
+*.log
+*.txt
+

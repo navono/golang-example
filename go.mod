@@ -29,6 +29,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway v1.9.6 // indirect
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/hashicorp/memberlist v0.1.4 // indirect
+	github.com/jinzhu/gorm v1.9.10 // indirect
 	github.com/kisielk/errcheck v1.2.0 // indirect
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
