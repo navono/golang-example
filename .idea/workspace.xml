@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/distributedSystem/01-cluster-join/node1.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/misc/gogit/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/wasm/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/wasm/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/wasm/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
@@ -265,7 +262,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete gRPC redundant code" />
     <MESSAGE value="docs: 修改说明" />
     <MESSAGE value="golang internals" />
     <MESSAGE value="refactor: change gRPC dir and add websocket demo" />
@@ -290,7 +286,8 @@
     <MESSAGE value="feat: add logger" />
     <MESSAGE value="refactor: log 包重命名" />
     <MESSAGE value="feat: add badger item TTL" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add badger item TTL" />
+    <MESSAGE value="feat: add golang wsam" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add golang wsam" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
