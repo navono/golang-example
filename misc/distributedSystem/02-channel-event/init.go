@@ -12,7 +12,7 @@ func init() {
 
 		Usage:    "Start node1",
 		Action:   node1,
-		Category: "channelEvent",
+		Category: "Cluster-channelEvent",
 	})
 
 	cmd.Cmds = append(cmd.Cmds, cli.Command{
@@ -20,7 +20,7 @@ func init() {
 		Aliases: []string{"ce2"},
 
 		Usage:    "Join node2 to cluster",
-		Category: "channelEvent",
+		Category: "Cluster-channelEvent",
 		Subcommands: []cli.Command{
 			{
 				Name:   "join",
@@ -35,7 +35,7 @@ func init() {
 		Aliases: []string{"ce3"},
 
 		Usage:    "Join node3 to cluster",
-		Category: "channelEvent",
+		Category: "Cluster-channelEvent",
 		Subcommands: []cli.Command{
 			{
 				Name:   "join",

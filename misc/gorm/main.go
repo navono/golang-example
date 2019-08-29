@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
+	"github.com/urfave/cli"
+	"golang-example/cmd"
 )
 
 type User struct {
@@ -24,10 +26,23 @@ var (
 )
 
 func init() {
+	cmd.Cmds = append(cmd.Cmds, cli.Command{
+		Name:    "gorm",
+		Aliases: []string{"gorm"},
+
+		Usage:    "Demonstration of gorm",
+		Action:   gormAction,
+		Category: "DB",
+	})
+}
+
+func gormAction(c *cli.Context) error {
 	InitSqlite()
 	AutoMigrate()
 	Setup()
 	Find()
+
+	return nil
 }
 
 func InitSqlite() {
@@ -71,9 +86,6 @@ func Setup() {
 
 	db.Create(user1).Association("Languages").Append([]*Language{lang1, lang2})
 	db.Create(user2)
-
-	//var lan Language
-	//db.Model(lan).Association("Users").Append([]*User{user1, user2})
 
 	var lan2 Language
 	db.Where(&Language{

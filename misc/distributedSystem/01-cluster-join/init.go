@@ -8,19 +8,19 @@ import (
 func init() {
 	cmd.Cmds = append(cmd.Cmds, cli.Command{
 		Name:    "jNode1",
-		Aliases: []string{"n1"},
+		Aliases: []string{"nj1"},
 
 		Usage:    "Start node1",
 		Action:   node1,
-		Category: "nodeJoin",
+		Category: "Cluster-nodeJoin",
 	})
 
 	cmd.Cmds = append(cmd.Cmds, cli.Command{
 		Name:    "jNode2",
-		Aliases: []string{"n2"},
+		Aliases: []string{"nj2"},
 
 		Usage:    "Join node2 to cluster",
-		Category: "nodeJoin",
+		Category: "Cluster-nodeJoin",
 		Subcommands: []cli.Command{
 			{
 				Name:   "join",
@@ -32,10 +32,10 @@ func init() {
 
 	cmd.Cmds = append(cmd.Cmds, cli.Command{
 		Name:    "jNode3",
-		Aliases: []string{"n3"},
+		Aliases: []string{"nj3"},
 
 		Usage:    "Join node3 to cluster",
-		Category: "nodeJoin",
+		Category: "Cluster-nodeJoin",
 		Subcommands: []cli.Command{
 			{
 				Name:   "join",
