@@ -2,11 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/cmd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/distributedSystem/01-cluster-join/node1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/distributedSystem/01-cluster-join/node2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/distributedSystem/01-cluster-join/node3.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/gColl.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/gColl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/buffer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/bytes_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/bytestrings/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/bytestrings/string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/filedir/dirs.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/filedir/dirs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/filedir/dirs_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/filedir/dirs_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/filedir/file_read.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/filedir/file_read.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/IO/filedir/file_write.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/IO/filedir/file_write.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/arraySlices/array.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/arraySlices/array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/conditional/condition.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/conditional/condition.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/functions/variadic.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/functions/variadic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/methods/methods.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/methods/methods.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/pointer/pointer.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/pointer/pointer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/structure/structure.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/structure/structure.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/types/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/types/maps.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/types/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/types/strings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/basic/variables/variable.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/basic/variables/variable.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/RWMutex.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/RWMutex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/bufferedChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/bufferedChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/cond.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/cond.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/data-confinement.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/data-confinement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/default-selection.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/default-selection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/fetchBiggestPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/fetchBiggestPage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutine-cancel.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutine-cancel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutine-leak.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutine-leak.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutine-size.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutine-size.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/goroutines.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/goroutines.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/mutex.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/mutex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/producer-consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/producer-consumer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/randomSelect.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/randomSelect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/rangeChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/rangeChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/select.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/unidirectionChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/unidirectionChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/concurrency/workerPool.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/concurrency/workerPool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/dump/stackTrace.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/dump/stackTrace.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/embeded.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/embeded.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/implement.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/implement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/interfaceAssertion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/interface/typeAssertion.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/interface/typeAssertion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/author/author.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/author/author.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/blog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/post/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/post/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/website/website.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/website/website.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/deferpkg/deferpkg.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/deferpkg/deferpkg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/deferpkg/deferredCases.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/deferpkg/deferredCases.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/errorpkg/cusom_errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/errorpkg/cusom_errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/errorpkg/error_handling.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/errorpkg/error_handling.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/firstclassfunction/firstclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/firstclassfunction/firstclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/firstclassfunction/practice.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/firstclassfunction/practice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/oop/employee/employee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/panicpkg/panicpkg.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/panicpkg/panicpkg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/polymorphism/poly.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/polymorphism/poly.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/reflection/reflection.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/reflection/reflection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/raft/kvstore.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/raft/kvstore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/error-handlingV1.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/error-handlingV1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/error-handlingV2.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/error-handlingV2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/generator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/greeter-context.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/greeter-context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/greeter-non-context.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/greeter-non-context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/or-channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/or-channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/pipeline-channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/pipeline-channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/pipeline-normal.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/pipeline-normal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/primer-finder-fan-out-fan-in.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern/primer-finder-naive.go" beforeDir="false" afterPath="$PROJECT_DIR$/pattern/primer-finder-naive.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,16 +131,16 @@
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
+      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\sourcecode\go\golang-example" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
       <recent name="E:\sourcecode\go\golang-example\misc\ws" />
       <recent name="E:\sourcecode\go\golang-example\misc" />
       <recent name="D:\sourcecode\go\golang_example\lang-related\IO\bytestrings" />
-      <recent name="D:\sourcecode\go\golang_example\lang-related" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
-      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,6 +191,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
+      <parameters value="node3 join 10.30.26.52:7946" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="golang_exam" />
@@ -261,7 +335,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="golang internals" />
     <MESSAGE value="refactor: change gRPC dir and add websocket demo" />
     <MESSAGE value="refactor: change module name to golang-example, modify grpc demo" />
     <MESSAGE value="fix: 删除注释代码" />
@@ -286,7 +359,8 @@
     <MESSAGE value="feat: add badger item TTL" />
     <MESSAGE value="feat: add golang wsam" />
     <MESSAGE value="refactor: 重构" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 重构" />
+    <MESSAGE value="feat: 增加 gorm 的 many to many 例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 gorm 的 many to many 例子" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
