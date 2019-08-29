@@ -3,54 +3,11 @@ package _1_cluster_join
 import (
 	"github.com/hashicorp/memberlist"
 	"github.com/urfave/cli"
-	"golang-example/cmd"
-
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 )
-
-func init() {
-	cmd.Cmds = append(cmd.Cmds, cli.Command{
-		Name:    "node1",
-		Aliases: []string{"n1"},
-
-		Usage:    "Start node1",
-		Action:   node1,
-		Category: "memberlist",
-	})
-
-	cmd.Cmds = append(cmd.Cmds, cli.Command{
-		Name:    "node2",
-		Aliases: []string{"n2"},
-
-		Usage:    "Join node2 to cluster",
-		Category: "memberlist",
-		Subcommands: []cli.Command{
-			{
-				Name:   "join",
-				Usage:  "join exist cluster",
-				Action: node2Join,
-			},
-		},
-	})
-
-	cmd.Cmds = append(cmd.Cmds, cli.Command{
-		Name:    "node3",
-		Aliases: []string{"n3"},
-
-		Usage:    "Join node3 to cluster",
-		Category: "memberlist",
-		Subcommands: []cli.Command{
-			{
-				Name:   "join",
-				Usage:  "join exist cluster",
-				Action: node3Join,
-			},
-		},
-	})
-}
 
 func node1(c *cli.Context) error {
 	conf := memberlist.DefaultLocalConfig()

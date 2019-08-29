@@ -9,6 +9,7 @@ import (
 	"os"
 
 	_ "golang-example/misc/distributedSystem/01-cluster-join"
+	_ "golang-example/misc/distributedSystem/02-channel-event"
 )
 
 func main() {
