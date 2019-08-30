@@ -4,7 +4,6 @@ import (
 	"github.com/urfave/cli"
 	"golang-example/cmd"
 
-	"fmt"
 	"log"
 	"os"
 
@@ -16,8 +15,10 @@ import (
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "golang example"
-	app.Description = "this is a set of demo of golang"
+	app.Name = "golangExample"
+	app.Usage = "golang 示例代码集"
+	app.UsageText = `golangExample.exe [global options] command [command options] [arguments...]`
+	app.Description = "提供了一些演示 golang 相关方面特性或库的使用方法"
 	app.Version = "0.5.0"
 	app.Author = "Ping"
 	app.Email = "navono007@gmail.com"
@@ -25,6 +26,4 @@ func main() {
 	if err := app.Run(os.Args); err != nil {
 		log.Fatal(err)
 	}
-
-	fmt.Println("main exit")
 }

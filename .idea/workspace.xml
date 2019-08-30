@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/golang_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/golang_example.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +50,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/work/2019/NG/sourcecode/ade_gateway" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
@@ -140,15 +137,6 @@
       <configuration name="TestModifyString in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -190,7 +178,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 实现 gRPC 的 server forward proxy" />
     <MESSAGE value="feat: 增加 ectd/raft 的例子" />
     <MESSAGE value="fix: 修改 ectd 为 master 分支" />
     <MESSAGE value="feat: add machinery demo" />
@@ -215,7 +202,8 @@
     <MESSAGE value="feat: 增加 memberlist 的例子，同时 format 整个目录" />
     <MESSAGE value="feat: 增加 memberlist 的例子" />
     <MESSAGE value="refactor: 将一些例子使用 cmd 重构" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 将一些例子使用 cmd 重构" />
+    <MESSAGE value="refactor: 重构 grom" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 重构 grom" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
