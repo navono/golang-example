@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/golang_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/golang_example.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/distributedSystem/01-cluster-join/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/distributedSystem/01-cluster-join/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/distributedSystem/02-channel-event/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/distributedSystem/02-channel-event/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gops/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gops/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.main">
+  <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -94,76 +93,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="grpc-client" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="E:/sourcecode/go/golang-example/misc/gRPC/client/main.go" />
-      <package value="golang_exam" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="grpc-proxy" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <parameters value="--backend_addr=localhost:8000 --backend_tls_noverify=true" />
-      <kind value="DIRECTORY" />
-      <filePath value="E:/sourcecode/go/golang-example/misc/gRPC/proxyServer/main.go" />
-      <package value="golang_exam" />
-      <directory value="E:/sourcecode/go/golang-example/misc/gRPC/proxyServer" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="cNode1" />
+      <parameters value="gorm" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="golang_exam" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="node1" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="golang_example" />
-      <working_directory value="E:/sourcecode/go/golang-example/misc/raft" />
-      <go_parameters value="-i" />
-      <parameters value="--id 1 --cluster http://127.0.0.1:12379,http://127.0.0.1:22379 --port 12380" />
-      <kind value="DIRECTORY" />
-      <filePath value="$PROJECT_DIR$/" />
-      <package value="golang_exam" />
-      <directory value="E:/sourcecode/go/golang-example/misc/raft" />
-      <method v="2" />
-    </configuration>
-    <configuration name="node2" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="golang_example" />
-      <working_directory value="E:/sourcecode/go/golang-example/misc/raft" />
-      <go_parameters value="-i" />
-      <parameters value="--id 3 --cluster http://192.168.200.100:12379,http://192.168.200.100:22379,http://192.168.200.101:12379 --port 12380" />
-      <kind value="DIRECTORY" />
-      <filePath value="$PROJECT_DIR$/" />
-      <package value="golang_exam" />
-      <directory value="E:/sourcecode/go/golang-example/misc/raft" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ws-client" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="E:/sourcecode/go/golang-example/misc/ws/client/main.go" />
-      <package value="golang_exam" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ws-proxy" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="golang_example" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="E:/sourcecode/go/golang-example/misc/ws/proxy/main.go" />
       <package value="golang_exam" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -179,15 +115,6 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Go Build.main" />
-      <item itemvalue="Go Build.ws-client" />
-      <item itemvalue="Go Build.grpc-client" />
-      <item itemvalue="Go Build.ws-proxy" />
-      <item itemvalue="Go Build.grpc-proxy" />
-      <item itemvalue="Go Build.node1" />
-      <item itemvalue="Go Build.node2" />
-    </list>
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
@@ -263,7 +190,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 删除注释代码" />
     <MESSAGE value="fix: 实现 gRPC 的 server forward proxy" />
     <MESSAGE value="feat: 增加 ectd/raft 的例子" />
     <MESSAGE value="fix: 修改 ectd 为 master 分支" />
@@ -288,7 +214,8 @@
     <MESSAGE value="feat: 增加 gorm 的 many to many 例子" />
     <MESSAGE value="feat: 增加 memberlist 的例子，同时 format 整个目录" />
     <MESSAGE value="feat: 增加 memberlist 的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 memberlist 的例子" />
+    <MESSAGE value="refactor: 将一些例子使用 cmd 重构" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 将一些例子使用 cmd 重构" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -445,6 +372,11 @@
           <url>file://$PROJECT_DIR$/misc/distributedSystem/02-channel-event/hash.go</url>
           <line>19</line>
           <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm/main.go</url>
+          <line>71</line>
+          <option name="timeStamp" value="118" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

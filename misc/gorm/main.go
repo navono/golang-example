@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
+
 	"github.com/urfave/cli"
 	"golang-example/cmd"
 )
@@ -46,8 +47,14 @@ func gormAction(c *cli.Context) error {
 }
 
 func InitSqlite() {
+	//sql.Register("sqlite3_with_extensions", &sqlite3.SQLiteDriver{
+	//	Extensions: []string{
+	//		"sqlite_userauth",
+	//	},
+	//})
+
 	db, err = gorm.Open("sqlite3",
-		fmt.Sprintf("config.db?_auth&_auth_user=%s&_auth_pass=%s&_auth_crypt=sha256", "admin", "123456"))
+		fmt.Sprintf("goexample.db?_auth&_auth_user=%s&_auth_pass=%s&_auth_crypt=sha256", "admin", "123456"))
 
 	db.DB().SetMaxIdleConns(3)
 	db.LogMode(true)
@@ -61,7 +68,12 @@ func AutoMigrate() {
 }
 
 func Setup() {
-	if db.HasTable(&User{}) {
+	var u User
+	db.Where(&User{
+		Name: "user1",
+	}).First(&u)
+
+	if db.HasTable(&User{}) && u.Name == "user1" {
 		return
 	}
 
