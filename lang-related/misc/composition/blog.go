@@ -2,9 +2,9 @@ package composition
 
 import (
 	"fmt"
-	"golangTutorialSeries/lang-related/misc/composition/author"
-	"golangTutorialSeries/lang-related/misc/composition/post"
-	"golangTutorialSeries/lang-related/misc/composition/website"
+	"golang-example/lang-related/misc/composition/author"
+	"golang-example/lang-related/misc/composition/post"
+	"golang-example/lang-related/misc/composition/website"
 )
 
 func init() {

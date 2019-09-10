@@ -2,7 +2,7 @@ package website
 
 import (
 	"fmt"
-	"golangTutorialSeries/lang-related/misc/composition/post"
+	"golang-example/lang-related/misc/composition/post"
 )
 
 // WebSite represent a web site

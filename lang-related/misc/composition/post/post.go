@@ -2,7 +2,7 @@ package post
 
 import (
 	"fmt"
-	author2 "golangTutorialSeries/lang-related/misc/composition/author"
+	author2 "golang-example/lang-related/misc/composition/author"
 )
 
 // Post represent a post

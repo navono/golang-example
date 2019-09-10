@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="POSTPONE_SUITABLE_CONFIGURATIONS_SEARCH" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <treeState key="project">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/json-operation/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/json-operation/test.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/blog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/post/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/post/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/website/website.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/website/website.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/mock/student_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/mock/student_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +89,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="F:/work/2019/NG/sourcecode/ade_gateway" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
@@ -94,7 +133,17 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="gorm" />
+      <parameters value="json" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="golang_exam" />
@@ -112,6 +161,16 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
@@ -178,7 +237,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 ectd/raft 的例子" />
     <MESSAGE value="fix: 修改 ectd 为 master 分支" />
     <MESSAGE value="feat: add machinery demo" />
     <MESSAGE value="feat: raft example" />
@@ -203,7 +261,8 @@
     <MESSAGE value="feat: 增加 memberlist 的例子" />
     <MESSAGE value="refactor: 将一些例子使用 cmd 重构" />
     <MESSAGE value="refactor: 重构 grom" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 重构 grom" />
+    <MESSAGE value="refactor: 修改启动界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 修改启动界面" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -363,8 +422,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/misc/gorm/main.go</url>
-          <line>71</line>
-          <option name="timeStamp" value="118" />
+          <line>168</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/json-operation/main.go</url>
+          <line>37</line>
+          <option name="timeStamp" value="139" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

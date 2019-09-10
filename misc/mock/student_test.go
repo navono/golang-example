@@ -3,7 +3,7 @@ package mock
 import (
 	"fmt"
 	"github.com/golang/mock/gomock"
-	mock_mockDemo "golang-example/misc/mockDemo/mock"
+	mock_mockDemo "golang-example/misc/mock/mock"
 	"testing"
 )
 

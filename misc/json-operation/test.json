@@ -1,0 +1,23 @@
+{
+  "projectID": "175e9551-a268-4f36-9ece-57dfe273a2dd",
+  "nets": [
+    {
+      "name": "test_net",
+      "id": "5e45f95f-b039-4b10-b737-7663bf2581c3",
+      "type": 1,
+      "time_sources": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "name": "test_net2",
+      "id": "aaaaaaaaa-b039-4b10-b737-7663bf2581c3",
+      "type": 1,
+      "time_sources": [
+        "1",
+        "2"
+      ]
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import (
 	_ "golang-example/misc/distributedSystem/02-channel-event"
 	_ "golang-example/misc/gops"
 	_ "golang-example/misc/gorm"
+	_ "golang-example/misc/json-operation"
 )
 
 func main() {
