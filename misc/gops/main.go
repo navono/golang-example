@@ -17,7 +17,7 @@ func init() {
 
 		Usage:    "Start exe with goAgent",
 		Action:   goAgent,
-		Category: "Perf",
+		Category: "perf",
 	})
 }
 

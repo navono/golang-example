@@ -32,17 +32,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/json-operation/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/json-operation/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang-related/misc/sort/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/goreleaser/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/blog.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/blog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/post/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/post/post.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang-related/misc/composition/website/website.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/composition/website/website.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/mock/student_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/mock/student_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gops/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gops/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/json-operation/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gabs/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/json-operation/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gabs/test.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +89,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/work/2019/NG/sourcecode/unifiedConfigProxy" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
@@ -133,7 +133,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="json" />
+      <parameters value="sort" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -237,7 +237,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 修改 ectd 为 master 分支" />
     <MESSAGE value="feat: add machinery demo" />
     <MESSAGE value="feat: raft example" />
     <MESSAGE value="feat: mock" />
@@ -262,7 +261,8 @@
     <MESSAGE value="refactor: 将一些例子使用 cmd 重构" />
     <MESSAGE value="refactor: 重构 grom" />
     <MESSAGE value="refactor: 修改启动界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 修改启动界面" />
+    <MESSAGE value="feat: add json and modify gorm example" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add json and modify gorm example" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -426,9 +426,24 @@
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/json-operation/main.go</url>
-          <line>37</line>
-          <option name="timeStamp" value="139" />
+          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
+          <line>61</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
+          <line>64</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
+          <line>54</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
+          <line>55</line>
+          <option name="timeStamp" value="144" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

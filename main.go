@@ -7,11 +7,13 @@ import (
 	"log"
 	"os"
 
+	_ "golang-example/lang-related/misc/sort"
 	_ "golang-example/misc/distributedSystem/01-cluster-join"
 	_ "golang-example/misc/distributedSystem/02-channel-event"
+	_ "golang-example/misc/gabs"
 	_ "golang-example/misc/gops"
+	_ "golang-example/misc/goreleaser"
 	_ "golang-example/misc/gorm"
-	_ "golang-example/misc/json-operation"
 )
 
 func main() {
