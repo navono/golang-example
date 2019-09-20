@@ -32,13 +32,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/xml/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang-related/misc/sort/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/sort/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gabs/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/json/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gabs/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/misc/json/test.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,16 +102,16 @@
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
+      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\sourcecode\go\golang-example" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
       <recent name="E:\sourcecode\go\golang-example\misc\ws" />
       <recent name="E:\sourcecode\go\golang-example\misc" />
       <recent name="D:\sourcecode\go\golang_example\lang-related\IO\bytestrings" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
-      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,7 +141,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="json" />
+      <parameters value="x file" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -227,7 +225,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: raft example" />
     <MESSAGE value="feat: mock" />
     <MESSAGE value="feat: 增加 gops 示例代码" />
     <MESSAGE value="chore: IDE 配置文件" />
@@ -252,7 +249,8 @@
     <MESSAGE value="refactor: 修改启动界面" />
     <MESSAGE value="feat: add json and modify gorm example" />
     <MESSAGE value="fix: 增加 sort 和调整 gabs 的实例" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 增加 sort 和调整 gabs 的实例" />
+    <MESSAGE value="refactor: gabs to json" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: gabs to json" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -431,9 +429,14 @@
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/json/main.go</url>
-          <line>70</line>
-          <option name="timeStamp" value="154" />
+          <url>file://$PROJECT_DIR$/misc/xml/main.go</url>
+          <line>79</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/xml/main.go</url>
+          <line>62</line>
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="se_project">
+	<control>
+		<ctrlarea name="CA0" description="控制域0" series="ECS-700SE" ID="0xac1400ff"><!--ID实际是IP地址:172.20.0.*, name,description,series,ID可动态修改-->
+			<ctrlstation name="CS2" description="控制站_172_20_0_2" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="2" /><!--除了type都可动态修改-->
+			<ctrlstation name="CS4" description="控制站_172_20_0_4" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="4" />
+			<ctrlstation name="CS6" description="控制站_172_20_0_6" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="6" />
+			<ctrlstation name="CS8" description="控制站_172_20_0_8" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="8" />
+			<ctrlstation name="CS10" description="控制站_172_20_0_10" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="10" />
+			<ctrlstation name="CS12" description="控制站_172_20_0_12" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="12" />
+			<ctrlstation name="CS14" description="控制站_172_20_0_14" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="14" />
+			<ctrlstation name="CS16" description="控制站_172_20_0_16" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="16" />
+			<ctrlstation name="CS18" description="控制站_172_20_0_18" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="18" />
+			<ctrlstation name="CS20" description="控制站_172_20_0_20" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="20" />
+			<ctrlstation name="CS22" description="控制站_172_20_0_22" detaildesc="" series="ECS-700SE" type="FCU811-S01" addr="22" />
+			<taggroup name="位号分组 0" ID="0"/>
+			<taggroup name="位号分组 1" ID="1"/><!--默认位号分组0~31，名称可改-->
+			<taggroup name="位号分组 2" ID="2"/>
+			<taggroup name="位号分组 3" ID="3"/>
+			<taggroup name="位号分组 4" ID="4"/>
+			<taggroup name="位号分组 5" ID="5"/>
+			<taggroup name="位号分组 6" ID="6"/>
+			<taggroup name="位号分组 7" ID="7"/>
+			<taggroup name="位号分组 8" ID="8"/>
+			<taggroup name="位号分组 9" ID="9"/>
+			<taggroup name="位号分组 10" ID="10"/>
+			<taggroup name="位号分组 11" ID="11"/>
+			<taggroup name="位号分组 12" ID="12"/>
+			<taggroup name="位号分组 13" ID="13"/>
+			<taggroup name="位号分组 14" ID="14"/>
+			<taggroup name="位号分组 15" ID="15"/>
+			<taggroup name="位号分组 16" ID="16"/>
+			<taggroup name="位号分组 17" ID="17"/>
+			<taggroup name="位号分组 18" ID="18"/>
+			<taggroup name="位号分组 19" ID="19"/>
+			<taggroup name="位号分组 20" ID="20"/>
+			<taggroup name="位号分组 21" ID="21"/>
+			<taggroup name="位号分组 22" ID="22"/>
+			<taggroup name="位号分组 23" ID="23"/>
+			<taggroup name="位号分组 24" ID="24"/>
+			<taggroup name="位号分组 25" ID="25"/>
+			<taggroup name="位号分组 26" ID="26"/>
+			<taggroup name="位号分组 27" ID="27"/>
+			<taggroup name="位号分组 28" ID="28"/>
+			<taggroup name="位号分组 29" ID="29"/>
+			<taggroup name="位号分组 30" ID="30"/>
+			<taggroup name="位号分组 31" ID="31"/>
+		</ctrlarea>
+	</control>
+	<config decimaldigits="2"> <!--全局小数位数配置-->
+	</config>
+</project>

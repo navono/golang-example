@@ -7,6 +7,7 @@ require (
 	github.com/Jeffail/gabs/v2 v2.1.0
 	github.com/casbin/casbin v1.9.1
 	github.com/casbin/xorm-adapter v0.0.0-20190716004226-a317737a1007
+	github.com/clbanning/mxj v1.8.4
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
