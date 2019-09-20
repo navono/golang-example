@@ -30,6 +30,7 @@ require (
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0 // indirect
 	github.com/minio/highwayhash v1.0.0 // indirect
+	github.com/mitchellh/mapstructure v1.1.2
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76
 	github.com/navono/go-logger v0.0.0-20190809011006-51a56006c815
 	github.com/prometheus/client_golang v1.1.0 // indirect
@@ -40,6 +41,7 @@ require (
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/pflag v1.0.3
 	github.com/stretchr/testify v1.4.0
+	github.com/thoas/go-funk v0.4.0
 	github.com/urfave/cli v1.21.0
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
 	go.uber.org/zap v1.10.0

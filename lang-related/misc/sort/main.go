@@ -6,6 +6,8 @@ import (
 	"golang-example/cmd"
 	"sort"
 	"strings"
+
+	"github.com/thoas/go-funk"
 )
 
 func init() {
@@ -48,15 +50,29 @@ func sortAction(c *cli.Context) error {
 			Age: 5,
 		}, {
 			Id:  "3",
-			Age: 8,
+			Age: 15,
+		}, {
+			Id:  "4",
+			Age: 9,
 		},
 	}
 
-	sort.Sort(peopleSlice(students))
-	fmt.Println(students)
+	//sort.Sort(peopleSlice(students))
+	//fmt.Println(students)
+
+	s := funk.Find(students, func(p people) bool {
+		return strings.Compare(p.Id, "3") == 0
+	})
+
+	if s != nil {
+		i := funk.IndexOf(students, s)
+		fmt.Println(i)
+	}
+
+	fmt.Println(s)
 
 	idx := sort.Search(len(students), func(i int) bool {
-		return strings.Compare(students[i].Id, "3") == 0
+		return strings.Compare(students[i].Id, "2") == 0
 	})
 
 	fmt.Println(idx)

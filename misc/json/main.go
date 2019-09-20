@@ -1,13 +1,28 @@
-package gabs
+package json
 
 import (
 	"errors"
 	"fmt"
 	"github.com/Jeffail/gabs/v2"
+	"github.com/mitchellh/mapstructure"
 	"github.com/urfave/cli"
 	"golang-example/cmd"
 	"io/ioutil"
 )
+
+type net struct {
+	Name        string        `json:"name,omitempty"`
+	Id          string        `json:"id,omitempty"`
+	Type        int32         `json:"type,omitempty"`
+	Segments    []*netSegment `json:"segments,omitempty"`
+	TimeSources []string      `json:"time_sources,omitempty"`
+}
+
+type netSegment struct {
+	Name     string `json:"name,omitempty"`
+	Ip       string `json:"ip,omitempty"`
+	Disabled bool   `json:"disabled,omitempty"`
+}
 
 func init() {
 	cmd.Cmds = append(cmd.Cmds, cli.Command{
@@ -21,7 +36,7 @@ func init() {
 }
 
 func jsonAction(c *cli.Context) error {
-	fileContent, _ := readFile("./misc/gabs/test.json")
+	fileContent, _ := readFile("./misc/json/test.json")
 	jsonParsed, err := gabs.ParseJSON(fileContent)
 
 	if err != nil {
@@ -50,17 +65,8 @@ func jsonAction(c *cli.Context) error {
 }
 `))
 
-	_ = jsonParsed.MergeFn(modifyJson, func(destination, source interface{}) interface{} {
-		// 从 destination 找到 source 相应中的数据，然后替换到 destination 中
-		switch u := destination.(type) {
-		case string:
-			fmt.Println(u)
-		case *[]interface{}:
-			fmt.Println(u)
-		}
-
-		return source
-	})
+	var n []net
+	_ = mapstructure.Decode(modifyJson.S("nets").Data(), n)
 
 	fmt.Println(jsonParsed)
 	return nil

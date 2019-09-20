@@ -32,23 +32,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lang-related/misc/sort/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/goreleaser/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang-related/misc/sort/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/lang-related/misc/sort/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gops/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gops/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/json-operation/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gabs/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/json-operation/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gabs/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gabs/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/json/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gabs/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/misc/json/test.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="learnGolang" />
@@ -89,21 +99,21 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="F:/work/2019/NG/sourcecode/unifiedConfigProxy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
-      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\sourcecode\go\golang-example" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
       <recent name="E:\sourcecode\go\golang-example\misc\ws" />
       <recent name="E:\sourcecode\go\golang-example\misc" />
       <recent name="D:\sourcecode\go\golang_example\lang-related\IO\bytestrings" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
+      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -133,7 +143,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="sort" />
+      <parameters value="json" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -176,26 +186,6 @@
     <option name="AUTOSCROLL_MODE" value="false" />
     <option name="ACTIVE_ACTIONS" value=",EXPORTABILITY_SORTER,ALPHA_COMPARATOR" />
   </component>
-  <component name="TestHistory">
-    <history-entry file="TestBuffer_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 11h 06m 57s.xml">
-      <configuration name="TestBuffer in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestToString_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 50m 25s.xml">
-      <configuration name="TestToString in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestWorkWithBuffer_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 55m 37s.xml">
-      <configuration name="TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestWorkWithBuffer_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 55m 49s.xml">
-      <configuration name="TestWorkWithBuffer in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="string_test_go - 2019.06.02 at 15h 59m 00s.xml">
-      <configuration name="string_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestModifyString_in_golang_example_lang-related_IO_bytestrings - 2019.06.02 at 15h 59m 12s.xml">
-      <configuration name="TestModifyString in golang_example/lang-related/IO/bytestrings" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -237,7 +227,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add machinery demo" />
     <MESSAGE value="feat: raft example" />
     <MESSAGE value="feat: mock" />
     <MESSAGE value="feat: 增加 gops 示例代码" />
@@ -262,7 +251,8 @@
     <MESSAGE value="refactor: 重构 grom" />
     <MESSAGE value="refactor: 修改启动界面" />
     <MESSAGE value="feat: add json and modify gorm example" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add json and modify gorm example" />
+    <MESSAGE value="fix: 增加 sort 和调整 gabs 的实例" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 增加 sort 和调整 gabs 的实例" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -426,24 +416,24 @@
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
-          <line>61</line>
-          <option name="timeStamp" value="140" />
+          <url>file://$PROJECT_DIR$/lang-related/misc/sort/main.go</url>
+          <line>79</line>
+          <option name="timeStamp" value="147" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
-          <line>64</line>
-          <option name="timeStamp" value="142" />
+          <url>file://$PROJECT_DIR$/lang-related/misc/sort/main.go</url>
+          <line>73</line>
+          <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
-          <line>54</line>
-          <option name="timeStamp" value="143" />
+          <url>file://$PROJECT_DIR$/lang-related/misc/sort/main.go</url>
+          <line>62</line>
+          <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/gabs/main.go</url>
-          <line>55</line>
-          <option name="timeStamp" value="144" />
+          <url>file://$PROJECT_DIR$/misc/json/main.go</url>
+          <line>70</line>
+          <option name="timeStamp" value="154" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
