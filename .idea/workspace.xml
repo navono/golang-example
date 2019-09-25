@@ -32,12 +32,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/watermill/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/bitcask_db/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/bitcask_db/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/watermill/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +140,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="bh" />
+      <parameters value="upg" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -226,7 +224,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: IDE 配置文件" />
     <MESSAGE value="feat: go concurrent quiz" />
     <MESSAGE value="feat: add badger demo" />
     <MESSAGE value="feat: add expVarMon 监控 app 的运行数据" />
@@ -251,7 +248,8 @@
     <MESSAGE value="refactor: gabs to json" />
     <MESSAGE value="feat: 增加 xml 的解析与处理" />
     <MESSAGE value="feat: 增加 bolthold 实例" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 bolthold 实例" />
+    <MESSAGE value="feat: 增加 watermill 实例" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 watermill 实例" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -473,6 +471,31 @@
           <url>file://$PROJECT_DIR$/misc/bolt_db/main.go</url>
           <line>115</line>
           <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/upgrade/main.go</url>
+          <line>50</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/jpillora/overseer@v0.0.0-20190427034852-ce9055846616/sys_windows.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/upgrade/main.go</url>
+          <line>83</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/upgrade/main.go</url>
+          <line>95</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/upgrade/main.go</url>
+          <line>36</line>
+          <option name="timeStamp" value="210" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -28,6 +28,11 @@ func wwAction(c *cli.Context) error {
 		gochannel.Config{},
 		watermill.NewStdLogger(false, false),
 	)
+	defer func() {
+		if err := pubSub.Close(); err != nil {
+			panic(err)
+		}
+	}()
 
 	messages, err := pubSub.Subscribe(context.Background(), "example.topic")
 	if err != nil {
@@ -35,7 +40,6 @@ func wwAction(c *cli.Context) error {
 	}
 
 	go process(messages)
-
 	publishMessages(pubSub)
 	return nil
 }

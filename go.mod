@@ -6,7 +6,6 @@ require (
 	cloud.google.com/go v0.44.3 // indirect
 	github.com/Jeffail/gabs/v2 v2.1.0
 	github.com/ThreeDotsLabs/watermill v1.0.0
-	github.com/attic-labs/noms v0.0.0-20190912021348-d7da7d7b013b
 	github.com/beevik/etree v1.1.0
 	github.com/casbin/casbin v1.9.1
 	github.com/casbin/xorm-adapter v0.0.0-20190716004226-a317737a1007
