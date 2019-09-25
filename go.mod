@@ -6,6 +6,7 @@ require (
 	cloud.google.com/go v0.44.3 // indirect
 	github.com/Jeffail/gabs/v2 v2.1.0
 	github.com/ThreeDotsLabs/watermill v1.0.0
+	github.com/aws/aws-sdk-go v1.24.5 // indirect
 	github.com/beevik/etree v1.1.0
 	github.com/casbin/casbin v1.9.1
 	github.com/casbin/xorm-adapter v0.0.0-20190716004226-a317737a1007
@@ -27,6 +28,7 @@ require (
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/hashicorp/memberlist v0.1.4
 	github.com/jinzhu/gorm v1.9.10
+	github.com/jpillora/overseer v0.0.0-20190427034852-ce9055846616
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0 // indirect
