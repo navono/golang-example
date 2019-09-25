@@ -1,11 +1,14 @@
 package xml
 
 import (
+	"golang-example/cmd"
+
 	"fmt"
+	"strconv"
+
+	"github.com/beevik/etree"
 	"github.com/clbanning/mxj"
 	"github.com/urfave/cli"
-	"golang-example/cmd"
-	"strconv"
 )
 
 func init() {
@@ -81,13 +84,42 @@ func basicXmlAction(c *cli.Context) error {
 }
 
 func fileXmlAction(c *cli.Context) error {
-	maps, err := mxj.NewMapsFromXmlFile("./misc/xml/Project.xml")
-	if err != nil {
-		return err
-	}
-	project := maps[0]
+	filepath := "E:\\data\\configProxy\\project2\\Control\\CA0\\车间1"
+	strLocalProjectPath := "E:\\data\\configProxy\\project2"
+	addr := "addr:0.2"
 
-	fmt.Println(project)
+	args := fmt.Sprintf(`-open filepath:"%s" %s user:"admin" strLocalProjectPath:"%s"  Series:"ECS-700SE" CSType:"FCU811-S01"`,
+		filepath, addr, strLocalProjectPath)
+	fmt.Print(args)
+
+	doc := etree.NewDocument()
+	if err := doc.ReadFromFile("./misc/xml/Project.xml"); err != nil {
+		panic(err)
+	}
+
+	root := doc.SelectElement("project")
+	fmt.Println("ROOT element:", root.Tag)
+
+	controller := root.SelectElement("control")
+	fmt.Println("Controller element:", controller.Tag)
+
+	//controller.AddChild()
+	domain := controller.CreateElement("ctrlarea")
+	domain.Attr = []etree.Attr{
+		{
+			Space: "",
+			Key:   "name",
+			Value: "CA1",
+		},
+	}
+	fmt.Println(domain)
+
+	doc.IndentTabs()
+	doc.Indent(2)
+	err := doc.WriteToFile("./misc/xml/Project1.xml")
+	if err != nil {
+		panic(err)
+	}
 	return nil
 }
 

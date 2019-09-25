@@ -5,12 +5,13 @@ go 1.12
 require (
 	cloud.google.com/go v0.44.3 // indirect
 	github.com/Jeffail/gabs/v2 v2.1.0
+	github.com/attic-labs/noms v0.0.0-20190912021348-d7da7d7b013b
+	github.com/beevik/etree v1.1.0
 	github.com/casbin/casbin v1.9.1
 	github.com/casbin/xorm-adapter v0.0.0-20190716004226-a317737a1007
 	github.com/clbanning/mxj v1.8.4
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f // indirect
-	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/dgraph-io/badger v1.6.0
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/go-xorm/xorm v0.7.5 // indirect
@@ -27,13 +28,13 @@ require (
 	github.com/hashicorp/memberlist v0.1.4
 	github.com/jinzhu/gorm v1.9.10
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
-	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0 // indirect
 	github.com/minio/highwayhash v1.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76
 	github.com/navono/go-logger v0.0.0-20190809011006-51a56006c815
+	github.com/prologic/bitcask v0.3.4
 	github.com/prometheus/client_golang v1.1.0 // indirect
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4 // indirect
 	github.com/prometheus/procfs v0.0.4 // indirect
@@ -43,7 +44,9 @@ require (
 	github.com/spf13/pflag v1.0.3
 	github.com/stretchr/testify v1.4.0
 	github.com/thoas/go-funk v0.4.0
+	github.com/timshannon/bolthold v0.0.0-20190812165541-a85bcc049a2e
 	github.com/urfave/cli v1.21.0
+	go.etcd.io/bbolt v1.3.3
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
 	go.uber.org/zap v1.10.0
 	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472 // indirect
