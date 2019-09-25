@@ -32,15 +32,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/bitcask_db/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/bolt_db/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/bolt_db/storer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/watermill/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/badger/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/badger_db/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/xml/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/xml/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/bitcask_db/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/bitcask_db/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +226,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 gops 示例代码" />
     <MESSAGE value="chore: IDE 配置文件" />
     <MESSAGE value="feat: go concurrent quiz" />
     <MESSAGE value="feat: add badger demo" />
@@ -254,7 +250,8 @@
     <MESSAGE value="fix: 增加 sort 和调整 gabs 的实例" />
     <MESSAGE value="refactor: gabs to json" />
     <MESSAGE value="feat: 增加 xml 的解析与处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 xml 的解析与处理" />
+    <MESSAGE value="feat: 增加 bolthold 实例" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 bolthold 实例" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

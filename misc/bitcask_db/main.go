@@ -13,7 +13,7 @@ func init() {
 		Name:    "bitcask",
 		Aliases: []string{"bc"},
 
-		Usage:    "Start exe with goAgent",
+		Usage:    "Demonstration of bitcask db",
 		Action:   bcAction,
 		Category: "DB",
 	})

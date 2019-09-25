@@ -16,6 +16,7 @@ import (
 	_ "golang-example/misc/goreleaser"
 	_ "golang-example/misc/gorm"
 	_ "golang-example/misc/json"
+	_ "golang-example/misc/watermill"
 	_ "golang-example/misc/xml"
 )
 
