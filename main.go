@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 
+	_ "golang-example/app/go-kit"
 	_ "golang-example/lang-related/misc/sort"
 	_ "golang-example/misc/bitcask_db"
 	_ "golang-example/misc/bolt_db"
