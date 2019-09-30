@@ -106,10 +106,22 @@ func bhAction(c *cli.Context) error {
 		panic(err)
 	}
 
+	// Delete
+	deleteItem(store, "key3")
+
 	// Find
 	findItem(store)
 
 	return nil
+}
+
+func deleteItem(store *bh.Store, key string) {
+	//var pk User
+	//bktKey := newStorer(pk, msgPackEncoder)
+
+	if err := store.Delete(key, &User{}); err != nil {
+		fmt.Println(err)
+	}
 }
 
 func fillDB(store *bh.Store) {
@@ -249,7 +261,7 @@ func transactUpdate(store *bh.Store) {
 
 func findItem(store *bh.Store) {
 	var userList []User
-	err := store.Find(&userList, bh.Where("Name").Eq("abc"))
+	err := store.Find(&userList, bh.Where("Name").Eq("ping"))
 	if err != nil {
 		fmt.Println(err.Error())
 	}
