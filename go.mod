@@ -53,6 +53,7 @@ require (
 	github.com/thoas/go-funk v0.4.0
 	github.com/timshannon/bolthold v0.0.0-20190812165541-a85bcc049a2e
 	github.com/urfave/cli v1.21.0
+	github.com/vmihailenco/msgpack/v4 v4.2.0
 	go.etcd.io/bbolt v1.3.3
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
 	go.uber.org/zap v1.10.0

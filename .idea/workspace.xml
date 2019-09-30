@@ -32,18 +32,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/go-kit/demoContext.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/go-kit/docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/go-kit/docker/prometheus.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/go-kit/endpoint.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/go-kit/instrument.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/go-kit/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/go-kit/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/go-kit/transport.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/bolt_db/db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/bolt_db/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/bolt_db/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +80,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/misc/gRPC/client/main.go" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="KKqCDzSo" />
+  </component>
   <component name="ProjectId" id="1OfQRWGRwDJqkufzQ7B9kcqdGmp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -106,7 +102,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="F:/work/2019/NG/sourcecode/unifiedConfigProxy" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -148,7 +144,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="kit" />
+      <parameters value="bh" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -232,7 +228,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add expVarMon 监控 app 的运行数据" />
     <MESSAGE value="refactor: 将文件夹名称去除 Demo 字眼" />
     <MESSAGE value="feat: 增加 casbin 示例" />
     <MESSAGE value="docs: 增加 casbin README 的说明" />
@@ -257,7 +252,8 @@
     <MESSAGE value="feat: 增加 watermill 实例" />
     <MESSAGE value="fix: 增加关闭" />
     <MESSAGE value="feat: 增加 overseer 的 upgrade 方案" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 overseer 的 upgrade 方案" />
+    <MESSAGE value="feat: 增加 go-kit 实例" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 go-kit 实例" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -476,11 +472,6 @@
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/bolt_db/main.go</url>
-          <line>115</line>
-          <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/misc/upgrade/main.go</url>
           <line>36</line>
           <option name="timeStamp" value="210" />
@@ -504,6 +495,21 @@
           <url>file://$USER_HOME$/go/pkg/mod/github.com/go-kit/kit@v0.8.0/transport/http/server.go</url>
           <line>50</line>
           <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/bolt_db/main.go</url>
+          <line>137</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/bolt_db/main.go</url>
+          <line>191</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/bolt_db/main.go</url>
+          <line>252</line>
+          <option name="timeStamp" value="263" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
