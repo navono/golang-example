@@ -16,7 +16,7 @@ func init() {
 		Name:    "upgrade",
 		Aliases: []string{"upg"},
 
-		Usage:    "Start exe with goAgent",
+		Usage:    "Start exe with upgrade",
 		Action:   upgAgent,
 		Category: "misc",
 	})

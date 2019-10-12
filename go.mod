@@ -4,9 +4,13 @@ go 1.12
 
 require (
 	cloud.google.com/go v0.44.3 // indirect
+	github.com/DataDog/zstd v1.4.1 // indirect
 	github.com/Jeffail/gabs/v2 v2.1.0
+	github.com/Sereal/Sereal v0.0.0-20190618215532-0b8ac451a863 // indirect
 	github.com/ThreeDotsLabs/watermill v1.0.0
+	github.com/VividCortex/gohistogram v1.0.0 // indirect
 	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
+	github.com/asdine/storm v2.1.2+incompatible
 	github.com/aws/aws-sdk-go v1.24.5 // indirect
 	github.com/beevik/etree v1.1.0
 	github.com/casbin/casbin v1.9.1
@@ -46,13 +50,15 @@ require (
 	github.com/satori/go.uuid v1.2.0
 	github.com/serialx/hashring v0.0.0-20190515033939-7706f26af194
 	github.com/sirupsen/logrus v1.4.2
+	github.com/smartystreets/goconvey v0.0.0-20190731233626-505e41936337 // indirect
 	github.com/sony/gobreaker v0.4.1 // indirect
 	github.com/spf13/pflag v1.0.3
 	github.com/streadway/handy v0.0.0-20190108123426-d5acb3125c2a // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/thoas/go-funk v0.4.0
-	github.com/timshannon/bolthold v0.0.0-20190812165541-a85bcc049a2e
+	github.com/timshannon/bolthold v0.0.0-20191009161117-ccb01ed9dec4
 	github.com/urfave/cli v1.21.0
+	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/vmihailenco/msgpack/v4 v4.2.0
 	go.etcd.io/bbolt v1.3.3
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d

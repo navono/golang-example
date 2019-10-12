@@ -11,7 +11,7 @@ func init() {
 		Name:    "releaser",
 		Aliases: []string{"rl"},
 
-		Usage:    "Start exe with goAgent",
+		Usage:    "Start exe with goreleaser",
 		Action:   releaseAction,
 		Category: "misc",
 	})

@@ -18,7 +18,7 @@ func init() {
 		Name:    "bolthold",
 		Aliases: []string{"bh"},
 
-		Usage:    "Start exe with goAgent",
+		Usage:    "Start exe with bolthold",
 		Action:   bhAction,
 		Category: "DB",
 	})
@@ -90,7 +90,6 @@ func bhAction(c *cli.Context) error {
 	if err != nil {
 		panic(err)
 	}
-
 	defer store.Close()
 
 	// fill data
@@ -211,6 +210,9 @@ func transactUpdate(store *bh.Store) {
 	if err != nil {
 		panic(err)
 	}
+
+	//tx.Bucket()
+	//bkt, err := tx.CreateBucketIfNotExists(testBucket)
 
 	l1 := Language{
 		ID:     uuid.NewV4().String(),

@@ -11,6 +11,7 @@ import (
 	_ "golang-example/lang-related/misc/sort"
 	_ "golang-example/misc/bitcask_db"
 	_ "golang-example/misc/bolt_db"
+	_ "golang-example/misc/bolt_storm"
 	_ "golang-example/misc/distributedSystem/01-cluster-join"
 	_ "golang-example/misc/distributedSystem/02-channel-event"
 	_ "golang-example/misc/gops"
@@ -20,6 +21,7 @@ import (
 	_ "golang-example/misc/upgrade"
 	_ "golang-example/misc/watermill"
 	_ "golang-example/misc/xml"
+	_ "golang-example/pattern"
 )
 
 func main() {

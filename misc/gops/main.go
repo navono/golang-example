@@ -15,7 +15,7 @@ func init() {
 		Name:    "gops",
 		Aliases: []string{"ps"},
 
-		Usage:    "Start exe with goAgent",
+		Usage:    "Start exe with gops",
 		Action:   goAgent,
 		Category: "perf",
 	})

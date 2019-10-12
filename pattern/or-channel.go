@@ -2,8 +2,14 @@ package pattern
 
 import (
 	"fmt"
+	"github.com/urfave/cli"
 	"time"
 )
+
+func orAction(c *cli.Context) error {
+	orPattern()
+	return nil
+}
 
 func orPattern() {
 	var or func(channels ...<-chan interface{}) <-chan interface{}
@@ -57,8 +63,4 @@ func orPattern() {
 	)
 
 	fmt.Printf("Done after: %v", time.Since(start))
-}
-
-func main() {
-	orPattern()
 }
