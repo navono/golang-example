@@ -7,7 +7,6 @@ import (
 
 	"fmt"
 	"log"
-	"time"
 )
 
 func init() {
@@ -27,6 +26,5 @@ func goAgent(c *cli.Context) error {
 		log.Fatal(err)
 	}
 
-	time.Sleep(time.Hour)
 	return nil
 }

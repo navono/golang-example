@@ -50,27 +50,30 @@ type Level2 struct {
 }
 
 func smAction(c *cli.Context) error {
-	fmt.Println(GetGID())
+	//fmt.Println(GetGID())
 
 	options := []func(*storm.Options) error{
 		storm.Codec(msgpack.Codec),
-		storm.BoltOptions(0666, &bbolt.Options{Timeout: 1 * time.Second}),
+		storm.BoltOptions(0600, &bbolt.Options{Timeout: 1 * time.Second}),
 	}
 
 	db, err := storm.Open("./misc/bolt_storm/db", options...)
 	if err != nil {
 		fmt.Println(err)
+		return err
 	}
 
 	// 填充
 	fillData(db, "bucket1", "Name1")
 	fillData(db, "bucket2", "Name2")
 
+	// 更新
+	for i := 1; i < 3; i++ {
+		go updateData(db, i)
+	}
+
 	// 查询
 	queryData(db)
-
-	// 更新
-	updateData(db)
 
 	// 删除
 	deleteData(db)
@@ -86,6 +89,7 @@ func fillData(db *storm.DB, bucketName, name string) {
 	if err != nil {
 		fmt.Println(err)
 	}
+	defer node.Rollback()
 
 	err = node.From(bucketName).Save(&Nested{
 		Name: name,
@@ -102,80 +106,74 @@ func fillData(db *storm.DB, bucketName, name string) {
 		Pointer: &Nest{Name: "Xiv"},
 	})
 	if err != nil {
-		_ = node.Rollback()
 		fmt.Println(err)
 		return
 	}
 
-	err = node.Commit()
-	if err != nil {
-		_ = node.Rollback()
-		fmt.Println(err)
-		return
-	}
+	_ = node.Commit()
 }
 
 func queryData(db *storm.DB) {
-	//tx, _ := db.Begin(true)
-
 	var n []Nested
-	//err := db.From("bucket1").Find("Name", "bucket1", &n)
-
-	//err := db.From("bucket1").Find("Name", "Name2", &n)
 	err := db.From("bucket1").Find("Color", "red", &n)
-
-	//err := db.Find("Color", "Red", &n)
-
 	if err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println(n)
 }
 
-func updateData(db *storm.DB) {
+func updateData(db *storm.DB, id int) {
 	tx, err := db.Begin(true)
 	if err != nil {
 		return
 	}
 
+	//defer tx.Rollback()
 	defer func() {
-		if err != nil {
-			if err := tx.Rollback(); err != nil {
-				return
-			}
+		if err := tx.Rollback(); err != nil {
+			return
 		}
-
-		_ = tx.Commit()
-		return
 	}()
 
 	err = tx.From("bucket1").Update(&Nested{
-		ID:   1,
-		Name: "update name",
+		ID:   id,
+		Name: fmt.Sprintf("update %d name", id),
 	})
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
 
-	queryData(db)
-
+	_ = tx.Commit()
 	return
 }
 
 func deleteData(db *storm.DB) {
-	// Read tx
-	readTx, err := db.Bolt.Begin(false)
-	if err != nil {
-		return
-	}
+	////Read tx
+	//readTx, err := db.Bolt.Begin(false)
+	//if err != nil {
+	//	return
+	//}
+	//defer readTx.Rollback()
+	//
+	//bs := readTx.Bucket([]byte("bucket1"))
+	//fmt.Println(bs)
+	//_ = readTx.Commit()
 
-	bs := readTx.Bucket([]byte("bucket1"))
-	fmt.Println(bs)
+	//err := db.Bolt.View(func(tx *bbolt.Tx) error {
+	//	projectBkt := tx.Bucket([]byte("bucket1"))
+	//	if projectBkt == nil {
+	//		// 无数据
+	//		return errors.New("not found")
+	//	}
+	//
+	//	return nil
+	//})
+	//fmt.Println(err)
 
-	err = db.From("bucket1").DeleteStruct(&Nested{
+	if err := db.From("bucket1").DeleteStruct(&Nested{
 		ID: 1,
-	})
-	if err != nil {
+	}); err != nil {
 		fmt.Println(err)
 	}
 

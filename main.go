@@ -1,9 +1,11 @@
 package main
 
 import (
+	"github.com/google/gops/agent"
 	"github.com/urfave/cli"
 	"golang-example/cmd"
 
+	"fmt"
 	"log"
 	"os"
 
@@ -12,6 +14,7 @@ import (
 	_ "golang-example/misc/bitcask_db"
 	_ "golang-example/misc/bolt_db"
 	_ "golang-example/misc/bolt_storm"
+	_ "golang-example/misc/bolt_tx_deadlock"
 	_ "golang-example/misc/deadlock"
 	_ "golang-example/misc/distributedSystem/01-cluster-join"
 	_ "golang-example/misc/distributedSystem/02-channel-event"
@@ -35,6 +38,12 @@ func main() {
 	app.Author = "Ping"
 	app.Email = "navono007@gmail.com"
 	app.Commands = cmd.Cmds
+
+	fmt.Println("Running app with gops agent.")
+	if err := agent.Listen(agent.Options{}); err != nil {
+		log.Fatal(err)
+	}
+
 	if err := app.Run(os.Args); err != nil {
 		log.Fatal(err)
 	}

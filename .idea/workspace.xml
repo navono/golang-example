@@ -32,11 +32,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/deadlock/deadlock.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/bolt_tx_deadlock/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/bolt_storm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/bolt_storm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gops/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gops/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,7 +228,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: typo" />
     <MESSAGE value="feat: add session-based login" />
     <MESSAGE value="feat: add logger" />
     <MESSAGE value="refactor: log 包重命名" />
@@ -253,7 +252,8 @@
     <MESSAGE value="feat: 修改 bolt 例子" />
     <MESSAGE value="fix: 修改一些 typo 以及 pattern" />
     <MESSAGE value="fix: 增加获取 goroutine ID 的方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 增加获取 goroutine ID 的方法" />
+    <MESSAGE value="feat: add deadlock example" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add deadlock example" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -530,6 +530,21 @@
           <url>file://$PROJECT_DIR$/pattern/or-channel.go</url>
           <line>9</line>
           <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/bolt_tx_deadlock/main.go</url>
+          <line>82</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/bolt_tx_deadlock/main.go</url>
+          <line>72</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/bolt_storm/main.go</url>
+          <line>162</line>
+          <option name="timeStamp" value="301" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
