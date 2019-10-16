@@ -1,13 +1,18 @@
 package bolt_storm
 
 import (
+	"bytes"
 	"fmt"
+	"runtime"
+	"strconv"
+	"time"
+
+	"golang-example/cmd"
+
 	"github.com/asdine/storm"
 	"github.com/asdine/storm/codec/msgpack"
 	"github.com/urfave/cli"
 	"go.etcd.io/bbolt"
-	"golang-example/cmd"
-	"time"
 )
 
 func init() {
@@ -45,6 +50,8 @@ type Level2 struct {
 }
 
 func smAction(c *cli.Context) error {
+	fmt.Println(GetGID())
+
 	options := []func(*storm.Options) error{
 		storm.Codec(msgpack.Codec),
 		storm.BoltOptions(0666, &bbolt.Options{Timeout: 1 * time.Second}),
@@ -156,7 +163,16 @@ func updateData(db *storm.DB) {
 }
 
 func deleteData(db *storm.DB) {
-	err := db.From("bucket1").DeleteStruct(&Nested{
+	// Read tx
+	readTx, err := db.Bolt.Begin(false)
+	if err != nil {
+		return
+	}
+
+	bs := readTx.Bucket([]byte("bucket1"))
+	fmt.Println(bs)
+
+	err = db.From("bucket1").DeleteStruct(&Nested{
 		ID: 1,
 	})
 	if err != nil {
@@ -164,4 +180,13 @@ func deleteData(db *storm.DB) {
 	}
 
 	queryData(db)
+}
+
+func GetGID() uint64 {
+	b := make([]byte, 64)
+	b = b[:runtime.Stack(b, false)]
+	b = bytes.TrimPrefix(b, []byte("goroutine "))
+	b = b[:bytes.IndexByte(b, ' ')]
+	n, _ := strconv.ParseUint(string(b), 10, 64)
+	return n
 }
