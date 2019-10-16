@@ -1,4 +1,4 @@
-package json
+package gabs
 
 import (
 	"errors"
@@ -26,17 +26,17 @@ type netSegment struct {
 
 func init() {
 	cmd.Cmds = append(cmd.Cmds, cli.Command{
-		Name:    "json",
+		Name:    "gabs",
 		Aliases: []string{"j"},
 
-		Usage:    "Demonstration of json operations",
+		Usage:    "Demonstration of gabs operations",
 		Action:   jsonAction,
 		Category: "data",
 	})
 }
 
 func jsonAction(c *cli.Context) error {
-	fileContent, _ := readFile("./misc/json/test.json")
+	fileContent, _ := readFile("./misc/gabs/test.gabs")
 	jsonParsed, err := gabs.ParseJSON(fileContent)
 
 	if err != nil {
