@@ -19,6 +19,7 @@ import (
 	_ "golang-example/misc/distributedSystem/01-cluster-join"
 	_ "golang-example/misc/distributedSystem/02-channel-event"
 	_ "golang-example/misc/gabs"
+	_ "golang-example/misc/gjson"
 	_ "golang-example/misc/gops"
 	_ "golang-example/misc/goreleaser"
 	_ "golang-example/misc/gorm"
@@ -40,9 +41,12 @@ func main() {
 	app.Commands = cmd.Cmds
 
 	fmt.Println("Running app with gops agent.")
-	if err := agent.Listen(agent.Options{}); err != nil {
-		log.Fatal(err)
-	}
+	// For inspect
+	go func() {
+		if err := agent.Listen(agent.Options{}); err != nil {
+			_, _ = fmt.Fprintf(os.Stderr, "%v\n", err)
+		}
+	}()
 
 	if err := app.Run(os.Args); err != nil {
 		log.Fatal(err)

@@ -58,6 +58,7 @@ require (
 	github.com/streadway/handy v0.0.0-20190108123426-d5acb3125c2a // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/thoas/go-funk v0.4.0
+	github.com/tidwall/gjson v1.3.2
 	github.com/timshannon/bolthold v0.0.0-20191009161117-ccb01ed9dec4
 	github.com/urfave/cli v1.21.0
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
