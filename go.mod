@@ -38,7 +38,7 @@ require (
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/labstack/echo/v4 v4.1.10
 	github.com/lib/pq v1.2.0 // indirect
-	github.com/mattn/go-sqlite3 v1.11.0 // indirect
+	github.com/mattn/go-sqlite3 v1.11.0
 	github.com/minio/highwayhash v1.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76

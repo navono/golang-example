@@ -1,31 +1,54 @@
 package gorm
 
 import (
+	"database/sql"
 	"fmt"
 	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/sqlite"
+	uuid "github.com/satori/go.uuid"
+
+	//_ "github.com/jinzhu/gorm/dialects/sqlite"
+	"github.com/mattn/go-sqlite3"
 	"github.com/urfave/cli"
 	"golang-example/cmd"
 )
 
-type User struct {
-	gorm.Model
-	Name        string        `gorm:"TYPE:VARCHAR(255)"`
-	Languages   []*Language   `gorm:"many2many:user_languages;"`
-	CreditCards []*CreditCard `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
-}
+type (
+	User struct {
+		gorm.Model
 
-type Language struct {
-	gorm.Model
-	Name  string  `gorm:"TYPE:VARCHAR(255)"`
-	Users []*User `gorm:"many2many:user_languages;"`
-}
+		Name        string        `gorm:"TYPE:VARCHAR(255)"`
+		Languages   []*Language   `gorm:"many2many:user_languages;"`
+		CreditCards []*CreditCard `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
+	}
 
-type CreditCard struct {
-	gorm.Model
-	Number string `gorm:"TYPE:VARCHAR(255)"`
-	UserID uint
-}
+	Language struct {
+		gorm.Model
+		Name  string  `gorm:"TYPE:VARCHAR(255)"`
+		Users []*User `gorm:"many2many:user_languages;"`
+	}
+
+	CreditCard struct {
+		gorm.Model
+		Number string `gorm:"TYPE:VARCHAR(255)"`
+		UserID uint
+	}
+)
+
+type (
+	Project struct {
+		gorm.Model
+		UID     string   `gorm:"primary_key;type:blob;not null"`
+		Name    string   `gorm:"TYPE:VARCHAR(255)"`
+		Devices []Device `gorm:"foreignkey:ProjectUID;association_foreignkey:UID"`
+	}
+
+	Device struct {
+		gorm.Model
+		ProjectUID string
+		UID        string `gorm:"primary_key;type:blob;not null"`
+		Name       string `gorm:"TYPE:VARCHAR(255)"`
+	}
+)
 
 var (
 	db  *gorm.DB
@@ -45,22 +68,26 @@ func init() {
 
 func gormAction(c *cli.Context) error {
 	InitSqlite()
-	AutoMigrate()
-	Setup()
-	Find()
+	//AutoMigrate()
+	//Setup()
+	//Find()
+
+	AutoMigrateProject()
+	SetupProject()
+	FindProject()
 
 	return nil
 }
 
 func InitSqlite() {
-	//sql.Register("sqlite3_with_extensions", &sqlite3.SQLiteDriver{
-	//	Extensions: []string{
-	//		"sqlite_userauth",
-	//	},
-	//})
+	sql.Register("sqlite3_with_extensions", &sqlite3.SQLiteDriver{
+		Extensions: []string{
+			"sqlite_userauth",
+		},
+	})
 
 	db, err = gorm.Open("sqlite3",
-		fmt.Sprintf("goexample.db?_auth&_auth_user=%s&_auth_pass=%s&_auth_crypt=sha256", "admin", "123456"))
+		fmt.Sprintf("./misc/gorm/goexample.db?_auth&_auth_user=%s&_auth_pass=%s&_auth_crypt=sha256", "admin", "123456"))
 
 	db.DB().SetMaxIdleConns(3)
 	db.LogMode(true)
@@ -166,4 +193,47 @@ func Find() {
 	////db.First(&u4)
 	//var c1 []*CreditCard
 	//db.Model(&u5).Association("CreditCards").Find(&c1)
+}
+
+func AutoMigrateProject() {
+	db.AutoMigrate(
+		&Project{},
+		&Device{},
+	)
+}
+
+func SetupProject() {
+	var p Project
+	db.Where(&Project{
+		Name: "p1",
+	}).First(&p)
+	if db.HasTable(&Project{}) && p.Name == "p1" {
+		return
+	}
+
+	p1 := &Project{
+		UID:  uuid.NewV4().String(),
+		Name: "p1",
+	}
+
+	p2 := &Project{
+		UID:  uuid.NewV4().String(),
+		Name: "p2",
+	}
+
+	db.Create(p1)
+	db.Create(p2)
+}
+
+func FindProject() {
+	// 查找指定 Project 下的所有 Devices
+	var p Project
+	var dev []Device
+	tmpDB := db.Model(&p).Related(&dev, "Devices")
+
+	var p1 Project
+	tmpDB.Preload("Devices").Where(&Project{
+		Name: "p1",
+	}).Find(&p1)
+	fmt.Println(p1)
 }

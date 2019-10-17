@@ -32,11 +32,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/gjson/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +141,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="gj" />
+      <parameters value="gorm" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -228,7 +225,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: log 包重命名" />
     <MESSAGE value="feat: add badger item TTL" />
     <MESSAGE value="feat: add golang wsam" />
     <MESSAGE value="refactor: 重构" />
@@ -253,7 +249,8 @@
     <MESSAGE value="feat: add deadlock example" />
     <MESSAGE value="fix: add bolt example" />
     <MESSAGE value="refactor: change json to gabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change json to gabs" />
+    <MESSAGE value="feat: gjson" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: gjson" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -410,11 +407,6 @@
           <url>file://$PROJECT_DIR$/misc/distributedSystem/02-channel-event/hash.go</url>
           <line>19</line>
           <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/gorm/main.go</url>
-          <line>168</line>
-          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/lang-related/misc/sort/main.go</url>
