@@ -126,16 +126,19 @@ func associateDevice() {
 		return
 	}
 
+	// Project 关联 Devices
 	var p Project
 	db.Where(&Project{
 		Name: "p1",
 	}).Find(&p).Association("Devices").Append([]Device{dev})
 
+	// 找到 Device 需要关联的 Network
 	var n Network
 	db.Where(&Network{
 		Name: "net1",
 	}).Find(&n)
 
+	// 再对已存在的 Device 关联 Network
 	var d1 Device
 	db.Where(&Device{
 		Name: dev.Name,
@@ -144,11 +147,11 @@ func associateDevice() {
 
 func query() {
 	// 查找 project 的所有 devices
-	var p Project
-	var tmpDev []Device
-	db.Model(&Project{}).Related(&tmpDev, "Devices").Preload("Devices").Where(&Project{
+	p := Project{
 		Name: "p1",
-	}).Find(&p)
+	}
+	var tmpDev []Device
+	db.Model(&Project{}).Related(&tmpDev, "Devices").Preload("Devices").Where(&p).Find(&p)
 	fmt.Println(p.Devices)
 
 	// 查找 project 的所有 network
@@ -159,16 +162,16 @@ func query() {
 	fmt.Println(p.Networks)
 
 	// 查找 device 的 networks
-	var d Device
-	db.Model(&Device{}).Related(&tmpNet, "Networks").Preload("Networks").Where(&Device{
+	d := Device{
 		Name: "dev1",
-	}).Find(&d)
+	}
+	db.Model(&Device{}).Related(&tmpNet, "Networks").Preload("Networks").Where(&d).Find(&d)
 	fmt.Println(d)
 
 	// 查找 network 的 devices
-	var n Network
-	db.Model(&Network{}).Related(&tmpDev, "Devices").Preload("Devices").Where(&Network{
+	n := Network{
 		Name: "net1",
-	}).Find(&n)
+	}
+	db.Model(&Network{}).Related(&tmpDev, "Devices").Preload("Devices").Where(&n).Find(&n)
 	fmt.Println(n)
 }
