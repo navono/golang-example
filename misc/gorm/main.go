@@ -2,12 +2,12 @@ package gorm
 
 import (
 	"database/sql"
+	"encoding/json"
 	"fmt"
 	"github.com/jinzhu/gorm"
-	uuid "github.com/satori/go.uuid"
-
-	//_ "github.com/jinzhu/gorm/dialects/sqlite"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	"github.com/mattn/go-sqlite3"
+	uuid "github.com/satori/go.uuid"
 	"github.com/urfave/cli"
 	"golang-example/cmd"
 )
@@ -15,10 +15,10 @@ import (
 type (
 	User struct {
 		gorm.Model
-
 		Name        string        `gorm:"TYPE:VARCHAR(255)"`
 		Languages   []*Language   `gorm:"many2many:user_languages;"`
 		CreditCards []*CreditCard `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
+		Projects    []*Project    `gorm:"many2many:user_projects;"`
 	}
 
 	Language struct {
@@ -34,12 +34,15 @@ type (
 	}
 )
 
+var devID = uuid.NewV4().String()
+
 type (
 	Project struct {
 		gorm.Model
 		UID     string   `gorm:"primary_key;type:blob;not null"`
 		Name    string   `gorm:"TYPE:VARCHAR(255)"`
 		Devices []Device `gorm:"foreignkey:ProjectUID;association_foreignkey:UID"`
+		Users   []*User  `gorm:"many2many:user_projects;"`
 	}
 
 	Device struct {
@@ -47,6 +50,12 @@ type (
 		ProjectUID string
 		UID        string `gorm:"primary_key;type:blob;not null"`
 		Name       string `gorm:"TYPE:VARCHAR(255)"`
+		Config     string `gorm:"type:blob"`
+	}
+
+	ModbusTCP struct {
+		Name string
+		Ip   string
 	}
 )
 
@@ -67,19 +76,20 @@ func init() {
 }
 
 func gormAction(c *cli.Context) error {
-	InitSqlite()
-	//AutoMigrate()
-	//Setup()
+	InitDB()
+	AutoMigrateUser()
+	SetupUser()
 	//Find()
 
 	AutoMigrateProject()
 	SetupProject()
+	SetupDevices()
 	FindProject()
 
 	return nil
 }
 
-func InitSqlite() {
+func InitDB() {
 	sql.Register("sqlite3_with_extensions", &sqlite3.SQLiteDriver{
 		Extensions: []string{
 			"sqlite_userauth",
@@ -93,7 +103,7 @@ func InitSqlite() {
 	db.LogMode(true)
 }
 
-func AutoMigrate() {
+func AutoMigrateUser() {
 	db.AutoMigrate(
 		&User{},
 		&Language{},
@@ -101,7 +111,7 @@ func AutoMigrate() {
 	)
 }
 
-func Setup() {
+func SetupUser() {
 	var u User
 	db.Where(&User{
 		Name: "user1",
@@ -226,14 +236,115 @@ func SetupProject() {
 }
 
 func FindProject() {
+	{
+		//dev2 := Device{
+		//	UID:  uuid.NewV4().String(),
+		//	Name: "dev2",
+		//}
+		//
+		//var p1 Project
+		//db.Where(&Project{
+		//	Name: "p1",
+		//}).First(&p1).Association("Devices").Replace(Device{
+		//	UID: devID,
+		//}, dev2)
+
+		var d Device
+		db.Where(&Device{
+			Name: "dev1",
+		}).Find(&d)
+
+		fmt.Println(d)
+		d.Name = "dev2"
+		db.Save(&d)
+	}
 	// 查找指定 Project 下的所有 Devices
-	var p Project
-	var dev []Device
-	tmpDB := db.Model(&p).Related(&dev, "Devices")
+	{
+		var dev []Device
+		tmpDB := db.Model(&Project{}).Related(&dev, "Devices")
+
+		var p1 Project
+		tmpDB.Preload("Devices").Where(&Project{
+			Name: "p1",
+		}).Find(&p1)
+
+		//var m ModbusTCP
+		//_ = json.Unmarshal([]byte(p1.Devices[0].Config), &m)
+
+		fmt.Println(p1)
+	}
+	{
+		var users []User
+		tmpDB := db.Model(&Project{}).Related(&users, "Users")
+
+		var p1 Project
+		tmpDB.Preload("Users").Where(&Project{
+			Name: "p1",
+		}).Find(&p1).RecordNotFound()
+		fmt.Println(p1)
+
+		// 找到 user 后，再次查找 lang
+
+	}
+	{
+		var users []User
+		//users := []User{}
+		tmpDB := getProjectPreload("Users", &users)
+
+		var p1 Project
+		tmpDB.Where(&Project{
+			Name: "p1",
+		}).Find(&p1)
+		fmt.Println(p1)
+	}
+}
+
+func SetupDevices() {
+	var p Device
+	db.Where(&Device{
+		Name: "dev1",
+	}).First(&p)
+	if db.HasTable(&Project{}) && p.Name == "dev1" {
+		return
+	}
+
+	modbus := &ModbusTCP{
+		Name: "modbus",
+		Ip:   "1.0.0.0",
+	}
+
+	data, _ := json.Marshal(modbus)
+
+	dev1 := Device{
+		UID:    devID,
+		Name:   "dev1",
+		Config: string(data),
+		//Config: &ModbusTCP{
+		//	Name: "modbus",
+		//	Ip:   "1.0.0.0",
+		//},
+	}
 
 	var p1 Project
-	tmpDB.Preload("Devices").Where(&Project{
+	db.Where(&Project{
 		Name: "p1",
-	}).Find(&p1)
-	fmt.Println(p1)
+	}).First(&p1).Association("Devices").Append([]Device{dev1})
+
+	var u1 User
+	db.Where(&User{
+		Name: "user1",
+	}).First(&u1).Association("Projects").Append([]Project{p1})
+}
+
+func getProjectPreload(assoc string, subType interface{}) *gorm.DB {
+	if len(assoc) == 0 {
+		return nil
+	}
+
+	//var p Project
+	//var tmpNets []model.Network
+	//tmpDB := s.db.Model(&model.Project{}).Related(&tmpNets, config.DBAssocNetworks)
+	tmpDB := db.Model(&Project{}).Related(subType, assoc)
+
+	return tmpDB.Preload(assoc)
 }
