@@ -32,10 +32,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/gorm/project.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/gorm/project/projectModel.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/gorm2/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +143,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="gorm" />
+      <parameters value="gorm2" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -228,7 +227,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add golang wsam" />
     <MESSAGE value="refactor: 重构" />
     <MESSAGE value="feat: 增加 gorm 的 many to many 例子" />
     <MESSAGE value="feat: 增加 memberlist 的例子，同时 format 整个目录" />
@@ -253,7 +251,8 @@
     <MESSAGE value="refactor: change json to gabs" />
     <MESSAGE value="feat: gjson" />
     <MESSAGE value="feat: gorm 增加自定义外键" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: gorm 增加自定义外键" />
+    <MESSAGE value="fix: gorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: gorm" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -560,6 +559,11 @@
           <url>file://$PROJECT_DIR$/misc/gorm/main.go</url>
           <line>273</line>
           <option name="timeStamp" value="341" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm2/main.go</url>
+          <line>172</line>
+          <option name="timeStamp" value="351" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
