@@ -32,23 +32,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/dialog/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/go-mocket/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/go-mocket/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/go-sqlmock/model/person.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/go-sqlmock/repository/person.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/gorm2/model/person.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/gorm2/model/project.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/gorm2/repository/person.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/gorm2/repository/person_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/gorm2/repository/persontest.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gorm2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,7 +258,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 memberlist 的例子，同时 format 整个目录" />
     <MESSAGE value="feat: 增加 memberlist 的例子" />
     <MESSAGE value="refactor: 将一些例子使用 cmd 重构" />
     <MESSAGE value="refactor: 重构 grom" />
@@ -298,7 +282,8 @@
     <MESSAGE value="fix: gorm" />
     <MESSAGE value="feat: 实现了一个完整的 gorm 例子" />
     <MESSAGE value="fix: 调整代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 调整代码" />
+    <MESSAGE value="feat: 增加 gorm 单元测试例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 gorm 单元测试例子" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -642,19 +627,14 @@
           <option name="timeStamp" value="385" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go</url>
-          <line>84</line>
-          <option name="timeStamp" value="391" />
+          <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/sqlmock.go</url>
+          <line>186</line>
+          <option name="timeStamp" value="399" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/sqlmock.go</url>
-          <line>207</line>
-          <option name="timeStamp" value="394" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/sqlmock.go</url>
-          <line>218</line>
-          <option name="timeStamp" value="396" />
+          <line>179</line>
+          <option name="timeStamp" value="400" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
