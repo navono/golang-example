@@ -1,9 +1,10 @@
 module golang-example
 
-go 1.12
+go 1.13
 
 require (
 	cloud.google.com/go v0.44.3 // indirect
+	github.com/DATA-DOG/go-sqlmock v1.3.3
 	github.com/DataDog/zstd v1.4.1 // indirect
 	github.com/Jeffail/gabs/v2 v2.1.0
 	github.com/Sereal/Sereal v0.0.0-20190618215532-0b8ac451a863 // indirect
@@ -21,6 +22,7 @@ require (
 	github.com/dgraph-io/badger v1.6.0
 	github.com/go-kit/kit v0.8.0
 	github.com/go-sql-driver/mysql v1.4.1
+	github.com/go-test/deep v1.0.1
 	github.com/go-xorm/xorm v0.7.5 // indirect
 	github.com/gogo/protobuf v1.3.0
 	github.com/golang/mock v1.3.1
@@ -29,11 +31,12 @@ require (
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/gops v0.3.6
 	github.com/gorilla/websocket v1.4.1
+	github.com/gotk3/gotk3 v0.0.0-20191010201156-711c17fcaec0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.1-0.20190118093823-f849b5445de4
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/hashicorp/memberlist v0.1.4
-	github.com/jinzhu/gorm v1.9.10
+	github.com/jinzhu/gorm v1.9.11
 	github.com/jpillora/overseer v0.0.0-20190427034852-ce9055846616
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/labstack/echo/v4 v4.1.10
@@ -50,11 +53,13 @@ require (
 	github.com/prometheus/procfs v0.0.4 // indirect
 	github.com/sasha-s/go-deadlock v0.2.0
 	github.com/satori/go.uuid v1.2.0
+	github.com/selvatico/go-mocket v1.0.7
 	github.com/serialx/hashring v0.0.0-20190515033939-7706f26af194
 	github.com/sirupsen/logrus v1.4.2
-	github.com/smartystreets/goconvey v0.0.0-20190731233626-505e41936337 // indirect
+	github.com/smartystreets/goconvey v0.0.0-20190731233626-505e41936337
 	github.com/sony/gobreaker v0.4.1 // indirect
 	github.com/spf13/pflag v1.0.3
+	github.com/sqweek/dialog v0.0.0-20190728103509-6254ed5b0d3c
 	github.com/streadway/handy v0.0.0-20190108123426-d5acb3125c2a // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/thoas/go-funk v0.4.0

@@ -4,11 +4,13 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
+
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	"github.com/mattn/go-sqlite3"
 	uuid "github.com/satori/go.uuid"
 	"github.com/urfave/cli"
+
 	"golang-example/cmd"
 )
 

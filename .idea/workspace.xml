@@ -32,7 +32,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/dialog/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/go-mocket/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/go-mocket/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/go-sqlmock/model/person.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/go-sqlmock/repository/person.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/gorm2/model/person.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/gorm2/model/project.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/gorm2/repository/person.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/gorm2/repository/person_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/gorm2/repository/persontest.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/misc/gorm2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm2/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,19 +112,20 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/misc/gorm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/misc/go-sqlmock" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourcecode\go\golang-example\misc\gorm2\model" />
       <recent name="D:\sourcecode\go\golang-example\misc\gorm\project" />
       <recent name="F:\sourcecode\go\golang-example" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
       <recent name="E:\sourcecode\go\golang-example\misc\ws" />
-      <recent name="E:\sourcecode\go\golang-example\misc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sourcecode\go\golang-example\misc\go-sqlmock" />
       <recent name="D:\sourcecode\go\golang-example\misc\gorm" />
       <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft" />
@@ -127,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.person_test.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -142,7 +158,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="gorm2" />
+      <parameters value="dialog" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -170,6 +186,37 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="main_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/misc/go-mocket" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="golang_exam" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/misc/go-mocket/main_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="person_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang_example" />
+      <working_directory value="$PROJECT_DIR$/misc/go-sqlmock/repository" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="golang_exam" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.main" />
+      <item itemvalue="Go Test.main_test.go" />
+      <item itemvalue="Go Test.person_test.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.person_test.go" />
+        <item itemvalue="Go Test.main_test.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -226,7 +273,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 gorm 的 many to many 例子" />
     <MESSAGE value="feat: 增加 memberlist 的例子，同时 format 整个目录" />
     <MESSAGE value="feat: 增加 memberlist 的例子" />
     <MESSAGE value="refactor: 将一些例子使用 cmd 重构" />
@@ -251,7 +297,8 @@
     <MESSAGE value="feat: gorm 增加自定义外键" />
     <MESSAGE value="fix: gorm" />
     <MESSAGE value="feat: 实现了一个完整的 gorm 例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 实现了一个完整的 gorm 例子" />
+    <MESSAGE value="fix: 调整代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 调整代码" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -546,18 +593,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/misc/gorm/main.go</url>
-          <line>283</line>
+          <line>285</line>
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/misc/gorm/main.go</url>
-          <line>244</line>
+          <line>246</line>
           <option name="timeStamp" value="337" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/misc/gorm/main.go</url>
-          <line>273</line>
+          <line>275</line>
           <option name="timeStamp" value="341" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm2/repository/persontest.go</url>
+          <line>89</line>
+          <option name="timeStamp" value="342" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm2/repository/person_test.go</url>
+          <line>91</line>
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm2/repository/person_test.go</url>
+          <line>98</line>
+          <option name="timeStamp" value="358" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm2/repository/person_test.go</url>
+          <line>62</line>
+          <option name="timeStamp" value="364" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm2/repository/person_test.go</url>
+          <line>79</line>
+          <option name="timeStamp" value="365" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/dialog/main.go</url>
+          <line>43</line>
+          <option name="timeStamp" value="379" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/driver.go</url>
+          <line>75</line>
+          <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go</url>
+          <line>84</line>
+          <option name="timeStamp" value="391" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/sqlmock.go</url>
+          <line>207</line>
+          <option name="timeStamp" value="394" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/sqlmock.go</url>
+          <line>218</line>
+          <option name="timeStamp" value="396" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
