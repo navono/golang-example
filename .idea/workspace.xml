@@ -258,7 +258,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 memberlist 的例子" />
     <MESSAGE value="refactor: 将一些例子使用 cmd 重构" />
     <MESSAGE value="refactor: 重构 grom" />
     <MESSAGE value="refactor: 修改启动界面" />
@@ -283,7 +282,8 @@
     <MESSAGE value="feat: 实现了一个完整的 gorm 例子" />
     <MESSAGE value="fix: 调整代码" />
     <MESSAGE value="feat: 增加 gorm 单元测试例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 gorm 单元测试例子" />
+    <MESSAGE value="fix: gorm 单元测试例子修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: gorm 单元测试例子修改" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -635,6 +635,26 @@
           <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/sqlmock.go</url>
           <line>179</line>
           <option name="timeStamp" value="400" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go</url>
+          <line>98</line>
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://C:/Go/src/database/sql/sql.go</url>
+          <line>1587</line>
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/sqlmock_go18.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/query.go</url>
+          <line>51</line>
+          <option name="timeStamp" value="419" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
