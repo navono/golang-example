@@ -1,16 +1,14 @@
 package main
 
 import (
-	"github.com/google/gops/agent"
-	"github.com/urfave/cli"
-	"golang-example/cmd"
-
 	"fmt"
 	"log"
 	"os"
 
 	_ "golang-example/app/go-kit"
+	"golang-example/cmd"
 	_ "golang-example/lang-related/misc/sort"
+	_ "golang-example/misc/EventBus"
 	_ "golang-example/misc/bitcask_db"
 	_ "golang-example/misc/bolt_db"
 	_ "golang-example/misc/bolt_storm"
@@ -29,6 +27,9 @@ import (
 	_ "golang-example/misc/watermill"
 	_ "golang-example/misc/xml"
 	_ "golang-example/pattern"
+
+	"github.com/google/gops/agent"
+	"github.com/urfave/cli"
 )
 
 func main() {

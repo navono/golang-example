@@ -45,6 +45,8 @@ require (
 	github.com/mattn/go-sqlite3 v1.11.0
 	github.com/minio/highwayhash v1.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.1.2
+	github.com/mustafaturan/bus v0.1.3
+	github.com/mustafaturan/monoton v0.3.1
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76
 	github.com/navono/go-logger v0.0.0-20190816044720-616d07d8284e
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
