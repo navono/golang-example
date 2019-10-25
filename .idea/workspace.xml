@@ -32,8 +32,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/watermill/channel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/watermill/http.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/go-sqlmock/repository/person_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/watermill/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.person_test.go">
+  <component name="RunManager" selected="Go Build.main">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -143,7 +147,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="dialog" />
+      <parameters value="watermill http" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -655,6 +659,26 @@
           <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/query.go</url>
           <line>51</line>
           <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!three!dots!labs/watermill-http@v1.0.2/pkg/http/subscriber.go</url>
+          <line>137</line>
+          <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/watermill/http.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="445" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/watermill/http.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="446" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!three!dots!labs/watermill-http@v1.0.2/pkg/http/subscriber.go</url>
+          <line>139</line>
+          <option name="timeStamp" value="447" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
