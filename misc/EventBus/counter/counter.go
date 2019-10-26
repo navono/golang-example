@@ -4,6 +4,8 @@ import (
 	"fmt"
 
 	"github.com/mustafaturan/bus"
+
+	"golang-example/misc/EventBus/models"
 )
 
 var topics map[string]uint
@@ -22,18 +24,23 @@ func init() {
 }
 
 func count(e *bus.Event) {
+	o := e.Data.(*models.Order)
+	o.SyncGroup.Add(1)
 	c <- e
 }
 
 func increment() {
 	for {
 		e := <-c
+		o := e.Data.(*models.Order)
 		n := e.Topic.Name
 		if count, ok := topics[n]; ok {
 			topics[n] = count + 1
 		} else {
 			topics[n] = 1
 		}
+
+		o.SyncGroup.Done()
 	}
 }
 

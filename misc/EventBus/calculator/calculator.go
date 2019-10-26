@@ -2,6 +2,7 @@ package calculator
 
 import (
 	"fmt"
+	"time"
 
 	"golang-example/misc/EventBus/models"
 
@@ -24,18 +25,24 @@ func init() {
 }
 
 func sum(e *bus.Event) {
+	o := e.Data.(*models.Order)
+	o.SyncGroup.Add(1)
 	c <- e
 }
 
 func calculate() {
 	for {
 		e := <-c
-		amount := int64(e.Data.(models.Order).Amount)
+		o := e.Data.(*models.Order)
+		amount := int64(o.Amount)
 		switch e.Topic.Name {
 		case "order.created":
 			total += amount
+			o.SyncGroup.Done()
 		case "order.canceled":
 			total -= amount
+			time.Sleep(5 * time.Second)
+			o.SyncGroup.Done()
 		default:
 			fmt.Printf("whoops unexpected topic (%s)", e.Topic.Name)
 		}

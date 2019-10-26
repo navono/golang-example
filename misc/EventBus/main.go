@@ -3,7 +3,6 @@ package EventBus
 import (
 	"fmt"
 	"math/rand"
-	"time"
 
 	"golang-example/cmd"
 	"golang-example/misc/EventBus/calculator"
@@ -57,22 +56,29 @@ func busAgent(c *cli.Context) error {
 	for i := 0; i < 3; i++ {
 		bus.Emit(
 			"order.created",
-			models.Order{Name: fmt.Sprintf("Product #%d", i), Amount: randomAmount()},
+			&models.Order{Name: fmt.Sprintf("Product #%d", i), Amount: randomAmount()},
 			txID,
 		)
 	}
 
-	bus.Emit(
+	evt, err := bus.Emit(
 		"order.canceled", // topic
-		models.Order{Name: "Product #N", Amount: randomAmount()}, // data
+		&models.Order{Name: "Product #N", Amount: randomAmount()}, // data
 		"", // when blank bus package auto assigns an ID using the provided gen
 	)
+	if err != nil {
+		return err
+	}
+
+	// 等待被处理
+	o := evt.Data.(*models.Order)
+	o.SyncGroup.Wait()
 
 	// printer consumer processed all events at that moment since it is synchronous
 	fmt.Println("You should see 4 events printed above!^^^")
 
 	// give some time to process events for async consumers
-	time.Sleep(time.Millisecond * 25)
+	// time.Sleep(time.Millisecond * 25)
 
 	printEventCounts()
 	printOrderTotalAmount()
