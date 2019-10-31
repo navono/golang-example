@@ -17,6 +17,7 @@ import (
 	_ "golang-example/misc/dialog"
 	_ "golang-example/misc/distributedSystem/01-cluster-join"
 	_ "golang-example/misc/distributedSystem/02-channel-event"
+	_ "golang-example/misc/filesystem"
 	_ "golang-example/misc/gabs"
 	_ "golang-example/misc/gjson"
 	_ "golang-example/misc/gops"

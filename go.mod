@@ -61,6 +61,7 @@ require (
 	github.com/sirupsen/logrus v1.4.2
 	github.com/smartystreets/goconvey v0.0.0-20190731233626-505e41936337
 	github.com/sony/gobreaker v0.4.1 // indirect
+	github.com/spf13/afero v1.2.2
 	github.com/spf13/pflag v1.0.3
 	github.com/sqweek/dialog v0.0.0-20190728103509-6254ed5b0d3c
 	github.com/streadway/handy v0.0.0-20190108123426-d5acb3125c2a // indirect

@@ -53,6 +53,10 @@ func initDB() {
 	db.DB().SetMaxIdleConns(3)
 	db.LogMode(true)
 
+	gorm.DefaultTableNameHandler = func(db *gorm.DB, defaultTableName string) string {
+		return "fun." + defaultTableName
+	}
+
 	db.AutoMigrate(
 		&model.Project{},
 		&model.Network{},
