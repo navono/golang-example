@@ -23,6 +23,7 @@ import (
 	_ "golang-example/misc/gops"
 	_ "golang-example/misc/goreleaser"
 	_ "golang-example/misc/gorm"
+	_ "golang-example/misc/gorm-multiDB"
 	_ "golang-example/misc/gorm2"
 	_ "golang-example/misc/upgrade"
 	_ "golang-example/misc/watermill"
