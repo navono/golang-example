@@ -143,13 +143,21 @@ func sqlxCrossDBQuery() {
 	fmt.Println(r1)
 
 	s = fmt.Sprintf("select name, type from a a inner join db2.b b on b.ID = a.ID;")
+	type s1 struct {
+		Name string
+		Type string
+	}
 	rows, err := d1.Queryx(s)
 	for rows.Next() {
-		var a, b interface{}
-		err := rows.Scan(&a, &b)
+		// var a, b interface{}
+		// err := rows.Scan(&a, &b)
+
+		var ss s1
+		err := rows.StructScan(&ss)
 		if err != nil {
 			log.Fatalln(err)
 		}
-		fmt.Printf("%#v %#v\n", a, b)
+		fmt.Printf("%#v\n", ss)
+		// fmt.Printf("%#v %#v\n", a, b)
 	}
 }

@@ -81,7 +81,7 @@ func gormAction(c *cli.Context) error {
 	InitDB()
 	AutoMigrateUser()
 	SetupUser()
-	//Find()
+	// Find()
 
 	AutoMigrateProject()
 	SetupProject()
@@ -187,8 +187,8 @@ func Find() {
 
 	// 查找指定 user 下的所有 CreditCard
 	var user3 User
-	//var creds []*CreditCard
-	//tmpDB3 := db.Model(&user3).Related(&creds, "CreditCards")
+	// var creds []*CreditCard
+	// tmpDB3 := db.Model(&user3).Related(&creds, "CreditCards")
 	tmpDB3 := db.Model(&user3).Related(&user3.CreditCards)
 
 	var u3 User
@@ -201,10 +201,10 @@ func Find() {
 	db.Find(&u4, "name = ?", "user1")
 	db.Model(&u4).Association("CreditCards").Find(&u4.CreditCards)
 
-	//var u5 User
-	////db.First(&u4)
-	//var c1 []*CreditCard
-	//db.Model(&u5).Association("CreditCards").Find(&c1)
+	// var u5 User
+	// //db.First(&u4)
+	// var c1 []*CreditCard
+	// db.Model(&u5).Association("CreditCards").Find(&c1)
 }
 
 func AutoMigrateProject() {
@@ -239,17 +239,17 @@ func SetupProject() {
 
 func FindProject() {
 	{
-		//dev2 := Device{
-		//	UID:  uuid.NewV4().String(),
-		//	Name: "dev2",
-		//}
+		// dev2 := Device{
+		// 	UID:  uuid.NewV4().String(),
+		// 	Name: "dev2",
+		// }
 		//
-		//var p1 Project
-		//db.Where(&Project{
-		//	Name: "p1",
-		//}).First(&p1).Association("Devices").Replace(Device{
-		//	UID: devID,
-		//}, dev2)
+		// var p1 Project
+		// db.Where(&Project{
+		// 	Name: "p1",
+		// }).First(&p1).Association("Devices").Replace(Device{
+		// 	UID: devID,
+		// }, dev2)
 
 		var d Device
 		db.Where(&Device{
@@ -270,8 +270,8 @@ func FindProject() {
 			Name: "p1",
 		}).Find(&p1)
 
-		//var m ModbusTCP
-		//_ = json.Unmarshal([]byte(p1.Devices[0].Config), &m)
+		// var m ModbusTCP
+		// _ = json.Unmarshal([]byte(p1.Devices[0].Config), &m)
 
 		fmt.Println(p1)
 	}
@@ -290,7 +290,7 @@ func FindProject() {
 	}
 	{
 		var users []User
-		//users := []User{}
+		// users := []User{}
 		tmpDB := getProjectPreload("Users", &users)
 
 		var p1 Project
@@ -321,10 +321,10 @@ func SetupDevices() {
 		UID:    devID,
 		Name:   "dev1",
 		Config: string(data),
-		//Config: &ModbusTCP{
-		//	Name: "modbus",
-		//	Ip:   "1.0.0.0",
-		//},
+		// Config: &ModbusTCP{
+		// 	Name: "modbus",
+		// 	Ip:   "1.0.0.0",
+		// },
 	}
 
 	var p1 Project
@@ -343,9 +343,10 @@ func getProjectPreload(assoc string, subType interface{}) *gorm.DB {
 		return nil
 	}
 
-	//var p Project
-	//var tmpNets []model.Network
-	//tmpDB := s.db.Model(&model.Project{}).Related(&tmpNets, config.DBAssocNetworks)
+	// var p Project
+	// var tmpNets []model.Network
+	// tmpDB := s.db.Model(&model.Project{}).Related(&tmpNets, config.DBAssocNetworks)
+	//
 	tmpDB := db.Model(&Project{}).Related(subType, assoc)
 
 	return tmpDB.Preload(assoc)
