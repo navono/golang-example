@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"golang-example/misc/EventBus/models"
+	"golang-example/misc/eventBus/models"
 
 	"github.com/mustafaturan/bus"
 )

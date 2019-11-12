@@ -5,7 +5,7 @@ import (
 
 	"github.com/mustafaturan/bus"
 
-	"golang-example/misc/EventBus/models"
+	"golang-example/misc/eventBus/models"
 )
 
 var topics map[string]uint

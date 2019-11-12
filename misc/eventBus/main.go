@@ -1,14 +1,14 @@
-package EventBus
+package eventBus
 
 import (
 	"fmt"
 	"math/rand"
 
 	"golang-example/cmd"
-	"golang-example/misc/EventBus/calculator"
-	"golang-example/misc/EventBus/counter"
-	"golang-example/misc/EventBus/models"
-	"golang-example/misc/EventBus/printer"
+	"golang-example/misc/eventBus/calculator"
+	"golang-example/misc/eventBus/counter"
+	"golang-example/misc/eventBus/models"
+	"golang-example/misc/eventBus/printer"
 
 	"github.com/mustafaturan/bus"
 	"github.com/mustafaturan/monoton"
