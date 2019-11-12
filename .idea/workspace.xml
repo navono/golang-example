@@ -31,10 +31,17 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="feat: 跨库查询">
+    <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/misc/gorm3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/gorm3/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gorm-multiDB/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm-multiDB/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gorm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gorm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/EventBus/calculator/calculator.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/EventBus/calculator/calculator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/EventBus/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/EventBus/models/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/dialog/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/dialog/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/gogit/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gogit/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +152,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="gm" />
+      <parameters value="dialog" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -173,7 +180,7 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="main_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="main_test.go" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/misc/go-mocket" />
       <framework value="gotest" />
@@ -201,7 +208,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.person_test.go" />
-        <item itemvalue="Go Test.main_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +266,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 增加 sort 和调整 gabs 的实例" />
     <MESSAGE value="refactor: gabs to json" />
     <MESSAGE value="feat: 增加 xml 的解析与处理" />
     <MESSAGE value="feat: 增加 bolthold 实例" />
@@ -285,7 +290,8 @@
     <MESSAGE value="feat: event bus 示例" />
     <MESSAGE value="feat: event bus 示例 增加 SyncGroup" />
     <MESSAGE value="feat: 跨库查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 跨库查询" />
+    <MESSAGE value="feat: 跨库结构化查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 跨库结构化查询" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -619,11 +625,6 @@
           <option name="timeStamp" value="365" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/dialog/main.go</url>
-          <line>43</line>
-          <option name="timeStamp" value="379" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://D:/data/Go/pkg/mod/github.com/!d!a!t!a-!d!o!g/go-sqlmock@v1.3.3/driver.go</url>
           <line>75</line>
           <option name="timeStamp" value="385" />
@@ -677,6 +678,26 @@
           <url>file://$PROJECT_DIR$/misc/filesystem/afero.go</url>
           <line>19</line>
           <option name="timeStamp" value="449" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gorm3/main.go</url>
+          <line>44</line>
+          <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/EventBus/main.go</url>
+          <line>74</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/EventBus/main.go</url>
+          <line>77</line>
+          <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/gogit/main.go</url>
+          <line>148</line>
+          <option name="timeStamp" value="474" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

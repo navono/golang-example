@@ -1,6 +1,7 @@
 package calculator
 
 import (
+	"errors"
 	"fmt"
 	"time"
 
@@ -42,6 +43,7 @@ func calculate() {
 		case "order.canceled":
 			total -= amount
 			time.Sleep(5 * time.Second)
+			o.Err = errors.New("test error")
 			o.SyncGroup.Done()
 		default:
 			fmt.Printf("whoops unexpected topic (%s)", e.Topic.Name)

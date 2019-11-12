@@ -10,4 +10,5 @@ type Order struct {
 	Amount int
 	// Ack       chan interface{}
 	SyncGroup sync.WaitGroup
+	Err       error
 }
