@@ -32,16 +32,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/gorm3/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/gorm3/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/firebird/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/EventBus/calculator/calculator.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/EventBus/calculator/calculator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/EventBus/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/EventBus/models/models.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/dialog/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/dialog/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/gogit/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/gogit/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,18 +106,18 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sourcecode\go\golang-example\misc\go-sqlmock" />
+      <recent name="D:\sourcecode\go\golang-example\misc\gorm" />
+      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
+      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\sourcecode\go\golang-example\misc\filesystem" />
       <recent name="D:\sourcecode\go\golang-example\misc\gorm2\model" />
       <recent name="D:\sourcecode\go\golang-example\misc\gorm\project" />
       <recent name="F:\sourcecode\go\golang-example" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\sourcecode\go\golang-example\misc\go-sqlmock" />
-      <recent name="D:\sourcecode\go\golang-example\misc\gorm" />
-      <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
-      <recent name="E:\sourcecode\go\golang-example\misc\raft" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,7 +147,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="dialog" />
+      <parameters value="fb" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -266,7 +261,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: gabs to json" />
     <MESSAGE value="feat: 增加 xml 的解析与处理" />
     <MESSAGE value="feat: 增加 bolthold 实例" />
     <MESSAGE value="feat: 增加 watermill 实例" />
@@ -281,7 +275,6 @@
     <MESSAGE value="refactor: change json to gabs" />
     <MESSAGE value="feat: gjson" />
     <MESSAGE value="feat: gorm 增加自定义外键" />
-    <MESSAGE value="fix: gorm" />
     <MESSAGE value="feat: 实现了一个完整的 gorm 例子" />
     <MESSAGE value="fix: 调整代码" />
     <MESSAGE value="feat: 增加 gorm 单元测试例子" />
@@ -291,7 +284,9 @@
     <MESSAGE value="feat: event bus 示例 增加 SyncGroup" />
     <MESSAGE value="feat: 跨库查询" />
     <MESSAGE value="feat: 跨库结构化查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 跨库结构化查询" />
+    <MESSAGE value="fix: gorm" />
+    <MESSAGE value="refactor: 重命名" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 重命名" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -685,12 +680,12 @@
           <option name="timeStamp" value="471" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/EventBus/main.go</url>
+          <url>file://$PROJECT_DIR$/misc/eventBus/main.go</url>
           <line>74</line>
           <option name="timeStamp" value="472" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/EventBus/main.go</url>
+          <url>file://$PROJECT_DIR$/misc/eventBus/main.go</url>
           <line>77</line>
           <option name="timeStamp" value="473" />
         </line-breakpoint>
@@ -698,6 +693,26 @@
           <url>file://$PROJECT_DIR$/misc/gogit/main.go</url>
           <line>148</line>
           <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/firebird/main.go</url>
+          <line>90</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/firebird/main.go</url>
+          <line>69</line>
+          <option name="timeStamp" value="493" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/firebird/main.go</url>
+          <line>78</line>
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/firebird/main.go</url>
+          <line>63</line>
+          <option name="timeStamp" value="495" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
