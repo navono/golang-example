@@ -41,6 +41,7 @@ require (
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jpillora/overseer v0.0.0-20190427034852-ce9055846616
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
+	github.com/konimarti/opc v0.3.0
 	github.com/labstack/echo/v4 v4.1.10
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0

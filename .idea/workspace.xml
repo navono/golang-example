@@ -32,7 +32,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/firebird/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/opc-da/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
@@ -147,7 +147,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="fb" />
+      <parameters value="opc-da" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -261,7 +261,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 xml 的解析与处理" />
     <MESSAGE value="feat: 增加 bolthold 实例" />
     <MESSAGE value="feat: 增加 watermill 实例" />
     <MESSAGE value="fix: 增加关闭" />
@@ -286,7 +285,8 @@
     <MESSAGE value="feat: 跨库结构化查询" />
     <MESSAGE value="fix: gorm" />
     <MESSAGE value="refactor: 重命名" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: 重命名" />
+    <MESSAGE value="feat: firebird db + sqlx" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: firebird db + sqlx" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -713,6 +713,41 @@
           <url>file://$PROJECT_DIR$/misc/firebird/main.go</url>
           <line>63</line>
           <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/opc-da/main.go</url>
+          <line>46</line>
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/konimarti/opc@v0.3.0/connection_windows.go</url>
+          <line>443</line>
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/konimarti/opc@v0.3.0/connection_windows.go</url>
+          <line>160</line>
+          <option name="timeStamp" value="499" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/konimarti/opc@v0.3.0/connection_windows.go</url>
+          <line>125</line>
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/konimarti/opc@v0.3.0/connection_windows.go</url>
+          <line>218</line>
+          <option name="timeStamp" value="501" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/opc-da/main.go</url>
+          <line>33</line>
+          <option name="timeStamp" value="502" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/opc-da/main.go</url>
+          <line>27</line>
+          <option name="timeStamp" value="503" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
