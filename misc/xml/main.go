@@ -103,7 +103,7 @@ func fileXmlAction(c *cli.Context) error {
 	controller := root.SelectElement("control")
 	fmt.Println("Controller element:", controller.Tag)
 
-	//controller.AddChild()
+	// controller.AddChild()
 	domain := controller.CreateElement("ctrlarea")
 	domain.Attr = []etree.Attr{
 		{

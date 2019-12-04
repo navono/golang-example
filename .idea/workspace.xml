@@ -31,12 +31,14 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/opc-da/main.go" afterDir="false" />
+    <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="feat: Serf">
+      <change afterPath="$PROJECT_DIR$/misc/serf-demo/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/serf-demo/oon.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/xml/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/xml/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +149,11 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="opc-da" />
+      <parameters value="serf" />
+      <envs>
+        <env name="ADVERTISE_ADDR" value="10.30.26.56" />
+        <env name="CLUSTER_ADDR" value="10.30.26.99" />
+      </envs>
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -261,8 +267,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 bolthold 实例" />
-    <MESSAGE value="feat: 增加 watermill 实例" />
     <MESSAGE value="fix: 增加关闭" />
     <MESSAGE value="feat: 增加 overseer 的 upgrade 方案" />
     <MESSAGE value="feat: 增加 go-kit 实例" />
@@ -286,7 +290,9 @@
     <MESSAGE value="fix: gorm" />
     <MESSAGE value="refactor: 重命名" />
     <MESSAGE value="feat: firebird db + sqlx" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: firebird db + sqlx" />
+    <MESSAGE value="feat: OPC DA" />
+    <MESSAGE value="feat: Serf" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Serf" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -748,6 +754,31 @@
           <url>file://$PROJECT_DIR$/misc/opc-da/main.go</url>
           <line>27</line>
           <option name="timeStamp" value="503" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/ehr/main.go</url>
+          <line>47</line>
+          <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/ehr/main.go</url>
+          <line>131</line>
+          <option name="timeStamp" value="511" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/ehr/main.go</url>
+          <line>126</line>
+          <option name="timeStamp" value="512" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/ehr/main.go</url>
+          <line>121</line>
+          <option name="timeStamp" value="513" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/ehr/main.go</url>
+          <line>116</line>
+          <option name="timeStamp" value="514" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

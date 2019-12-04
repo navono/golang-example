@@ -29,6 +29,7 @@ import (
 	_ "golang-example/misc/gorm2"
 	_ "golang-example/misc/gorm3"
 	_ "golang-example/misc/opc-da"
+	_ "golang-example/misc/serf-demo"
 	_ "golang-example/misc/upgrade"
 	_ "golang-example/misc/watermill"
 	_ "golang-example/misc/xml"

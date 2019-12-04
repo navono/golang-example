@@ -31,12 +31,15 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/gops v0.3.6
+	github.com/gorilla/mux v1.7.3
 	github.com/gorilla/websocket v1.4.1
 	github.com/gotk3/gotk3 v0.0.0-20191010201156-711c17fcaec0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.1-0.20190118093823-f849b5445de4
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/hashicorp/memberlist v0.1.4
+	github.com/hashicorp/serf v0.8.5
+	github.com/imroc/req v0.2.4
 	github.com/jinzhu/gorm v1.9.11
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jpillora/overseer v0.0.0-20190427034852-ce9055846616
@@ -53,6 +56,7 @@ require (
 	github.com/nakagami/firebirdsql v0.0.0-20191006235538-bba3f542e616
 	github.com/navono/go-logger v0.0.0-20190816044720-616d07d8284e
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
+	github.com/pkg/errors v0.8.1
 	github.com/prologic/bitcask v0.3.4
 	github.com/prometheus/client_golang v1.1.0 // indirect
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4 // indirect
@@ -80,6 +84,7 @@ require (
 	go.uber.org/zap v1.10.0
 	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472 // indirect
 	golang.org/x/net v0.0.0-20190827160401-ba9fcec4b297
+	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
 	golang.org/x/sys v0.0.0-20190830142957-1e83adbbebd0 // indirect
 	golang.org/x/time v0.0.0-20190921001708-c4c64cad1fd0
 	google.golang.org/appengine v1.6.2 // indirect
