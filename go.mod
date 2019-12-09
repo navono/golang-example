@@ -55,6 +55,7 @@ require (
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76
 	github.com/nakagami/firebirdsql v0.0.0-20191006235538-bba3f542e616
 	github.com/navono/go-logger v0.0.0-20190816044720-616d07d8284e
+	github.com/ompluscator/dynamic-struct v1.2.0
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
 	github.com/pkg/errors v0.8.1
 	github.com/prologic/bitcask v0.3.4

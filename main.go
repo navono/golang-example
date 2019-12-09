@@ -16,6 +16,7 @@ import (
 	_ "golang-example/misc/dialog"
 	_ "golang-example/misc/distributedSystem/01-cluster-join"
 	_ "golang-example/misc/distributedSystem/02-channel-event"
+	_ "golang-example/misc/dynamic-struct"
 	_ "golang-example/misc/eventBus"
 	_ "golang-example/misc/filesystem"
 	_ "golang-example/misc/firebird"

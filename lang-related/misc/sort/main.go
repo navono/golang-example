@@ -57,8 +57,14 @@ func sortAction(c *cli.Context) error {
 		},
 	}
 
-	//sort.Sort(peopleSlice(students))
-	//fmt.Println(students)
+	// sort.Sort(peopleSlice(students))
+	// fmt.Println(students)
+
+	d := funk.IndexOf(students, people{
+		Id: "3",
+	})
+
+	fmt.Println(d)
 
 	s := funk.Find(students, func(p people) bool {
 		return strings.Compare(p.Id, "3") == 0
