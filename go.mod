@@ -8,6 +8,7 @@ require (
 	github.com/DataDog/zstd v1.4.1 // indirect
 	github.com/Jeffail/gabs/v2 v2.1.0
 	github.com/Sereal/Sereal v0.0.0-20190618215532-0b8ac451a863 // indirect
+	github.com/ShinyTrinkets/overseer v0.4.0
 	github.com/ThreeDotsLabs/watermill v1.0.0
 	github.com/ThreeDotsLabs/watermill-http v1.0.2
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
