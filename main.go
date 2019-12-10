@@ -12,6 +12,7 @@ import (
 	_ "golang-example/misc/bolt_db"
 	_ "golang-example/misc/bolt_storm"
 	_ "golang-example/misc/bolt_tx_deadlock"
+	_ "golang-example/misc/daemon"
 	_ "golang-example/misc/deadlock"
 	_ "golang-example/misc/dialog"
 	_ "golang-example/misc/distributedSystem/01-cluster-join"

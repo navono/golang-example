@@ -76,6 +76,7 @@ require (
 	github.com/sqweek/dialog v0.0.0-20190728103509-6254ed5b0d3c
 	github.com/streadway/handy v0.0.0-20190108123426-d5acb3125c2a // indirect
 	github.com/stretchr/testify v1.4.0
+	github.com/takama/daemon v0.11.0
 	github.com/thoas/go-funk v0.4.0
 	github.com/tidwall/gjson v1.3.2
 	github.com/timshannon/bolthold v0.0.0-20191009161117-ccb01ed9dec4
