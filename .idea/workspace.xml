@@ -32,11 +32,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/nats-client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/nats-client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/nats-client/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +251,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 增加 go-kit 实例" />
     <MESSAGE value="feat: 修改 bolt 例子" />
     <MESSAGE value="fix: 修改一些 typo 以及 pattern" />
     <MESSAGE value="fix: 增加获取 goroutine ID 的方法" />
@@ -280,7 +275,8 @@
     <MESSAGE value="feat: Serf" />
     <MESSAGE value="feat: dynamic struct" />
     <MESSAGE value="feat: 进程管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 进程管理" />
+    <MESSAGE value="feat: 增加 nats-client 客户端" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加 nats-client 客户端" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -290,10 +286,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575936943265" />
-    <state x="2326" y="41" key="CommitChangelistDialog2" timestamp="1575889795386">
+    <state x="2326" y="41" key="CommitChangelistDialog2" timestamp="1575937427089">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575889795386" />
+    <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575937427089" />
     <state width="1867" height="421" key="GridCell.Tab.0.bottom" timestamp="1575937291951">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -326,10 +322,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1867" height="421" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575937291951" />
-    <state x="2372" y="182" key="Vcs.Push.Dialog.v2" timestamp="1575889797653">
+    <state x="2372" y="182" key="Vcs.Push.Dialog.v2" timestamp="1575937429138">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575889797653" />
+    <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575937429138" />
     <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1575936667415">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -832,16 +828,6 @@
           <url>file://$PROJECT_DIR$/misc/overseer/main.go</url>
           <line>55</line>
           <option name="timeStamp" value="535" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/nats-client/main.go</url>
-          <line>81</line>
-          <option name="timeStamp" value="537" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/misc/nats-client/main.go</url>
-          <line>55</line>
-          <option name="timeStamp" value="539" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

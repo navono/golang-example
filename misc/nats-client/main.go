@@ -11,6 +11,7 @@ import (
 	"golang-example/cmd"
 )
 
+// go run main.go nats -s "nats://10.30.26.99:4222" aa bb
 func init() {
 	cmd.Cmds = append(cmd.Cmds, cli.Command{
 		Name:    "nats",
