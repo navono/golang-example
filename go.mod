@@ -24,7 +24,6 @@ require (
 	github.com/dgraph-io/badger v1.6.0
 	github.com/go-kit/kit v0.8.0
 	github.com/go-sql-driver/mysql v1.4.1
-	github.com/go-test/deep v1.0.1
 	github.com/go-xorm/xorm v0.7.5 // indirect
 	github.com/gogo/protobuf v1.3.0
 	github.com/golang/mock v1.3.1
@@ -40,12 +39,12 @@ require (
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/hashicorp/memberlist v0.1.4
 	github.com/hashicorp/serf v0.8.5
-	github.com/imroc/req v0.2.4
 	github.com/jinzhu/gorm v1.9.11
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/jpillora/overseer v0.0.0-20190427034852-ce9055846616
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/konimarti/opc v0.3.0
+	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/echo/v4 v4.1.10
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0
@@ -55,6 +54,8 @@ require (
 	github.com/mustafaturan/monoton v0.3.1
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76
 	github.com/nakagami/firebirdsql v0.0.0-20191006235538-bba3f542e616
+	github.com/nats-io/nats-server/v2 v2.1.2 // indirect
+	github.com/nats-io/nats.go v1.9.1
 	github.com/navono/go-logger v0.0.0-20190816044720-616d07d8284e
 	github.com/ompluscator/dynamic-struct v1.2.0
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
@@ -84,7 +85,7 @@ require (
 	go.etcd.io/bbolt v1.3.3
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
 	go.uber.org/zap v1.10.0
-	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472 // indirect
+	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472
 	golang.org/x/net v0.0.0-20190827160401-ba9fcec4b297
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
 	golang.org/x/sys v0.0.0-20190830142957-1e83adbbebd0 // indirect
