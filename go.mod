@@ -6,6 +6,7 @@ require (
 	cloud.google.com/go v0.44.3 // indirect
 	github.com/DATA-DOG/go-sqlmock v1.3.3
 	github.com/DataDog/zstd v1.4.1 // indirect
+	github.com/GeertJohan/go.rice v1.0.0 // indirect
 	github.com/Jeffail/gabs/v2 v2.1.0
 	github.com/Sereal/Sereal v0.0.0-20190618215532-0b8ac451a863 // indirect
 	github.com/ShinyTrinkets/overseer v0.4.0
@@ -21,6 +22,7 @@ require (
 	github.com/clbanning/mxj v1.8.4
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f // indirect
+	github.com/daaku/go.zipexe v1.0.1 // indirect
 	github.com/dgraph-io/badger v1.6.0
 	github.com/go-kit/kit v0.8.0
 	github.com/go-sql-driver/mysql v1.4.1
@@ -32,6 +34,7 @@ require (
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/gops v0.3.6
 	github.com/gorilla/mux v1.7.3
+	github.com/gorilla/rpc v1.2.0 // indirect
 	github.com/gorilla/websocket v1.4.1
 	github.com/gotk3/gotk3 v0.0.0-20191010201156-711c17fcaec0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.1-0.20190118093823-f849b5445de4
@@ -57,6 +60,10 @@ require (
 	github.com/nats-io/nats-server/v2 v2.1.2 // indirect
 	github.com/nats-io/nats.go v1.9.1
 	github.com/navono/go-logger v0.0.0-20190816044720-616d07d8284e
+	github.com/ochinchina/go-ini v1.0.1 // indirect
+	github.com/ochinchina/go-reaper v0.0.0-20181016012355-6b11389e79fc // indirect
+	github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c // indirect
+	github.com/ochinchina/supervisord v0.6.3 // indirect
 	github.com/ompluscator/dynamic-struct v1.2.0
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
 	github.com/pkg/errors v0.8.1
@@ -64,10 +71,12 @@ require (
 	github.com/prometheus/client_golang v1.1.0 // indirect
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4 // indirect
 	github.com/prometheus/procfs v0.0.4 // indirect
+	github.com/rogpeppe/go-charset v0.0.0-20190617161244-0dc95cdf6f31 // indirect
 	github.com/sasha-s/go-deadlock v0.2.0
 	github.com/satori/go.uuid v1.2.0
 	github.com/selvatico/go-mocket v1.0.7
 	github.com/serialx/hashring v0.0.0-20190515033939-7706f26af194
+	github.com/sevlyar/go-daemon v0.1.5 // indirect
 	github.com/sirupsen/logrus v1.4.2
 	github.com/smartystreets/goconvey v0.0.0-20190731233626-505e41936337
 	github.com/sony/gobreaker v0.4.1 // indirect
@@ -89,11 +98,12 @@ require (
 	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472
 	golang.org/x/net v0.0.0-20190827160401-ba9fcec4b297
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
-	golang.org/x/sys v0.0.0-20190830142957-1e83adbbebd0 // indirect
+	golang.org/x/sys v0.0.0-20191210023423-ac6580df4449 // indirect
 	golang.org/x/time v0.0.0-20190921001708-c4c64cad1fd0
 	google.golang.org/appengine v1.6.2 // indirect
 	google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55 // indirect
 	google.golang.org/grpc v1.23.0
+	gopkg.in/ini.v1 v1.51.0
 	gopkg.in/src-d/go-billy.v4 v4.3.2
 	gopkg.in/src-d/go-git.v4 v4.13.1
 )

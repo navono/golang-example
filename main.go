@@ -30,6 +30,7 @@ import (
 	_ "golang-example/misc/gorm-multiDB"
 	_ "golang-example/misc/gorm2"
 	_ "golang-example/misc/gorm3"
+	_ "golang-example/misc/ini"
 	_ "golang-example/misc/nats-client"
 	_ "golang-example/misc/opc-da"
 	_ "golang-example/misc/overseer"
