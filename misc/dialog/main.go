@@ -2,6 +2,7 @@ package dialog
 
 import (
 	"fmt"
+	"path/filepath"
 	"strings"
 
 	"github.com/sqweek/dialog"
@@ -30,8 +31,20 @@ func dialogAction(c *cli.Context) error {
 	** I'm guessing it has something to do with not having a main loop? */
 	dialog.Message("%s", "Please select a file").Title("Hello world!").Info()
 	// file, err := dialog.File().Title("Save As").Filter("All Files", "*").Save()
-	file, err := dialog.File().Title("Save As").Filter("All Files", "*").Load()
+	file, err := dialog.File().Title("Save As").Filter("*.zip", "zip").Load()
 	fmt.Println(file)
+
+	b := filepath.Base(file)
+	di := filepath.Dir(file)
+
+	dotIdx := strings.Index(b, ".")
+
+	fmt.Println(filepath.Join("a", "b"))
+
+	fmt.Println(b)
+	fmt.Println(di)
+	fmt.Println(b[0:dotIdx])
+
 	fmt.Println("Error:", err)
 	dialog.Message("You chose file: %s", file).Title("Goodbye world!").Error()
 	d, err := dialog.Directory().Title("Now find a dir").Browse()

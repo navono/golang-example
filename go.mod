@@ -51,6 +51,7 @@ require (
 	github.com/labstack/echo/v4 v4.1.10
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0
+	github.com/mholt/archiver/v3 v3.3.0
 	github.com/minio/highwayhash v1.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/mustafaturan/bus v0.1.3

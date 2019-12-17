@@ -8,6 +8,7 @@ import (
 	_ "golang-example/app/go-kit"
 	"golang-example/cmd"
 	_ "golang-example/lang-related/misc/sort"
+	_ "golang-example/misc/archive"
 	_ "golang-example/misc/bitcask_db"
 	_ "golang-example/misc/bolt_db"
 	_ "golang-example/misc/bolt_storm"
