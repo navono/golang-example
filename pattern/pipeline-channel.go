@@ -19,9 +19,7 @@ func generator(done <-chan interface{}, integers ...int) <-chan int {
 	return intStream
 }
 
-func multiply(done <-chan interface{},
-	intStream <-chan int,
-	multiplier int) <-chan int {
+func multiply(done <-chan interface{}, intStream <-chan int, multiplier int) <-chan int {
 	multipliedStream := make(chan int)
 	go func() {
 		defer close(multipliedStream)
@@ -36,10 +34,7 @@ func multiply(done <-chan interface{},
 	return multipliedStream
 }
 
-func add(done <-chan interface{},
-	intStream <-chan int,
-	additive int,
-) <-chan int {
+func add(done <-chan interface{}, intStream <-chan int, additive int) <-chan int {
 	addedStream := make(chan int)
 	go func() {
 		defer close(addedStream)

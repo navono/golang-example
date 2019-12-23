@@ -30,11 +30,13 @@ require (
 	github.com/gogo/protobuf v1.3.0
 	github.com/golang/mock v1.3.1
 	github.com/golang/protobuf v1.3.2
+	github.com/golang/snappy v0.0.1 // indirect
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/gops v0.3.6
 	github.com/gorilla/mux v1.7.3
 	github.com/gorilla/rpc v1.2.0 // indirect
+	github.com/gorilla/sessions v1.2.0
 	github.com/gorilla/websocket v1.4.1
 	github.com/gotk3/gotk3 v0.0.0-20191010201156-711c17fcaec0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.1-0.20190118093823-f849b5445de4
@@ -48,15 +50,18 @@ require (
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/konimarti/opc v0.3.0
 	github.com/labstack/echo v3.3.10+incompatible
+	github.com/labstack/echo-contrib v0.7.0
 	github.com/labstack/echo/v4 v4.1.10
 	github.com/lib/pq v1.2.0 // indirect
+	github.com/mattn/go-colorable v0.1.4 // indirect
+	github.com/mattn/go-isatty v0.0.11 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0
-	github.com/mholt/archiver/v3 v3.3.0
 	github.com/minio/highwayhash v1.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/mustafaturan/bus v0.1.3
 	github.com/mustafaturan/monoton v0.3.1
 	github.com/mwitkow/grpc-proxy v0.0.0-20181017164139-0f1106ef9c76
+	github.com/myntra/pipeline v0.0.0-20180618182531-2babf4864ce8
 	github.com/nakagami/firebirdsql v0.0.0-20191006235538-bba3f542e616
 	github.com/nats-io/nats-server/v2 v2.1.2 // indirect
 	github.com/nats-io/nats.go v1.9.1
@@ -64,12 +69,11 @@ require (
 	github.com/ochinchina/go-ini v1.0.1 // indirect
 	github.com/ochinchina/go-reaper v0.0.0-20181016012355-6b11389e79fc // indirect
 	github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c // indirect
-	github.com/ochinchina/supervisord v0.6.3 // indirect
+	github.com/ochinchina/supervisord v0.6.3
 	github.com/ompluscator/dynamic-struct v1.2.0
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
 	github.com/pkg/errors v0.8.1
 	github.com/prologic/bitcask v0.3.4
-	github.com/prometheus/client_golang v1.1.0 // indirect
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4 // indirect
 	github.com/prometheus/procfs v0.0.4 // indirect
 	github.com/rogpeppe/go-charset v0.0.0-20190617161244-0dc95cdf6f31 // indirect
@@ -91,15 +95,16 @@ require (
 	github.com/tidwall/gjson v1.3.2
 	github.com/timshannon/bolthold v0.0.0-20191009161117-ccb01ed9dec4
 	github.com/urfave/cli v1.21.0
+	github.com/valyala/fasttemplate v1.1.0 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/vmihailenco/msgpack/v4 v4.2.0
 	go.etcd.io/bbolt v1.3.3
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
 	go.uber.org/zap v1.10.0
-	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472
-	golang.org/x/net v0.0.0-20190827160401-ba9fcec4b297
+	golang.org/x/crypto v0.0.0-20191219195013-becbf705a915
+	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
-	golang.org/x/sys v0.0.0-20191210023423-ac6580df4449 // indirect
+	golang.org/x/sys v0.0.0-20191219235734-af0d71d358ab // indirect
 	golang.org/x/time v0.0.0-20190921001708-c4c64cad1fd0
 	google.golang.org/appengine v1.6.2 // indirect
 	google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55 // indirect
