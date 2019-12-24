@@ -34,6 +34,7 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/gops v0.3.6
+	github.com/google/wire v0.4.0
 	github.com/gorilla/mux v1.7.3
 	github.com/gorilla/rpc v1.2.0 // indirect
 	github.com/gorilla/sessions v1.2.0
@@ -100,6 +101,7 @@ require (
 	github.com/vmihailenco/msgpack/v4 v4.2.0
 	go.etcd.io/bbolt v1.3.3
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
+	go.uber.org/fx v1.10.0
 	go.uber.org/zap v1.10.0
 	golang.org/x/crypto v0.0.0-20191219195013-becbf705a915
 	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553

@@ -23,6 +23,7 @@ import (
 	_ "golang-example/misc/eventBus"
 	_ "golang-example/misc/filesystem"
 	_ "golang-example/misc/firebird"
+	_ "golang-example/misc/fx-http"
 	_ "golang-example/misc/gabs"
 	_ "golang-example/misc/gjson"
 	_ "golang-example/misc/gogit"
