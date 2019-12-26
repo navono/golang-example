@@ -2,6 +2,7 @@
 vendor
 dist
 
+*.out
 *.exe
 *.a
 *.o
