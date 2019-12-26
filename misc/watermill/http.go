@@ -47,8 +47,6 @@ func httpAction(c *cli.Context) error {
 			fmt.Println(msg)
 		}
 	}
-
-	return nil
 }
 
 func createPubSub() (*http.Publisher, *http.Subscriber) {

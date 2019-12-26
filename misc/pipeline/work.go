@@ -14,17 +14,17 @@ type work struct {
 }
 
 func (w work) Exec(request *pipeline.Request) *pipeline.Result {
-	w.Status(fmt.Sprintf("%+v", request))
+	w.Status(fmt.Sprintf("work %d inpput %+v", w.id, request))
 
-	duration := time.Duration(1000 * w.id)
-	time.Sleep(time.Millisecond * duration)
-	msg := fmt.Sprintf("work %d", w.id)
-
-	if w.id == 3 {
+	if w.id == 1 {
 		return &pipeline.Result{
 			Error: errors.New("bad request"),
 		}
 	}
+
+	duration := time.Duration(1000 * w.id)
+	time.Sleep(time.Millisecond * duration)
+	msg := fmt.Sprintf("work %d", w.id)
 
 	return &pipeline.Result{
 		Error:  nil,

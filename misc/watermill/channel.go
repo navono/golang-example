@@ -12,9 +12,11 @@ import (
 )
 
 func channelAction(c *cli.Context) error {
+	logger := watermill.NewStdLogger(false, false)
+
 	pubSub := gochannel.NewGoChannel(
 		gochannel.Config{},
-		watermill.NewStdLogger(false, false),
+		logger,
 	)
 	defer func() {
 		if err := pubSub.Close(); err != nil {
@@ -51,5 +53,7 @@ func process(messages <-chan *message.Message) {
 		// we need to Acknowledge that we received and processed the message,
 		// otherwise, it will be resent over and over again.
 		msg.Ack()
+
+		// msg.Nack()
 	}
 }

@@ -32,11 +32,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/fx-http/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/event.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/task.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/worker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/job/job.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/job/task.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/work/work.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/scipipe/foo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/scipipe/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/watermill/tx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pattern/fan-in-fan-out/fanin-fanout.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/pipeline/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/pipeline/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/pipeline/work.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/pipeline/work.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/watermill/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/watermill/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/watermill/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,18 +127,18 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourcecode\go\golang-example\pattern\fan-in-fan-out" />
+      <recent name="D:\sourcecode\go\golang-example\misc\non-db-transcation2\work" />
+      <recent name="D:\sourcecode\go\golang-example\misc\non-db-transcation2\job" />
+      <recent name="D:\sourcecode\go\golang-example\misc\filesystem" />
+      <recent name="D:\sourcecode\go\golang-example\misc\gorm2\model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sourcecode\go\golang-example\misc\go-sqlmock" />
       <recent name="D:\sourcecode\go\golang-example\misc\gorm" />
       <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\sourcecode\go\golang-example\misc\filesystem" />
-      <recent name="D:\sourcecode\go\golang-example\misc\gorm2\model" />
-      <recent name="D:\sourcecode\go\golang-example\misc\gorm\project" />
-      <recent name="F:\sourcecode\go\golang-example" />
-      <recent name="E:\sourcecode\go\golang-example\misc\raft\grpcapi" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.main">
@@ -139,7 +156,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="fx" />
+      <parameters value="fan" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -255,7 +272,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: gjson" />
     <MESSAGE value="feat: gorm 增加自定义外键" />
     <MESSAGE value="feat: 实现了一个完整的 gorm 例子" />
     <MESSAGE value="fix: 调整代码" />
@@ -280,82 +296,89 @@
     <MESSAGE value="feat: ini" />
     <MESSAGE value="feat: archive" />
     <MESSAGE value="feat: pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: pipeline" />
+    <MESSAGE value="feat: fx DI" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: fx DI" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577071430424">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577243833738">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577071430424" />
-    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576830562033" />
+    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577243833738" />
     <state x="2708" y="148" key="#xdebugger.evaluate" timestamp="1576832154365">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2708" y="148" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576832154365" />
-    <state x="2326" y="41" key="CommitChangelistDialog2" timestamp="1577064351341">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="406" y="41" key="CommitChangelistDialog2" timestamp="1577151282848">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="406" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151282848" />
     <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577064351341" />
-    <state width="848" height="582" key="DebuggerActiveHint" timestamp="1576830588637">
+    <state width="848" height="582" key="DebuggerActiveHint" timestamp="1577240811678">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="848" height="582" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576830588637" />
+    <state width="848" height="582" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577240811678" />
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1576564208240">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576564208240" />
-    <state width="1867" height="379" key="GridCell.Tab.0.bottom" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209919" />
-    <state width="1867" height="379" key="GridCell.Tab.0.center" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209919" />
-    <state width="1867" height="379" key="GridCell.Tab.0.left" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209919" />
-    <state width="1867" height="379" key="GridCell.Tab.0.right" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209919" />
-    <state width="1867" height="379" key="GridCell.Tab.1.bottom" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209920" />
-    <state width="1867" height="379" key="GridCell.Tab.1.center" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209919" />
-    <state width="1867" height="379" key="GridCell.Tab.1.left" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209919" />
-    <state width="1867" height="379" key="GridCell.Tab.1.right" timestamp="1577146328165">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="379" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577146328165" />
-    <state width="1867" height="570" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576833209919" />
-    <state x="2372" y="182" key="Vcs.Push.Dialog.v2" timestamp="1577064353496">
+    <state width="3327" height="461" key="GridCell.Tab.0.bottom" timestamp="1577250519035">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="3189" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
+    <state width="3327" height="461" key="GridCell.Tab.0.center" timestamp="1577250519035">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="3189" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
+    <state width="3327" height="461" key="GridCell.Tab.0.left" timestamp="1577250519034">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="3189" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519034" />
+    <state width="3327" height="461" key="GridCell.Tab.0.right" timestamp="1577250519035">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="3189" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
+    <state width="3327" height="461" key="GridCell.Tab.1.bottom" timestamp="1577250519035">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="3189" height="268" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
+    <state width="3327" height="461" key="GridCell.Tab.1.center" timestamp="1577250519035">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="3189" height="268" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
+    <state width="3327" height="461" key="GridCell.Tab.1.left" timestamp="1577250519035">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="3189" height="268" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
+    <state width="3327" height="461" key="GridCell.Tab.1.right" timestamp="1577250519035">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="3189" height="268" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
+    <state width="3327" height="461" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1577151284503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151284503" />
     <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577064353496" />
-    <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1577068559758">
+    <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1577172171639">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="508" y="95" width="1098" height="852" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576635308470" />
-    <state x="2458" y="189" width="843" height="662" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577068559758" />
+    <state x="2458" y="189" width="843" height="662" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577172171639" />
+    <state x="2459" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1577173049651">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2459" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577173049651" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -894,6 +917,121 @@
           <url>file://$PROJECT_DIR$/misc/fx-http/main.go</url>
           <line>214</line>
           <option name="timeStamp" value="551" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/scipipe/foo.go</url>
+          <line>48</line>
+          <option name="timeStamp" value="552" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/scipipe/foo.go</url>
+          <line>21</line>
+          <option name="timeStamp" value="553" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/scipipe/foo.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="554" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation/main.go</url>
+          <line>27</line>
+          <option name="timeStamp" value="562" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>96</line>
+          <option name="timeStamp" value="568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>103</line>
+          <option name="timeStamp" value="569" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/work/work.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="571" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>67</line>
+          <option name="timeStamp" value="572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>46</line>
+          <option name="timeStamp" value="573" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>50</line>
+          <option name="timeStamp" value="574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/main.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="576" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>70</line>
+          <option name="timeStamp" value="578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/task.go</url>
+          <line>40</line>
+          <option name="timeStamp" value="579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>93</line>
+          <option name="timeStamp" value="580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/non-db-transcation2/job/job.go</url>
+          <line>78</line>
+          <option name="timeStamp" value="581" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/pipeline/work.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="593" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/myntra/pipeline@v0.0.0-20180618182531-2babf4864ce8/stage.go</url>
+          <line>54</line>
+          <option name="timeStamp" value="597" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/myntra/pipeline@v0.0.0-20180618182531-2babf4864ce8/step.go</url>
+          <line>63</line>
+          <option name="timeStamp" value="598" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/myntra/pipeline@v0.0.0-20180618182531-2babf4864ce8/step.go</url>
+          <line>61</line>
+          <option name="timeStamp" value="599" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/pipeline/work.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="600" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pattern/fan-in-fan-out/fanin-fanout.go</url>
+          <line>38</line>
+          <option name="timeStamp" value="601" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pattern/fan-in-fan-out/fanin-fanout.go</url>
+          <line>119</line>
+          <option name="timeStamp" value="603" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pattern/fan-in-fan-out/fanin-fanout.go</url>
+          <line>104</line>
+          <option name="timeStamp" value="605" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

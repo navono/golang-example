@@ -24,6 +24,11 @@ func init() {
 				Usage:  "http example",
 				Action: httpAction,
 			},
+			{
+				Name:   "tx",
+				Usage:  "transaction example",
+				Action: txAction,
+			},
 		},
 	})
 }

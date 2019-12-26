@@ -10,8 +10,9 @@ require (
 	github.com/Jeffail/gabs/v2 v2.1.0
 	github.com/Sereal/Sereal v0.0.0-20190618215532-0b8ac451a863 // indirect
 	github.com/ShinyTrinkets/overseer v0.4.0
-	github.com/ThreeDotsLabs/watermill v1.0.0
+	github.com/ThreeDotsLabs/watermill v1.0.2
 	github.com/ThreeDotsLabs/watermill-http v1.0.2
+	github.com/ThreeDotsLabs/watermill-sql v1.1.1
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
 	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
 	github.com/asdine/storm v2.1.2+incompatible
@@ -34,7 +35,6 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/google/go-cmp v0.3.1 // indirect
 	github.com/google/gops v0.3.6
-	github.com/google/wire v0.4.0
 	github.com/gorilla/mux v1.7.3
 	github.com/gorilla/rpc v1.2.0 // indirect
 	github.com/gorilla/sessions v1.2.0
@@ -50,10 +50,8 @@ require (
 	github.com/jpillora/overseer v0.0.0-20190427034852-ce9055846616
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/konimarti/opc v0.3.0
-	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/echo-contrib v0.7.0
 	github.com/labstack/echo/v4 v4.1.10
-	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/mattn/go-isatty v0.0.11 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0
@@ -80,6 +78,7 @@ require (
 	github.com/rogpeppe/go-charset v0.0.0-20190617161244-0dc95cdf6f31 // indirect
 	github.com/sasha-s/go-deadlock v0.2.0
 	github.com/satori/go.uuid v1.2.0
+	github.com/scipipe/scipipe v0.9.6
 	github.com/selvatico/go-mocket v1.0.7
 	github.com/serialx/hashring v0.0.0-20190515033939-7706f26af194
 	github.com/sevlyar/go-daemon v0.1.5 // indirect
@@ -103,7 +102,7 @@ require (
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
 	go.uber.org/fx v1.10.0
 	go.uber.org/zap v1.10.0
-	golang.org/x/crypto v0.0.0-20191219195013-becbf705a915
+	golang.org/x/crypto v0.0.0-20191219195013-becbf705a915 // indirect
 	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553
 	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
 	golang.org/x/sys v0.0.0-20191219235734-af0d71d358ab // indirect

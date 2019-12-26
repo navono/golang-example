@@ -24,10 +24,10 @@ func init() {
 func pipeAction(c *cli.Context) error {
 
 	// create a new pipeline
-	workpipe := pipeline.NewProgress("myProgressworkpipe", 1000, time.Second*3)
+	workpipe := pipeline.NewProgress("createProject", 1000, time.Second*3)
 	// func NewStage(name string, concurrent bool, disableStrictMode bool) *Stage
 	// To execute steps concurrently, set concurrent=true.
-	stage := pipeline.NewStage("mypworkstage", false, false)
+	stage := pipeline.NewStage("stage", true, true)
 
 	// a unit of work
 	step1 := &work{id: 1}
@@ -42,18 +42,7 @@ func pipeAction(c *cli.Context) error {
 	// add the stage to the pipe.
 	workpipe.AddStage(stage)
 
-	stage2 := pipeline.NewStage("testStage", true, false)
-
-	sstep1 := &work{id: 3}
-	sstep2 := &work{id: 4}
-
-	stage2.AddStep(sstep1)
-	stage2.AddStep(sstep2)
-
-	workpipe.AddStage(stage2)
-
 	go readPipeline(workpipe)
-	sstep2.Cancel()
 
 	result := workpipe.Run()
 	if result.Error != nil {
