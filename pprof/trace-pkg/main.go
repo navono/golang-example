@@ -1,4 +1,4 @@
-package trace
+package trace_pkg
 
 import (
 	"os"

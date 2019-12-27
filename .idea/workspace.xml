@@ -32,28 +32,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/event.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/queue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/task.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation/worker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/job/job.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/job/task.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/non-db-transcation2/work/work.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/scipipe/foo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/scipipe/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/watermill/tx.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pattern/fan-in-fan-out/fanin-fanout.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogs/pointer-copy/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/blogs/pointer-copy/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogs/pointer-copy/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/blogs/pointer-copy/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/pipeline/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/pipeline/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/pipeline/work.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/pipeline/work.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/watermill/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/channel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/watermill/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/http.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/watermill/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/watermill/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pprof/trace-handler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pprof/trace-handler/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pprof/trace-pkg/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pprof/trace-pkg/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +259,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: gorm 增加自定义外键" />
     <MESSAGE value="feat: 实现了一个完整的 gorm 例子" />
     <MESSAGE value="fix: 调整代码" />
     <MESSAGE value="feat: 增加 gorm 单元测试例子" />
@@ -297,26 +283,31 @@
     <MESSAGE value="feat: archive" />
     <MESSAGE value="feat: pipeline" />
     <MESSAGE value="feat: fx DI" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: fx DI" />
+    <MESSAGE value="refactor: fix some scenario" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix some scenario" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577243833738">
+    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577322850817">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577071430424" />
-    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577243833738" />
+    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577322850817" />
+    <state x="2464" y="299" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577323056877">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2464" y="299" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577323056877" />
     <state x="2708" y="148" key="#xdebugger.evaluate" timestamp="1576832154365">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2708" y="148" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576832154365" />
-    <state x="406" y="41" key="CommitChangelistDialog2" timestamp="1577151282848">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2326" y="41" key="CommitChangelistDialog2" timestamp="1577406712846">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="406" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151282848" />
-    <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577064351341" />
+    <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577406712846" />
     <state width="848" height="582" key="DebuggerActiveHint" timestamp="1577240811678">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -365,16 +356,16 @@
     </state>
     <state width="3189" height="268" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
     <state width="3327" height="461" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1577151284503">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2372" y="182" key="Vcs.Push.Dialog.v2" timestamp="1577322514035">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151284503" />
-    <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577064353496" />
-    <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1577172171639">
+    <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577322514035" />
+    <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1577342353152">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="508" y="95" width="1098" height="852" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576635308470" />
-    <state x="2458" y="189" width="843" height="662" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577172171639" />
+    <state x="2458" y="189" width="843" height="662" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577342353152" />
     <state x="2459" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1577173049651">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

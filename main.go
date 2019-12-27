@@ -47,6 +47,8 @@ import (
 	_ "golang-example/misc/xml"
 	_ "golang-example/pattern"
 	_ "golang-example/pattern/fan-in-fan-out"
+	_ "golang-example/pprof/trace-handler"
+	_ "golang-example/pprof/trace-pkg"
 
 	"github.com/google/gops/agent"
 	"github.com/urfave/cli"

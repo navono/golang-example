@@ -9,6 +9,7 @@ dist
 *.PKGDEF
 *.wasm
 *.db
+./log
 *.log
 *.txt
 
