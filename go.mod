@@ -37,7 +37,7 @@ require (
 	github.com/google/gops v0.3.6
 	github.com/gorilla/mux v1.7.3
 	github.com/gorilla/rpc v1.2.0 // indirect
-	github.com/gorilla/sessions v1.2.0
+	github.com/gorilla/sessions v1.2.0 // indirect
 	github.com/gorilla/websocket v1.4.1
 	github.com/gotk3/gotk3 v0.0.0-20191010201156-711c17fcaec0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.1-0.20190118093823-f849b5445de4
@@ -50,7 +50,7 @@ require (
 	github.com/jpillora/overseer v0.0.0-20190427034852-ce9055846616
 	github.com/koding/websocketproxy v0.0.0-20181220232114-7ed82d81a28c
 	github.com/konimarti/opc v0.3.0
-	github.com/labstack/echo-contrib v0.7.0
+	github.com/labstack/echo-contrib v0.7.0 // indirect
 	github.com/labstack/echo/v4 v4.1.10
 	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/mattn/go-isatty v0.0.11 // indirect
@@ -98,6 +98,7 @@ require (
 	github.com/valyala/fasttemplate v1.1.0 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/vmihailenco/msgpack/v4 v4.2.0
+	github.com/zserge/lorca v0.1.8
 	go.etcd.io/bbolt v1.3.3
 	go.etcd.io/etcd v0.0.0-20190621205006-948e276ca73d
 	go.uber.org/fx v1.10.0
