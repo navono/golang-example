@@ -22,6 +22,19 @@ func BenchmarkMemoryStack(b *testing.B) {
 	_ = fmt.Sprintf("%v", s.a)
 }
 
+func BenchmarkMemoryStackWithFn(b *testing.B) {
+	var s S
+	var s1 S
+
+	s = byCopy()
+	s1 = byCopy()
+	for i := 0; i < b.N; i++ {
+		for i := 0; i < 1000000; i++ {
+			s.stack(s1)
+		}
+	}
+}
+
 func BenchmarkMemoryHeap(b *testing.B) {
 	var s *S
 
@@ -32,4 +45,17 @@ func BenchmarkMemoryHeap(b *testing.B) {
 	b.StopTimer()
 
 	_ = fmt.Sprintf("%v", s.a)
+}
+
+func BenchmarkMemoryHeapWithFn(b *testing.B) {
+	var s *S
+	var s1 *S
+
+	s = byPointer()
+	s1 = byPointer()
+	for i := 0; i < b.N; i++ {
+		for i := 0; i < 1000000; i++ {
+			s.heap(s1)
+		}
+	}
 }
