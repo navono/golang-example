@@ -35,6 +35,7 @@ import (
 	_ "golang-example/misc/gorm2"
 	_ "golang-example/misc/gorm3"
 	_ "golang-example/misc/ini"
+	_ "golang-example/misc/memberlist"
 	_ "golang-example/misc/nats-client"
 	_ "golang-example/misc/non-db-transcation"
 	_ "golang-example/misc/non-db-transcation2"
