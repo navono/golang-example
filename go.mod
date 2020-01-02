@@ -3,6 +3,8 @@ module golang-example
 go 1.13
 
 require (
+	cirello.io/oversight v1.0.3
+	cirello.io/supervisor v1.0.3
 	cloud.google.com/go v0.44.3 // indirect
 	github.com/DATA-DOG/go-sqlmock v1.3.3
 	github.com/DataDog/zstd v1.4.1 // indirect

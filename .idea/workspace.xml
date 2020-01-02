@@ -32,15 +32,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be21d868-2d79-4eff-bd6c-c7ce3a31e11b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/cirello/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/cirello/process/process.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/cirello/simpleService.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/pointer-copy/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/blogs/pointer-copy/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/pointer-copy/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/blogs/pointer-copy/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pprof/trace-handler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pprof/trace-handler/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pprof/trace-pkg/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pprof/trace-pkg/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/overseer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/misc/overseer/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +99,7 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -109,23 +109,23 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/misc/go-sqlmock" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\sourcecode\go\golang-example\pattern\fan-in-fan-out" />
-      <recent name="D:\sourcecode\go\golang-example\misc\non-db-transcation2\work" />
-      <recent name="D:\sourcecode\go\golang-example\misc\non-db-transcation2\job" />
-      <recent name="D:\sourcecode\go\golang-example\misc\filesystem" />
-      <recent name="D:\sourcecode\go\golang-example\misc\gorm2\model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sourcecode\go\golang-example\misc\go-sqlmock" />
       <recent name="D:\sourcecode\go\golang-example\misc\gorm" />
       <recent name="F:\sourcecode\go\golang-example\misc\zapSentry" />
       <recent name="E:\sourcecode\go\golang-example\misc\raft" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourcecode\go\golang-example\misc\cirello\process" />
+      <recent name="D:\sourcecode\go\golang-example\misc\cirello" />
+      <recent name="D:\sourcecode\go\golang-example\pattern\fan-in-fan-out" />
+      <recent name="D:\sourcecode\go\golang-example\misc\non-db-transcation2\work" />
+      <recent name="D:\sourcecode\go\golang-example\misc\non-db-transcation2\job" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.main">
@@ -143,7 +143,7 @@
       <module name="golang_example" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <parameters value="fan" />
+      <parameters value="cirello" />
       <EXTENSION ID="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -259,10 +259,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: 实现了一个完整的 gorm 例子" />
-    <MESSAGE value="fix: 调整代码" />
-    <MESSAGE value="feat: 增加 gorm 单元测试例子" />
-    <MESSAGE value="fix: gorm 单元测试例子修改" />
     <MESSAGE value="fix: 事件驱动 watermill 例子修改" />
     <MESSAGE value="feat: event bus 示例" />
     <MESSAGE value="feat: event bus 示例 增加 SyncGroup" />
@@ -284,17 +280,21 @@
     <MESSAGE value="feat: pipeline" />
     <MESSAGE value="feat: fx DI" />
     <MESSAGE value="refactor: fix some scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix some scenario" />
+    <MESSAGE value="feat: pointer vs copy" />
+    <MESSAGE value="feat: pprof" />
+    <MESSAGE value="fix: blogs code modify" />
+    <MESSAGE value="feat: add Option pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Option pattern" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577322850817">
+    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577416608448">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577071430424" />
-    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577322850817" />
+    <state x="2334" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577416608448" />
     <state x="2464" y="299" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577323056877">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -303,69 +303,69 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2708" y="148" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576832154365" />
-    <state x="2326" y="41" key="CommitChangelistDialog2" timestamp="1577406712846">
+    <state x="2326" y="41" key="CommitChangelistDialog2" timestamp="1577754379166">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="406" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151282848" />
-    <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577406712846" />
+    <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577754379166" />
     <state width="848" height="582" key="DebuggerActiveHint" timestamp="1577240811678">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="848" height="582" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577240811678" />
-    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1576564208240">
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1577753379031">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576564208240" />
-    <state width="3327" height="461" key="GridCell.Tab.0.bottom" timestamp="1577250519035">
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577753379031" />
+    <state width="1867" height="367" key="GridCell.Tab.0.bottom" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state width="3327" height="461" key="GridCell.Tab.0.center" timestamp="1577250519035">
+    <state width="1867" height="367" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state width="1867" height="367" key="GridCell.Tab.0.center" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state width="3327" height="461" key="GridCell.Tab.0.left" timestamp="1577250519034">
+    <state width="1867" height="367" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state width="1867" height="367" key="GridCell.Tab.0.left" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519034" />
-    <state width="3327" height="461" key="GridCell.Tab.0.right" timestamp="1577250519035">
+    <state width="1867" height="367" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state width="1867" height="367" key="GridCell.Tab.0.right" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state width="3327" height="461" key="GridCell.Tab.1.bottom" timestamp="1577250519035">
+    <state width="1867" height="367" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state width="1867" height="367" key="GridCell.Tab.1.bottom" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state width="3327" height="461" key="GridCell.Tab.1.center" timestamp="1577250519035">
+    <state width="1867" height="367" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state width="1867" height="367" key="GridCell.Tab.1.center" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state width="3327" height="461" key="GridCell.Tab.1.left" timestamp="1577250519035">
+    <state width="1867" height="367" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state width="1867" height="367" key="GridCell.Tab.1.left" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state width="3327" height="461" key="GridCell.Tab.1.right" timestamp="1577250519035">
+    <state width="1867" height="367" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state width="1867" height="367" key="GridCell.Tab.1.right" timestamp="1577762263268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="3189" height="268" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577235637225" />
-    <state width="3327" height="461" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577250519035" />
-    <state x="2372" y="182" key="Vcs.Push.Dialog.v2" timestamp="1577322514035">
+    <state width="1867" height="367" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577423684721" />
+    <state width="1867" height="367" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577762263268" />
+    <state x="2372" y="182" key="Vcs.Push.Dialog.v2" timestamp="1577754381024">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151284503" />
-    <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577322514035" />
-    <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1577342353152">
+    <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577754381024" />
+    <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1577416800646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="508" y="95" width="1098" height="852" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576635308470" />
-    <state x="2458" y="189" width="843" height="662" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577342353152" />
+    <state x="2458" y="189" width="843" height="662" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577416800646" />
     <state x="2459" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1577173049651">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -866,7 +866,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/misc/overseer/main.go</url>
-          <line>55</line>
+          <line>56</line>
           <option name="timeStamp" value="535" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
@@ -1023,6 +1023,31 @@
           <url>file://$PROJECT_DIR$/pattern/fan-in-fan-out/fanin-fanout.go</url>
           <line>104</line>
           <option name="timeStamp" value="605" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://D:/data/Go/pkg/mod/github.com/!shiny!trinkets/overseer@v0.4.0/manager.go</url>
+          <line>231</line>
+          <option name="timeStamp" value="608" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/cirello/main.go</url>
+          <line>23</line>
+          <option name="timeStamp" value="609" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/cirello/process/process.go</url>
+          <line>256</line>
+          <option name="timeStamp" value="614" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/cirello/process/process.go</url>
+          <line>226</line>
+          <option name="timeStamp" value="615" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/misc/cirello/process/process.go</url>
+          <line>224</line>
+          <option name="timeStamp" value="616" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
