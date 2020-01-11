@@ -3,6 +3,8 @@ module golang-example
 go 1.13
 
 require (
+	cirello.io/oversight v1.0.3
+	cirello.io/supervisor v1.0.3
 	cloud.google.com/go v0.44.3 // indirect
 	github.com/DATA-DOG/go-sqlmock v1.3.3
 	github.com/DataDog/zstd v1.4.1 // indirect
@@ -70,6 +72,7 @@ require (
 	github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c // indirect
 	github.com/ochinchina/supervisord v0.6.3
 	github.com/ompluscator/dynamic-struct v1.2.0
+	github.com/pborman/uuid v1.2.0
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
 	github.com/pkg/errors v0.8.1
 	github.com/prologic/bitcask v0.3.4

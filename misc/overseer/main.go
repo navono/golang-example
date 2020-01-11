@@ -26,12 +26,13 @@ func overseerAction(c *cli.Context) error {
 	ovr := pm.NewOverseer()
 
 	cmdOptions := pm.Options{
-		Buffered:  false,
-		Streaming: true,
+		Buffered:   false,
+		Streaming:  true,
+		DelayStart: 1000,
 	}
 
 	id1 := "ping1"
-	pingCmd := ovr.Add(id1, "ping", []string{"localhost"}, cmdOptions)
+	pingCmd := ovr.Add(id1, "ping", []string{"localhost", "-t"}, cmdOptions)
 
 	statusFeed := make(chan *pm.ProcessJSON)
 	ovr.Watch(statusFeed)
@@ -59,6 +60,15 @@ func overseerAction(c *cli.Context) error {
 					fmt.Println("Closing Stdout and Stderr loop")
 				}
 			}
+		}
+	}()
+
+	go func() {
+		time.Sleep(5 * time.Second)
+		fmt.Println("stopping!")
+		err := ovr.Stop(id1)
+		if err != nil {
+			panic(err)
 		}
 	}()
 

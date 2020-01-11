@@ -44,3 +44,7 @@ func byPointer() *S {
 		g: 1.0, h: 1.0, i: 1.0,
 	}
 }
+
+func (s S) stack(s1 S) {}
+
+func (s *S) heap(s1 *S) {}
