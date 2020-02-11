@@ -306,6 +306,10 @@
     <state x="2326" y="41" key="CommitChangelistDialog2" timestamp="1577406712846">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="325" y="12" key="CommitChangelistDialog2" timestamp="1578745207931">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="325" y="12" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578745207931" />
     <state x="406" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151282848" />
     <state x="2326" y="41" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577406712846" />
     <state width="848" height="582" key="DebuggerActiveHint" timestamp="1577240811678">
@@ -359,6 +363,14 @@
     <state x="2372" y="182" key="Vcs.Push.Dialog.v2" timestamp="1577322514035">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="270" y="55" key="SettingsEditor" timestamp="1577535902513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577535902513" />
+    <state x="362" y="144" key="Vcs.Push.Dialog.v2" timestamp="1578745211540">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578745211540" />
     <state x="452" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577151284503" />
     <state x="2372" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577322514035" />
     <state x="2458" y="189" width="843" height="662" key="find.popup" timestamp="1577342353152">
