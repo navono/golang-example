@@ -75,7 +75,7 @@ require (
 	github.com/pborman/uuid v1.2.0
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
 	github.com/pkg/errors v0.8.1
-	github.com/prologic/bitcask v0.3.4
+	git.mills.io/prologic/bitcask v0.3.4
 	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4 // indirect
 	github.com/prometheus/procfs v0.0.4 // indirect
 	github.com/rogpeppe/go-charset v0.0.0-20190617161244-0dc95cdf6f31 // indirect

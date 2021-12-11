@@ -5,7 +5,7 @@ import (
 	"github.com/urfave/cli"
 	"golang-example/cmd"
 
-	"github.com/prologic/bitcask"
+	"git.mills.io/prologic/bitcask"
 )
 
 func init() {
